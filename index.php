@@ -4,10 +4,12 @@
 		<title>Bootstrap Example</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="interNet29/plugin/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-		<script src="interNet29/plugin/jquery-3.7.1-dist/jquery-3.7.1.min.js"></script>
-		<script src="interNet29/plugin/popper-1.12.8-dist/popper-1.12.8.min.js"></script>
-		<script src="interNet29/plugin/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="interNet29/plugin/style.css">
+		<script src="interNet29/plugin/script.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
 		<div class="jumbotron text-center">
