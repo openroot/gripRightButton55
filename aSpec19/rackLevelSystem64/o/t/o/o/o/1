@@ -26,6 +26,6 @@
 :24:x                  :                                                                :=                             =:   :
 :25:y                  :                                                                :=                             =:   :
 :26:z                  :                                                                :=Reference                    =:33 :
-:t :cycle22            :                                                                :=Upgrade                      =:26 :
-:u :slim20             :                                                                :=Save                         =:13 :
+:t :cycle22            :                                                                :=Upgrade                      =:***:
+:u :slim20             :                                                                :=Save                         =:013:
 :+-:mirror25           :                                                                :=Pipe                         =:16 :
