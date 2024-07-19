@@ -1,31 +1,31 @@
-:o :_esb10_            :¶¶                                                              :±Extra Sheet Base             ±:45 :
-:x :_pvs12_            :®®                                                              :±Push Vector Stress           ±:64 :
-:1 :_aon13_            :..                                                              :±Appendix Ordered Numerical   ±:91 :
-:2 :_awc13_            :<>                                                              :±Alphanumeric Words Count     ±:95 :
-:3 :_afs13_            :!!                                                              :±Alphabet Factor Summation    ±:92 :
-:4 :_osc13_            :&&                                                              :±Occupied Space Count         ±:70 :
-:5 :_psc13_            :||                                                              :±Paragraph Series Count       ±:78 :
-:6 :_afa11_            :__                                                              :±Abbreviation First Alphabet  ±:88 :
-:7 :_grb9_             :§§                                                              :±Graph Roll Block             ±:64 :
-:8 :_qnb11_            :~~                                                              :±Quick Note Block             ±:58 :
-:9 :_lcs15_            :¦¦                                                              :±Linguistic Comment Section   ±:96 :
-:10:_srf14_            :##                                                              :±Symbolic Representation Form ±:109:
-:11:_dpr12_            :??                                                              :±Differential Priority Rank   ±:97 :
-:12:_iif11_            :;;                                                              :±Instant Inheritance From     ±:85 :
-:13:_ccf11_            :@@                                                              :±Clone Copy Format            ±:67 :
-:14:_ttp11_            :^^                                                              :±To The Power                 ±:42 :
-:15:_sof15_            :[]                                                              :±Start Of Fold                ±:48 :
-:16:_mof15_            :{}                                                              :±Middle Of Fold               ±:54 :
-:17:_fof15_            :()                                                              :±Finish Of Fold               ±:55 :
-:18:_mov12_            :××                                                              :±Multiplication Of Vertex     ±:86 :
-:19:_dov10_            :÷÷                                                              :±Division Of Vertex           ±:55 :
-:20:_aov10_            :++                                                              :±Addition Of Vertex           ±:54 :
-:21:_sov12_            :--                                                              :±Subtraction Of Vertex        ±:67 :
-:22:_sdr12_            :%%                                                              :±Self Divisional Remainder    ±:92 :
-:23:_rae10_            :==                                                              :±Referential Adjacent Equal   ±:93 :
-:24:_css13_            :""                                                              :±Contextual Sustained Styling ±:105:
-:25:_sss15_            :''                                                              :±Self Sustained Styling       ±:87 :
-:26:_coa11_            :,,                                                              :±Continuation Of Appendix     ±:86 :
-:t :_ioa11_            :±±                                                              :±Increase One Addition        ±:***:
-:u :_hlb13_            :ƒƒ                                                              :±Hook Line Border             ±:±±±:
-:+-:_cfd11_            :**                                                              :±Colour Flat Distribute       ±:81 :
+:o :esb10              :¶¶                                                              :±Extra Sheet Base             ±:45 :
+:x :pvs12              :®®                                                              :±Push Vector Stress           ±:64 :
+:1 :aon13              :..                                                              :±Appendix Ordered Numerical   ±:91 :
+:2 :awc13              :<>                                                              :±Alphanumeric Words Count     ±:95 :
+:3 :afs13              :!!                                                              :±Alphabet Factor Summation    ±:92 :
+:4 :osc13              :&&                                                              :±Occupied Space Count         ±:70 :
+:5 :psc13              :||                                                              :±Paragraph Series Count       ±:78 :
+:6 :afa11              :__                                                              :±Abbreviation First Alphabet  ±:88 :
+:7 :grb9               :§§                                                              :±Graph Roll Block             ±:64 :
+:8 :qnb11              :~~                                                              :±Quick Note Block             ±:58 :
+:9 :lcs15              :¦¦                                                              :±Linguistic Comment Section   ±:96 :
+:10:srf14              :##                                                              :±Symbolic Representation Form ±:109:
+:11:dpr12              :??                                                              :±Differential Priority Rank   ±:97 :
+:12:iif11              :;;                                                              :±Instant Inheritance From     ±:85 :
+:13:ccf11              :@@                                                              :±Clone Copy Format            ±:67 :
+:14:ttp11              :^^                                                              :±To The Power                 ±:42 :
+:15:sof15              :[]                                                              :±Start Of Fold                ±:48 :
+:16:mof15              :{}                                                              :±Middle Of Fold               ±:54 :
+:17:fof15              :()                                                              :±Finish Of Fold               ±:55 :
+:18:mov12              :××                                                              :±Multiplication Of Vertex     ±:86 :
+:19:dov10              :÷÷                                                              :±Division Of Vertex           ±:55 :
+:20:aov10              :++                                                              :±Addition Of Vertex           ±:54 :
+:21:sov12              :--                                                              :±Subtraction Of Vertex        ±:67 :
+:22:sdr12              :%%                                                              :±Self Divisional Remainder    ±:92 :
+:23:rae10              :==                                                              :±Referential Adjacent Equal   ±:93 :
+:24:css13              :""                                                              :±Contextual Sustained Styling ±:105:
+:25:sss15              :''                                                              :±Self Sustained Styling       ±:87 :
+:26:coa11              :,,                                                              :±Continuation Of Appendix     ±:86 :
+:t :ioa11              :±±                                                              :±Increase One Addition22042014±:***:
+:u :hlb13              :ƒƒ                                                              :±Hook Line Border             ±:±±±:
+:+-:cfd11              :**                                                              :±Colour Flat Distribute       ±:81 :
