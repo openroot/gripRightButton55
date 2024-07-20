@@ -1,3 +1,4 @@
-# lock20Page14
+# The Head Project
 
-A project renames from start to finish, "o" is the entry point of any project, is in progress in case of missing.
+o is known as project gateway.
+It renames from star to finish, considered as in progress on unavailability.
