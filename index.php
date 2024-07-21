@@ -1,19 +1,34 @@
 <?php
 	require_once("comPile31/save13.php");
 	require_once("comPile31/buy13.php");
-	require_once("comPile31/tor12.php");
 
 	use comPile31\save13 as save13;
 	use comPile31\buy13 as buy13;
 ?>
 
 <?php
-	set_error_handler(function($errNo, $errStr, $errFile, $errLine) { // TODO:Parameter renamings
-		if (0 === error_reporting()) {
+	error_reporting(\E_ALL);
+	set_error_handler("error");
+	
+	function error($errno, $errstr, $errfile, $errline): false|ErrorException {
+		if (error_reporting() === 0) {
 			return false;
 		}
-		throw new \ErrorException($errStr, 0, $errNo, $errFile, $errLine);
-	});
+		throw new \ErrorException($errstr, 0, $errno, $errfile, $errline);
+	}
+?>
+
+<?php
+	function displayError($error) {
+		print "<br>-<br>" . $error . "<br>-<br>";
+	}
+
+	function displayHTML($value) {
+		print "File name: " . $value[0] . "<br>";
+		print "File size: " . $value[1] . "<br>";
+		print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
+		print "<br><br>";
+	}
 ?>
 
 <!DOCTYPE html>
@@ -32,17 +47,6 @@
 		</div>
 
 		<?php
-			function displayError($error) {
-				print "<br>-<br>" . $error . "<br>-<br>";
-			}
-
-			function displayHTML($value) {
-				print "File name: " . $value[0] . "<br>";
-				print "File size: " . $value[1] . "<br>";
-				print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
-				print "<br><br>";
-			}
-
 			$fileAddresses = [
 				"o",
 				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
