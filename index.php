@@ -11,12 +11,12 @@
 <?php
 	error_reporting(E_ALL);
 	set_error_handler("error");
-	
-	function error($errno, $errstr, $errfile, $errline): false|Throwable {
-		if (error_reporting() === 0) {
-			return false;
+
+	function error($errno, $errstr, $errfile, $errline): void {
+		if (error_reporting() !== 0) {
+			$trace = new tor12\trace();
+			$trace->report($errstr, $errno, $errfile, $errline);
 		}
-		throw new \ErrorException($errstr, 0, $errno, $errfile, $errline);
 	}
 ?>
 
