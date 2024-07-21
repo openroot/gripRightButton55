@@ -25,13 +25,15 @@
 				print "<br>-<br>" . $error . "<br>-<br>";
 			}
 
+			/* save13 */
 			class readFile {
 				public $name;
-				public $content;
+				public $contentRows;
 				public $size;
 
 				function __construct($name) {
 					$this->name = $name;
+					$this->contentRows = [];
 					$this->read();
 				}
 
@@ -46,26 +48,40 @@
 					if ($file) {
 						$this->size = filesize($this->name);
 						if ($this->size > 0) {
-							$this->content = fread($file, $this->size);
+							while (!feof($file)) {
+								array_push($this->contentRows, fgets($file));
+							}
 							fclose($file);
 						}
 					}
 				}
 
+				private function htmlAdapter() {
+					$t = "";
+					foreach ($this->contentRows as $contentRow) {
+						$contentRow = mb_convert_encoding($contentRow, "UTF-8", "HTML-ENTITIES");
+						$contentRow = htmlspecialchars($contentRow);
+						$contentRow = str_replace(" ", "&nbsp;", $contentRow) . "<br>";
+						$t .= $contentRow;
+					}
+					return $t;
+				}
+
 				public function displayData() {
 					print "File name: " . $this->name . "<br>";
-					print "File size: " . $this->size . "<br>";					
-					$this->content = mb_convert_encoding($this->content, "UTF-8", "HTML-ENTITIES");
-					$this->content = nl2br(htmlspecialchars($this->content));
-					$this->content = str_replace(" ", "&nbsp;", $this->content);
-					print "File content:<br>" . $this->content;
-					print "<br>";
+					print "File size: " . $this->size . "<br>";
+					print "File content:<br>". $this->htmlAdapter();
+					print "<br><br>";
 				}
 
 				function __destruct() { }
 			}
+			/* save13 */
 
-			$fileAddresses = ["o"];
+			/* buy13 */
+			/* buy13 */
+
+			$fileAddresses = ["o", "aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"];
 			foreach ($fileAddresses as $fileAddress) {
 				$file = new readFile($fileAddress);
 				$file->displayData();
