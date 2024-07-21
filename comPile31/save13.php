@@ -43,35 +43,41 @@
 ?>
 
 <?php
-	class container {
-		private ?array $structure = null;
+	class structure {
+		private ?array $divisions = null;
 
-		function __construct(array $structure) {
-			$this->structure = [];
-			foreach ($structure as $section) {
+		function __construct(array $divisions) {
+			$this->divisions = [];
+			foreach ($divisions as $section) {
 				$division = new division($section);
-				array_push($this->structure, $division);
+				array_push($this->divisions, $division);
 			}
 		}
 
-		public function fromStructure(): ?array {
-			return $this->structure;
+		public function fromDivisions(): ?array {
+			return $this->divisions;
 		}
 	}
 
 	class division {
-		private ?string $section = null;
+		private ?string $sections = null;
 
-		function __construct(string $section) {
-			$this->section = $section or "";
+		function __construct(string $sections) {
+			$this->sections = $sections or "";
 		}
 
-		public function fromSection(): ?string {
-			return $this->section;
+		public function fromSections(): ?string {
+			return $this->sections;
 		}
 	}
 
 	class section {
+		private ?string $segment = null;
+
 		function __construct() { }
+
+		public function fromSegment(): ?string {
+			return $this->segment;
+		}
 	}
 ?>

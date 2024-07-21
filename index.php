@@ -59,9 +59,9 @@
 					$file = new save13\readFile($fileAddress);
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 
-					$container = new save13\container($file->fromContent());
-					foreach ($container->fromStructure() as $structure) {
-						print_r($structure->fromSection());
+					$structure = new save13\structure($file->fromContent());
+					foreach ($structure->fromDivisions() as $division) {
+						print_r($division->fromSections());
 					}
 				}
 				catch (Exception $e) {
