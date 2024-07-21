@@ -27,9 +27,9 @@
 
 			/* save13 */
 			class readFile {
-				public $name;
-				public $contentRows;
-				public $size;
+				private $name;
+				private $contentRows;
+				private $size;
 
 				function __construct($name) {
 					$this->name = $name;
@@ -56,21 +56,10 @@
 					}
 				}
 
-				private function htmlAdapter() {
-					$t = "";
-					foreach ($this->contentRows as $contentRow) {
-						$contentRow = mb_convert_encoding($contentRow, "UTF-8", "HTML-ENTITIES");
-						$contentRow = htmlspecialchars($contentRow);
-						$contentRow = str_replace(" ", "&nbsp;", $contentRow) . "<br>";
-						$t .= $contentRow;
-					}
-					return $t;
-				}
-
 				public function displayData() {
 					print "File name: " . $this->name . "<br>";
 					print "File size: " . $this->size . "<br>";
-					print "File content:<br>". $this->htmlAdapter();
+					print "File content:<br>". (new adapter($this->contentRows, adapterInputType::isArray))->convert(adapterOutputType::isHtml);
 					print "<br><br>";
 				}
 
@@ -79,9 +68,48 @@
 			/* save13 */
 
 			/* buy13 */
+			enum adapterInputType: string {
+				case isString = "string";
+				case isArray = "array";
+			};
+			
+			enum adapterOutputType: string {
+				case isHtml = "html";
+			};
+			
+			class adapter {
+				private $content;
+				private $adapterInputType;
+
+				function __construct($content, $adapterInputType) {
+					$this->content = $content;
+					$this->adapterInputType = $adapterInputType;
+				}
+
+				public function convert($adapterOutputType) {
+					if ($this->adapterInputType == adapterInputType::isString) {
+						$this->content = [$this->content];
+					}
+					switch($adapterOutputType) {
+						case adapterOutputType::isHtml:
+							$t = "";
+							foreach ($this->content as $row) {
+								$row = mb_convert_encoding($row, "UTF-8", "HTML-ENTITIES");
+								$row = htmlspecialchars($row);
+								$row = str_replace(" ", "&nbsp;", $row) . "<br>";
+								$t .= $row;
+							}
+							return $t;
+							break;
+					}
+				}
+			}
 			/* buy13 */
 
-			$fileAddresses = ["o", "aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"];
+			$fileAddresses = [
+				"o",
+				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
+			];
 			foreach ($fileAddresses as $fileAddress) {
 				$file = new readFile($fileAddress);
 				$file->displayData();
