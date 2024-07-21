@@ -54,7 +54,7 @@
 			}
 		}
 
-		public function fromContent(): ?array {
+		public function fromStructure(): ?array {
 			return $this->structure;
 		}
 	}

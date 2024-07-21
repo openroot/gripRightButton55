@@ -60,6 +60,9 @@
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 
 					$container = new save13\container($file->fromContent());
+					foreach ($container->fromStructure() as $structure) {
+						print_r($structure->fromSection());
+					}
 				}
 				catch (Exception $e) {
 					displayError($e);
