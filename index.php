@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Bootstrap Example</title>
+		<title>gripRightButton55</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="interNet29/plugin28/style.css">
@@ -9,9 +9,16 @@
 	</head>
 	<body>
 		<div>
-			<h1>My First Bootstrap Page</h1>
-			<p>Resize this responsive page to see the effect!</p>
+			<h1>Ready Page</h1>
+			<p>See the effect.</p>
 		</div>
+
+		<?php
+
+			
+
+		?>
+
 		<div>
 			<div>
 				<div>
