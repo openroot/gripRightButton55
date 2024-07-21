@@ -65,8 +65,11 @@
 				function __destruct() { }
 			}
 
-			$file = new readFile("o");
-			$file->displayData();
+			$fileAddresses = ["o"];
+			foreach ($fileAddresses as $fileAddress) {
+				$file = new readFile($fileAddress);
+				$file->displayData();
+			}
 		?>
 	</body>
 </html>
