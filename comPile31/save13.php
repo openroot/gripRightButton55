@@ -70,4 +70,8 @@
 			return $this->section;
 		}
 	}
+
+	class section {
+		function __construct() { }
+	}
 ?>
