@@ -87,7 +87,7 @@
 				}
 
 				public function convert($adapterOutputType) {
-					if ($this->adapterInputType == adapterInputType::isString) {
+					if ($this->adapterInputType === adapterInputType::isString) {
 						$this->content = [$this->content];
 					}
 					switch($adapterOutputType) {
