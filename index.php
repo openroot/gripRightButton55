@@ -1,16 +1,18 @@
 <?php
 	require_once("comPile31/save13.php");
 	require_once("comPile31/buy13.php");
+	require_once("comPile31/tor12.php");
 
 	use comPile31\save13 as save13;
 	use comPile31\buy13 as buy13;
+	use comPile31\tor12 as tor12;
 ?>
 
 <?php
-	error_reporting(\E_ALL);
+	error_reporting(E_ALL);
 	set_error_handler("error");
 	
-	function error($errno, $errstr, $errfile, $errline): false|ErrorException {
+	function error($errno, $errstr, $errfile, $errline): false|Throwable {
 		if (error_reporting() === 0) {
 			return false;
 		}
