@@ -43,5 +43,31 @@
 ?>
 
 <?php
-	class container { }
+	class container {
+		private ?array $structure = null;
+
+		function __construct(array $structure) {
+			$this->structure = [];
+			foreach ($structure as $section) {
+				$division = new division($section);
+				array_push($this->structure, $division);
+			}
+		}
+
+		public function fromContent(): ?array {
+			return $this->structure;
+		}
+	}
+
+	class division {
+		private ?string $section = null;
+
+		function __construct(string $section) {
+			$this->section = $section or "";
+		}
+
+		public function fromSection(): ?string {
+			return $this->section;
+		}
+	}
 ?>

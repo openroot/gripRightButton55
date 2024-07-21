@@ -58,6 +58,8 @@
 				try {
 					$file = new save13\readFile($fileAddress);
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
+
+					$container = new save13\container($file->fromContent());
 				}
 				catch (Exception $e) {
 					displayError($e);
