@@ -1,48 +1,47 @@
 <?php
-	set_error_handler(function($errNo, $errStr, $errFile, $errLine) {
-		if (0 === error_reporting()) {
-			return false;
-		}
-		throw new ErrorException($errStr, 0, $errNo, $errFile, $errLine);
-	});
-	
-	class readFile {
-		private $name;
-		private $contentRows;
-		private $size;
+	namespace comPile31\save13;
+?>
 
-		function __construct($name) {
+<?php
+	class readFile {
+		private string $name = "";
+		private ?int $size = null;
+		private ?array $content = null;
+
+		function __construct(string $name) {
 			$this->name = $name;
-			$this->contentRows = [];
 			$this->read();
 		}
 
-		private function read() {
+		private function read(): void {
 			$file = null;
-			try {
-				$file = fopen($this->name, "r");
-			}
-			catch (Exception $e) {
-				displayError($e);
-			}
+			$file = fopen($this->name, "r");
 			if ($file) {
 				$this->size = filesize($this->name);
 				if ($this->size > 0) {
+					$this->content = [];
 					while (!feof($file)) {
-						array_push($this->contentRows, fgets($file));
+						array_push($this->content, fgets($file));
 					}
 					fclose($file);
 				}
 			}
 		}
 
-		public function displayData() {
-			print "File name: " . $this->name . "<br>";
-			print "File size: " . $this->size . "<br>";
-			print "File content:<br>". (new adapter($this->contentRows, adapterInputType::isArray))->convert(adapterOutputType::isHtml);
-			print "<br><br>";
+		public function fromName(): string {
+			return $this->name;
 		}
 
-		function __destruct() { }
+		public function fromSize(): ?int {
+			return $this->size;
+		}
+
+		public function fromContent(): ?array {
+			return $this->content;
+		}
 	}
+?>
+
+<?php
+	class container { }
 ?>

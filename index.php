@@ -2,6 +2,18 @@
 	require_once("comPile31/save13.php");
 	require_once("comPile31/buy13.php");
 	require_once("comPile31/tor12.php");
+
+	use comPile31\save13 as save13;
+	use comPile31\buy13 as buy13;
+?>
+
+<?php
+	set_error_handler(function($errNo, $errStr, $errFile, $errLine) { // TODO:Parameter renamings
+		if (0 === error_reporting()) {
+			return false;
+		}
+		throw new \ErrorException($errStr, 0, $errNo, $errFile, $errLine);
+	});
 ?>
 
 <!DOCTYPE html>
@@ -24,67 +36,26 @@
 				print "<br>-<br>" . $error . "<br>-<br>";
 			}
 
-			/* save13 */
-			/* save13 */
-
-			/* buy13 */
-			enum adapterInputType: string {
-				case isString = "string";
-				case isArray = "array";
-			};
-			
-			enum adapterOutputType: string {
-				case isHtml = "html";
-			};
-			
-			class adapter {
-				private $content;
-				private $adapterInputType;
-
-				function __construct($content, $adapterInputType) {
-					$this->content = $content;
-					$this->adapterInputType = $adapterInputType;
-				}
-
-				private function convertToHTML($str) {
-					$str = mb_convert_encoding($str, "UTF-8", "HTML-ENTITIES");
-					$str = htmlspecialchars($str);
-					$str = str_replace(" ", "&nbsp;", $str);
-					return $str;
-				}
-
-				public function convert($adapterOutputType) {
-					if ($this->adapterInputType === adapterInputType::isString) {
-						$this->content = [$this->content];
-					}
-					switch($adapterOutputType) {
-						case adapterOutputType::isHtml:
-							switch($this->adapterInputType) {
-								case adapterInputType::isString:
-									return $this->convertToHTML($this->content);
-									break;
-								case adapterInputType::isArray:
-									$t = "";
-									foreach ($this->content as $row) {
-										$t .= $this->convertToHTML($row) . "<br>";
-									}
-									return $t;
-									break;
-							}
-							break;
-					}
-					return null;
-				}
+			function displayHTML($value) {
+				print "File name: " . $value[0] . "<br>";
+				print "File size: " . $value[1] . "<br>";
+				print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
+				print "<br><br>";
 			}
-			/* buy13 */
 
 			$fileAddresses = [
 				"o",
 				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
 			];
+
 			foreach ($fileAddresses as $fileAddress) {
-				$file = new readFile($fileAddress);
-				$file->displayData();
+				try {
+					$file = new save13\readFile($fileAddress);
+					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
+				}
+				catch (Exception $e) {
+					displayError($e);
+				}
 			}
 		?>
 	</body>
