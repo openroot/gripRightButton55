@@ -86,22 +86,34 @@
 					$this->adapterInputType = $adapterInputType;
 				}
 
+				private function convertToHTML($str) {
+					$str = mb_convert_encoding($str, "UTF-8", "HTML-ENTITIES");
+					$str = htmlspecialchars($str);
+					$str = str_replace(" ", "&nbsp;", $str);
+					return $str;
+				}
+
 				public function convert($adapterOutputType) {
 					if ($this->adapterInputType === adapterInputType::isString) {
 						$this->content = [$this->content];
 					}
 					switch($adapterOutputType) {
 						case adapterOutputType::isHtml:
-							$t = "";
-							foreach ($this->content as $row) {
-								$row = mb_convert_encoding($row, "UTF-8", "HTML-ENTITIES");
-								$row = htmlspecialchars($row);
-								$row = str_replace(" ", "&nbsp;", $row) . "<br>";
-								$t .= $row;
+							switch($this->adapterInputType) {
+								case adapterInputType::isString:
+									return $this->convertToHTML($this->content);
+									break;
+								case adapterInputType::isArray:
+									$t = "";
+									foreach ($this->content as $row) {
+										$t .= $this->convertToHTML($row) . "<br>";
+									}
+									return $t;
+									break;
 							}
-							return $t;
 							break;
 					}
+					return null;
 				}
 			}
 			/* buy13 */
