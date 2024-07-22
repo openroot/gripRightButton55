@@ -68,6 +68,10 @@
 					displayError($e);
 				}
 			}
+
+			print "<pre>";
+			print_r(save13\section::allowedLengthUnit);
+			print "</pre>";
 		?>
 	</body>
 </html>
