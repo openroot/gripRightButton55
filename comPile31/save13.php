@@ -177,6 +177,13 @@
 			30 => [1 => 114],
 			31 => [1 => 117]
 		];
+		private const symbolSpecialIdentifiers = [
+			1 = [1 => "o"],
+			2 = [1 => "x"],
+			29 = [1 => "t"],
+			30 = [1 => "u"],
+			31 = [1 => "+-"],
+		]
 
 		function __construct(int $sectionNumber, string $segment) {
 			$this->segment = $segment ?? "";
