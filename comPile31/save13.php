@@ -76,7 +76,7 @@
 		private ?int $sectionNumber = null;
 		private ?string $segment = null;
 
-		public const acceptableTableMultiplier = [ // 
+		public const acceptableTableMultiplier = [ // Addressing
 			31 => 1,
 			5 => 2,
 			14 => 3,
