@@ -44,37 +44,6 @@
 
 <?php
 	class structure {
-		private ?array $divisions = null;
-		private const allowedLengthUnit = 3621;
-
-		function __construct(array $divisions) {
-			$this->divisions = [];
-			foreach ($divisions as $sections) {
-				$division = new division($sections);
-				array_push($this->divisions, $division);
-			}
-		}
-
-		public function fromDivisions(): ?array {
-			return $this->divisions;
-		}
-	}
-
-	class division {
-		private ?string $sections = null;
-
-		function __construct(string $sections) {
-			$this->sections = $sections ?? "";
-		}
-
-		public function fromSections(): ?string {
-			return $this->sections;
-		}
-	}
-
-	class section {
-		private ?int $sectionNumber = null;
-		private ?string $segment = null;
 		public const acceptableTableMultiplier = [ // Addressing
 			31 => 1,
 			5 => 2,
@@ -393,13 +362,16 @@
 				18 => [1 => "+-"]
 			]
 		];
+		private array $struct = [];
 
-		function __construct(int $sectionNumber, string $segment) {
-			$this->segment = $segment ?? "";
+		function __construct(array $content) {
+			foreach ($content as $index => $division) {
+				$sections = explode(":", $division);
+			}
 		}
 
-		public function fromSegment(): ?string {
-			return $this->segment;
+		public function fromStruct(): array {
+			return $this->struct;
 		}
 	}
 ?>

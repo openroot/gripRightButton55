@@ -60,18 +60,14 @@
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 
 					$structure = new save13\structure($file->fromContent());
-					foreach ($structure->fromDivisions() as $division) {
-						//print_r($division->fromSections());
-					}
+					print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
 				}
 				catch (Exception $e) {
 					displayError($e);
 				}
 			}
 
-			print "<pre>";
-			//print_r(save13\section::allowedLengthUnit);
-			print "</pre>";
+			print "<pre>"; print_r(save13\structure::allowedLengthUnit); print "</pre>";
 		?>
 	</body>
 </html>
