@@ -75,8 +75,7 @@
 	class section {
 		private ?int $sectionNumber = null;
 		private ?string $segment = null;
-		// Registering
-		public const rangeSectionNumber = [
+		public const rangeSectionNumber = [ // Registering
 			1 => [1 => [1, 2, 3, 4, 5]],
 			2 => [1 => [1, 2, 3, 4, 5]],
 			3 => [1 => [1, 2, 3, 4, 5]],
@@ -109,8 +108,7 @@
 			30 => [1 => [1, 2, 3, 4]],
 			31 => [1 => [1, 2, 3, 4, 5]]
 		];
-		// Allowing
-		public const allowedLengthUnit = [
+		public const allowedLengthUnit = [ // Allowing
 			1 => [1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]],
 			2 => [1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]],
 			3 => [1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]],
@@ -143,8 +141,7 @@
 			30 => [1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29]]],
 			31 => [1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]]
 		];
-		// Verifying
-		private const verifyCountTotal = [
+		private const verifyCountTotal = [ // Verifying
 			1 => [1 => 117],
 			2 => [1 => 117],
 			3 => [1 => 117],
@@ -177,8 +174,7 @@
 			30 => [1 => 114],
 			31 => [1 => 117]
 		];
-		// Moderating
-		private const commonIdentificationString = [
+		private const commonIdentificationString = [ // Moderating
 			1 => [
 				1 => "o",
 				2 => "x",
