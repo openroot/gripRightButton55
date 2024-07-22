@@ -49,8 +49,8 @@
 
 		function __construct(array $divisions) {
 			$this->divisions = [];
-			foreach ($divisions as $section) {
-				$division = new division($section);
+			foreach ($divisions as $sections) {
+				$division = new division($sections);
 				array_push($this->divisions, $division);
 			}
 		}
@@ -141,7 +141,9 @@
 			31 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]
 		];
 
-		function __construct() { }
+		function __construct(string $segment) {
+			$this->segment = $segment ?? "";
+		}
 
 		public function fromSegment(): ?string {
 			return $this->segment;
