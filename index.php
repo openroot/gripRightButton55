@@ -61,7 +61,7 @@
 
 					$structure = new save13\structure($file->fromContent());
 					foreach ($structure->fromDivisions() as $division) {
-						print_r($division->fromSections());
+						//print_r($division->fromSections());
 					}
 				}
 				catch (Exception $e) {
@@ -70,7 +70,7 @@
 			}
 
 			print "<pre>";
-			print_r(save13\section::allowedLengthUnit);
+			//print_r(save13\section::allowedLengthUnit);
 			print "</pre>";
 		?>
 	</body>
