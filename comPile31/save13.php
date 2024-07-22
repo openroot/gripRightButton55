@@ -106,7 +106,11 @@
 	}
 
 	class section {
+		private ?int $sectionNumber = null;
 		private ?string $segment = null;
+		public const rangeSectionNumber = [
+			1 => [1 => [1, 2, 3, 4, 5]]
+		];
 		public const allowedLengthUnit = [
 			1 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]],
 			2 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]],
@@ -141,7 +145,7 @@
 			31 => [1 => [2], 2 => [19], 3 => [64], 4 => [29], 5 => [3]]
 		];
 
-		function __construct(string $segment) {
+		function __construct(int $sectionNumber, string $segment) {
 			$this->segment = $segment ?? "";
 		}
 
