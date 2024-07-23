@@ -391,7 +391,9 @@
 				foreach ($group as $index1 => $formats) {
 					foreach ($formats as $index2 => $format) {
 						var_dump($index2 . "->" . $format);
+
 					}
+					break;
 				}
 			}
 			$t = 1+2;
