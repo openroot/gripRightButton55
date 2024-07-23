@@ -286,37 +286,37 @@
 		];
 		private const commonIdentificationString = [ // Moderating
 			1 => [
-				1 => [1 => "o", 2 => "¶¶"],
-				2 => [1 => "x", 2 => "®®"],
-				3 => [1 => "1", 2 => "«»"],
+				1 => [1 => "o", 2 => "Â¶Â¶"],
+				2 => [1 => "x", 2 => "Â®Â®"],
+				3 => [1 => "1", 2 => "Â«Â»"],
 				4 => [1 => "2", 2 => "<>"],
-				5 => [1 => "3", 2 => "ÏÏ"],
-				6 => [1 => "4", 2 => "óó"],
+				5 => [1 => "3", 2 => "ÃÃ"],
+				6 => [1 => "4", 2 => "Ã³Ã³"],
 				7 => [1 => "5", 2 => "||"],
 				8 => [1 => "6", 2 => "__"],
-				9 => [1 => "7", 2 => "§§"],
+				9 => [1 => "7", 2 => "Â§Â§"],
 				10 => [1 => "8", 2 => "~~"],
-				11 => [1 => "9", 2 => "¦¦"],
-				12 => [1 => "10", 2 => "ÐÐ"],
-				13 => [1 => "11", 2 => "¢¢"],
-				14 => [1 => "12", 2 => "þþ"],
-				15 => [1 => "13", 2 => "ëë"],
+				11 => [1 => "9", 2 => "Â¦Â¦"],
+				12 => [1 => "10", 2 => "ÃÃ"],
+				13 => [1 => "11", 2 => "Â¢Â¢"],
+				14 => [1 => "12", 2 => "Ã¾Ã¾"],
+				15 => [1 => "13", 2 => "Ã«Ã«"],
 				16 => [1 => "14", 2 => "^^"],
 				17 => [1 => "15", 2 => "[]"],
 				18 => [1 => "16", 2 => "{}"],
 				19 => [1 => "17", 2 => "()"],
-				20 => [1 => "18", 2 => "××"],
-				21 => [1 => "19", 2 => "÷÷"],
+				20 => [1 => "18", 2 => "Ã—Ã—"],
+				21 => [1 => "19", 2 => "Ã·Ã·"],
 				22 => [1 => "20", 2 => "++"],
 				23 => [1 => "21", 2 => "--"],
 				24 => [1 => "22", 2 => "%%"],
 				25 => [1 => "23", 2 => "=="],
-				26 => [1 => "24", 2 => "¤¤"],
-				27 => [1 => "25", 2 => "©©"],
-				28 => [1 => "26", 2 => "ÆÆ"],
-				29 => [1 => "t", 2 => "±±"],
-				30 => [1 => "u", 2 => "µµ"],
-				31 => [1 => "+-", 2 => "°°"]
+				26 => [1 => "24", 2 => "Â¤Â¤"],
+				27 => [1 => "25", 2 => "Â©Â©"],
+				28 => [1 => "26", 2 => "Ã†Ã†"],
+				29 => [1 => "t", 2 => "Â±Â±"],
+				30 => [1 => "u", 2 => "ÂµÂµ"],
+				31 => [1 => "+-", 2 => "Â°Â°"]
 			],
 			2 => [
 				1 => [1 => "o"],
@@ -365,29 +365,26 @@
 		private array $errors = [];
 		private array $struct = [];
 
-		function __construct(array $content) {
-			$divisionsCount = count($content);
-			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
-				foreach ($content as $division) {
-					$trimmedSections = [];
+		function __construct(array $divisions) {
+			if (array_key_exists(count($divisions), structure::acceptableTableMultiplier)) {
+				foreach ($divisions as $division) {
 					$sections = explode(":", $division);
 					array_shift($sections);
 					array_pop($sections);
-					foreach ($sections as $section) {
-						array_push($trimmedSections, $section);
-					}
-					array_push($this->struct, $trimmedSections);
+					array_push($this->struct, $sections);
 				}
+				$this->isStructure($divisions);
 			}
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
-			$this->isStructure($content);
 		}
 
-		public function isStructure(array $content): bool {
+		public function isStructure(array $divisions): bool {
 			if ($this->struct) {
+				foreach ($this->struct as $divison) {
 
+				}
 			}
 			return false;
 		}

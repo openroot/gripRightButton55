@@ -75,7 +75,7 @@
 			foreach ($fileAddresses as $fileAddress) {
 				try {
 					$file = new save13\readFile($fileAddress);
-
+					
 					$structure = new save13\structure($file->fromContent());
 					if (!$structure->fromErrors()) {
 						displayCode($structure->fromStruct());
