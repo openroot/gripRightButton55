@@ -371,7 +371,13 @@
 					$sections = explode(":", $division);
 					array_shift($sections);
 					array_pop($sections);
-					array_push($this->struct, $sections);
+					$secs = [];
+					foreach ($sections as $section) {
+						if (!($section === "***" || $section === "###")) {
+							array_push($secs, $section);
+						}
+					}
+					array_push($this->struct, $secs);
 				}
 				$this->isStructure($divisions);
 			}
