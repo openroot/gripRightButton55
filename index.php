@@ -21,8 +21,20 @@
 ?>
 
 <?php
-	function displayError($error) {
-		print "<br>-<br>" . $error . "<br>-<br>";
+	function displayError($value) {
+		if (count($value) > 0) {
+			print "<br>-";
+			foreach ($value as $index => $val) {
+				 print "<br>«" . ($index + 1) . "» " .  $val;
+			}
+			print "<br>-<br>";
+		}
+	}
+
+	function displayCode($value) {
+		print "<pre>";
+		print_r($value);
+		print "</pre>";
 	}
 
 	function displayHTML($value) {
@@ -60,20 +72,18 @@
 
 					$structure = new save13\structure($file->fromContent());
 					if (!$structure->fromErrors()) {
-						print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
+						displayCode($structure->fromStruct());
 					}
 					else {
-						print "<pre>"; print_r($structure->fromErrors()); print "</pre>";
+						displayError($structure->fromErrors());
 					}
 
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
 				catch (Exception $e) {
-					displayError($e);
+					displayError([$e]);
 				}
 			}
-
-			//print "<pre>"; print_r(save13\structure::allowedLengthUnit); print "</pre>";
 		?>
 	</body>
 </html>

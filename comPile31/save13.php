@@ -45,7 +45,7 @@
 <?php
 	class structure {
 		public const acceptableTableMultiplier = [ // Addressing
-			//31 => 1,
+			31 => 1,
 			5 => 2,
 			14 => 3,
 			18 => 4
@@ -384,6 +384,7 @@
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
+			//$this->struct = ["sdf", "sdf"];
 		}
 
 		public function fromErrors(): ?array {
