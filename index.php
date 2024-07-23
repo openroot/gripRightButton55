@@ -34,6 +34,7 @@
 	function displayCode($value) {
 		if (count($value) > 0) {
 			print "<pre>";
+			var_dump($value);
 			print_r($value);
 			//foreach ($value as $index => $val) {
 				//buy13\adapter::inHTML("\n«" . ($index + 1) . "» " .  $val);

@@ -382,24 +382,14 @@
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
+			$this->isStructure($content);
 		}
 
-		private function detectCommonIdentification($content): ?int {
-			$result = null;
-			$divisionsCount = count($content);
-			if ($divisionsCount > 0) {
-				$initialIdentifier = rtrim((explode(":", $content[0]))[1], " ");
-				var_dump("Division count: " . $divisionsCount . ", initial id: " . $initialIdentifier);
+		public function isStructure(array $content): bool {
+			if ($this->struct) {
 
-				foreach (structure::commonIdentificationString as $group) {
-					foreach ($group as $index1 => $formats) {
-						foreach ($formats as $index2 => $format) {
-						}
-						break;
-					}
-				}
 			}
-			return $result;
+			return false;
 		}
 
 		public function fromErrors(): ?array {
