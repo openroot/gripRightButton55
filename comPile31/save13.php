@@ -370,17 +370,12 @@
 			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
 				foreach ($content as $index1 => $division) {
 					$divisionNumber = $index1 + 1;
-					if (strlen($division) > 0) {
-						$sections = explode(":", $division);
-						array_shift($sections);
-						array_pop($sections);
-						foreach ($sections as $indexSectionNumber => $section) {
-							$sectionNumber = $indexSectionNumber + 1;
-							array_push($this->struct, $section);
-						}
-					}
-					else {
-						array_push($this->errors, "Division is blank at division number: " . $divisionNumber);
+					$sections = explode(":", $division);
+					array_shift($sections);
+					array_pop($sections);
+					foreach ($sections as $index2 => $section) {
+						$sectionNumber = $index2 + 1;
+						array_push($this->struct, $section);
 					}
 				}
 			}
