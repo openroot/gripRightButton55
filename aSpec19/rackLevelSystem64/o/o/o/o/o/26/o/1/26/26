@@ -1,31 +1,31 @@
-:o :indicate26         :Environmental snooze.                                           :±Product Access Name          ±:66 :
-:x :alphaNumeric50     :26 letters of the alphabet (A order Z) & the digits (0 order 9).:±English Alphabets Reserved QR±:100:
-:1 :a3                 :                                                                :±a                            ±:3  :
-:2 :b2                 :                                                                :±b                            ±:2  :
-:3 :c3                 :                                                                :±c                            ±:3  :
-:4 :d3                 :                                                                :±d                            ±:3  :
-:5 :e3                 :                                                                :±e                            ±:3  :
-:6 :f5                 :                                                                :±f                            ±:5  :
-:7 :g3                 :                                                                :±g                            ±:3  :
-:8 :h4                 :                                                                :±h                            ±:4  :
-:9 :i3                 :                                                                :±i                            ±:3  :
-:10:j5                 :                                                                :±j                            ±:5  :
-:11:k5                 :                                                                :±k                            ±:5  :
-:12:l7                 :                                                                :±l                            ±:7  :
-:13:m5                 :                                                                :±m                            ±:5  :
-:14:n5                 :                                                                :±n                            ±:5  :
-:15:o5                 :                                                                :±o                            ±:5  :
-:16:p5                 :                                                                :±p                            ±:5  :
-:17:q4                 :                                                                :±q                            ±:4  :
-:18:r4                 :                                                                :±r                            ±:4  :
-:19:s5                 :                                                                :±s                            ±:5  :
-:20:t3                 :                                                                :±t                            ±:3  :
-:21:u5                 :                                                                :±u                            ±:5  :
-:22:v2                 :                                                                :±v                            ±:2  :
-:23:w7                 :                                                                :±w                            ±:7  :
-:24:x1                 :                                                                :±x                            ±:1  :
-:25:y6                 :                                                                :±y                            ±:6  :
-:26:z6                 :                                                                :±z                            ±:6  :
-:t :summation39        :Addition from total system, extrude "o", "x", "t", "u" and "+-".:±Light View           382 109 ±:###:
-:u :extraReference47   :Collect an external pointing instrumentation providing cap here.:±Amplification Form           ±:@@@:
-:+-:thresholdKit49     :"A quick brown fox jumps over the lazy dog", is machine address.:±National English Dictionaries±:107:
+:o :indicate26         :Environmental snooze.                                           :(Product Access Name          ±:66 :
+:x :alphaNumeric50     :26 letters of the alphabet (A order Z) & the digits (0 order 9).:(English Alphabets Reserved QR±:100:
+:1 :a3                 :                                                                :(a                            ±:3  :
+:2 :b2                 :                                                                :(b                            ±:2  :
+:3 :c3                 :                                                                :(c                            ±:3  :
+:4 :d3                 :                                                                :(d                            ±:3  :
+:5 :e3                 :                                                                :(e                            ±:3  :
+:6 :f5                 :                                                                :(f                            ±:5  :
+:7 :g3                 :                                                                :(g                            ±:3  :
+:8 :h4                 :                                                                :(h                            ±:4  :
+:9 :i3                 :                                                                :(i                            ±:3  :
+:10:j5                 :                                                                :(j                            ±:5  :
+:11:k5                 :                                                                :(k                            ±:5  :
+:12:l7                 :                                                                :(l                            ±:7  :
+:13:m5                 :                                                                :(m                            ±:5  :
+:14:n5                 :                                                                :(n                            ±:5  :
+:15:o5                 :                                                                :(o                            ±:5  :
+:16:p5                 :                                                                :(p                            ±:5  :
+:17:q4                 :                                                                :(q                            ±:4  :
+:18:r4                 :                                                                :(r                            ±:4  :
+:19:s5                 :                                                                :(s                            ±:5  :
+:20:t3                 :                                                                :(t                            ±:3  :
+:21:u5                 :                                                                :(u                            ±:5  :
+:22:v2                 :                                                                :(v                            ±:2  :
+:23:w7                 :                                                                :(w                            ±:7  :
+:24:x1                 :                                                                :(x                            ±:1  :
+:25:y6                 :                                                                :(y                            ±:6  :
+:26:z6                 :                                                                :(z                            ±:6  :
+:t :summation39        :Addition from total system, extrude "o", "x", "t", "u" and "+-".:(Light View           382 109 ±:###:
+:u :extraReference47   :Collect an external pointing instrumentation providing cap here.:(Amplification Form           ±:@@@:
+:+-:thresholdKit49     :"A quick brown fox jumps over the lazy dog", is machine address.:(National English Dictionaries±:107:
