@@ -368,17 +368,17 @@
 		function __construct(array $content) {
 			$divisionsCount = count($content);
 			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
-				$this->detectCommonIdentification($content);
-				foreach ($content as $index1 => $division) {
-					$divisionNumber = $index1 + 1;
+				$divs = [];
+				foreach ($content as $division) {
+					$secs = [];
 					$sections = explode(":", $division);
 					array_shift($sections);
 					array_pop($sections);
-					foreach ($sections as $index2 => $section) {
-						$sectionNumber = $index2 + 1;
+					foreach ($sections as $section) {
 						array_push($this->struct, $section);
 					}
 				}
+				//$this->detectCommonIdentification($content);
 			}
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
@@ -390,19 +390,15 @@
 			$divisionsCount = count($content);
 			if ($divisionsCount > 0) {
 				$initialIdentifier = rtrim((explode(":", $content[0]))[1], " ");
-
 				var_dump("Division count: " . $divisionsCount . ", initial id: " . $initialIdentifier);
 
 				foreach (structure::commonIdentificationString as $group) {
 					foreach ($group as $index1 => $formats) {
 						foreach ($formats as $index2 => $format) {
-							//var_dump($index2 . "->" . $format);
-						
 						}
 						break;
 					}
 				}
-				$t = 1+2;
 			}
 			return $result;
 		}
