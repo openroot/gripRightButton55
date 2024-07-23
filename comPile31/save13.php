@@ -374,7 +374,7 @@
 					$secs = [];
 					foreach ($sections as $section) {
 						$sectionLength = strlen($section);
-						if (!($section === $this->createDummyString("*", $sectionLength) || $section === $this->createDummyString("#", $sectionLength))) {
+						if (!($section === $this->createDummyString("#", $sectionLength) || $section === $this->createDummyString("@", $sectionLength))) {
 							array_push($secs, $section);
 						}
 					}
