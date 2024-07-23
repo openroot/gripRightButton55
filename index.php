@@ -51,23 +51,24 @@
 		<?php
 			$fileAddresses = [
 				"o",
-				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
+				//"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
 			];
 
 			foreach ($fileAddresses as $fileAddress) {
 				try {
 					$file = new save13\readFile($fileAddress);
-					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 
 					$structure = new save13\structure($file->fromContent());
-					print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
+					//print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
+
+					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
 				catch (Exception $e) {
 					displayError($e);
 				}
 			}
 
-			print "<pre>"; print_r(save13\structure::allowedLengthUnit); print "</pre>";
+			//print "<pre>"; print_r(save13\structure::allowedLengthUnit); print "</pre>";
 		?>
 	</body>
 </html>

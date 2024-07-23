@@ -45,7 +45,7 @@
 <?php
 	class structure {
 		public const acceptableTableMultiplier = [ // Addressing
-			31 => 1,
+			//31 => 1,
 			5 => 2,
 			14 => 3,
 			18 => 4
@@ -363,10 +363,30 @@
 			]
 		];
 		private array $struct = [];
+		private array $possibleErrors = [];
 
 		function __construct(array $content) {
-			foreach ($content as $index => $division) {
-				$sections = explode(":", $division);
+			$divisionsCount = count($content);
+			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
+				foreach ($content as $indexLine => $division) {
+					$divisionNumber = $indexLine + 1;
+					if (strlen($division) > 0) {
+						$sections = explode(":", $division);
+						foreach ($sections as $indexSectionNumber => $section) {
+							$sectionNumber = $indexSectionNumber;
+						}
+					}
+					else {
+						array_push($this->possibleErrors, "Division is blank at division number: " . $divisionNumber);
+					}
+				}
+			}
+			else {
+				array_push($this->possibleErrors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
+			}
+
+			if (count($this->possibleErrors) > 0) {
+				echo "<pre>"; print_r($this->possibleErrors); echo "</pre>";
 			}
 		}
 
