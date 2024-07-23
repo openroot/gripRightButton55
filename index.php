@@ -59,7 +59,12 @@
 					$file = new save13\readFile($fileAddress);
 
 					$structure = new save13\structure($file->fromContent());
-					//print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
+					if (!$structure->fromErrors()) {
+						print "<pre>"; print_r($structure->fromStruct()); print "</pre>";
+					}
+					else {
+						print "<pre>"; print_r($structure->fromErrors()); print "</pre>";
+					}
 
 					displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}

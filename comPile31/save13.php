@@ -362,8 +362,8 @@
 				18 => [1 => "+-"]
 			]
 		];
-		private array $struct = [];
 		private array $errors = [];
+		private array $struct = [];
 
 		function __construct(array $content) {
 			$divisionsCount = count($content);
@@ -384,14 +384,14 @@
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
-
-			if (count($this->errors) > 0) {
-				echo "<pre>"; print_r($this->errors); echo "</pre>";
-			}
 		}
 
-		public function fromStruct(): array {
-			return $this->struct;
+		public function fromErrors(): ?array {
+			return count($this->errors) > 0 ? $this->errors : null;
+		}
+
+		public function fromStruct(): ?array {
+			return !$this->fromErrors() ? $this->struct : null;
 		}
 	}
 ?>
