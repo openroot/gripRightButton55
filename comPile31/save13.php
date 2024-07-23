@@ -363,13 +363,13 @@
 			]
 		];
 		private array $struct = [];
-		private array $possibleErrors = [];
+		private array $errors = [];
 
 		function __construct(array $content) {
 			$divisionsCount = count($content);
 			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
-				foreach ($content as $indexLine => $division) {
-					$divisionNumber = $indexLine + 1;
+				foreach ($content as $index1 => $division) {
+					$divisionNumber = $index1 + 1;
 					if (strlen($division) > 0) {
 						$sections = explode(":", $division);
 						foreach ($sections as $indexSectionNumber => $section) {
@@ -377,16 +377,16 @@
 						}
 					}
 					else {
-						array_push($this->possibleErrors, "Division is blank at division number: " . $divisionNumber);
+						array_push($this->errors, "Division is blank at division number: " . $divisionNumber);
 					}
 				}
 			}
 			else {
-				array_push($this->possibleErrors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
+				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
 
-			if (count($this->possibleErrors) > 0) {
-				echo "<pre>"; print_r($this->possibleErrors); echo "</pre>";
+			if (count($this->errors) > 0) {
+				echo "<pre>"; print_r($this->errors); echo "</pre>";
 			}
 		}
 
