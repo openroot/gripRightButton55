@@ -390,6 +390,7 @@
 			$divisionsCount = count($content);
 			if ($divisionsCount > 0) {
 				$initialIdentifier = rtrim((explode(":", $content[0]))[1], " ");
+
 				var_dump("Division count: " . $divisionsCount . ", initial id: " . $initialIdentifier);
 
 				foreach (structure::commonIdentificationString as $group) {
