@@ -372,8 +372,11 @@
 					$divisionNumber = $index1 + 1;
 					if (strlen($division) > 0) {
 						$sections = explode(":", $division);
+						array_shift($sections);
+						array_pop($sections);
 						foreach ($sections as $indexSectionNumber => $section) {
-							$sectionNumber = $indexSectionNumber;
+							$sectionNumber = $indexSectionNumber + 1;
+							array_push($this->struct, $section);
 						}
 					}
 					else {
@@ -384,7 +387,10 @@
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
-			//$this->struct = ["sdf", "sdf"];
+		}
+
+		private function detectCommonIdentification(): ?int {
+			$result = null;
 		}
 
 		public function fromErrors(): ?array {
