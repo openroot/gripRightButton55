@@ -368,17 +368,16 @@
 		function __construct(array $content) {
 			$divisionsCount = count($content);
 			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
-				$divs = [];
 				foreach ($content as $division) {
-					$secs = [];
+					$trimmedSections = [];
 					$sections = explode(":", $division);
 					array_shift($sections);
 					array_pop($sections);
 					foreach ($sections as $section) {
-						array_push($this->struct, $section);
+						array_push($trimmedSections, $section);
 					}
+					array_push($this->struct, $trimmedSections);
 				}
-				//$this->detectCommonIdentification($content);
 			}
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
