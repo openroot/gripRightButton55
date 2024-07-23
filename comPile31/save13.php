@@ -390,7 +390,7 @@
 			foreach (structure::commonIdentificationString as $group) {
 				foreach ($group as $index1 => $formats) {
 					foreach ($formats as $index2 => $format) {
-						array_push($this->struct, $index2 . "->" . $format);
+						var_dump($index2 . "->" . $format);
 					}
 				}
 			}
