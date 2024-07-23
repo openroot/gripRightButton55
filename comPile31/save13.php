@@ -373,7 +373,8 @@
 					array_pop($sections);
 					$secs = [];
 					foreach ($sections as $section) {
-						if (!($section === "***" || $section === "###")) {
+						$sectionLength = strlen($section);
+						if (!($section === $this->createDummyString("*", $sectionLength) || $section === $this->createDummyString("#", $sectionLength))) {
 							array_push($secs, $section);
 						}
 					}
@@ -384,6 +385,16 @@
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
+		}
+
+		private function createDummyString(string $content, int $count): string {
+			$result = "";
+			if ($count > 0) {
+				for ($i = 1; $i <= $count; $i++) {
+					$result .= $content;
+				}
+			}
+			return $result;
 		}
 
 		public function isStructure(array $divisions): bool {
