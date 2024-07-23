@@ -387,16 +387,22 @@
 
 		private function detectCommonIdentification($content): ?int {
 			$result = null;
-			foreach (structure::commonIdentificationString as $group) {
-				foreach ($group as $index1 => $formats) {
-					foreach ($formats as $index2 => $format) {
-						var_dump($index2 . "->" . $format);
+			$divisionsCount = count($content);
+			if ($divisionsCount > 0) {
+				$initialIdentifier = rtrim((explode(":", $content[0]))[1], " ");
+				var_dump("Division count: " . $divisionsCount . ", initial id: " . $initialIdentifier);
 
+				foreach (structure::commonIdentificationString as $group) {
+					foreach ($group as $index1 => $formats) {
+						foreach ($formats as $index2 => $format) {
+							//var_dump($index2 . "->" . $format);
+						
+						}
+						break;
 					}
-					break;
 				}
+				$t = 1+2;
 			}
-			$t = 1+2;
 			return $result;
 		}
 
