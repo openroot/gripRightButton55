@@ -31,7 +31,14 @@
 			$this->inputType = $inputType;
 		}
 
-		private function convertToHTML(string $value): string {
+		private function convertInHTML(string $value): string {
+			$value = mb_convert_encoding($value, "UTF-8", "HTML-ENTITIES");
+			$value = htmlspecialchars($value);
+			$value = str_replace(" ", "&nbsp;", $value);
+			return $value;
+		}
+
+		public static function inHTML(string $value): string {
 			$value = mb_convert_encoding($value, "UTF-8", "HTML-ENTITIES");
 			$value = htmlspecialchars($value);
 			$value = str_replace(" ", "&nbsp;", $value);
@@ -43,12 +50,12 @@
 				case adapterOutputType::html:
 					switch($this->inputType) {
 						case adapterInputType::string:
-							return $this->convertToHTML($this->content);
+							return $this->convertInHTML($this->content);
 							break;
 						case adapterInputType::array:
 							$t = "";
 							foreach ($this->content as $row) {
-								$t .= $this->convertToHTML($row) . "<br>";
+								$t .= $this->convertInHTML($row) . "<br>";
 							}
 							return $t;
 							break;

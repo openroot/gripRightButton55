@@ -25,7 +25,7 @@
 		if (count($value) > 0) {
 			print "<br>-";
 			foreach ($value as $index => $val) {
-				 print "<br>«" . ($index + 1) . "» " .  $val;
+				 buy13\adapter::inHTML("\n«" . ($index + 1) . "» " .  $val);
 			}
 			print "<br>-<br>";
 		}
@@ -33,7 +33,9 @@
 
 	function displayCode($value) {
 		print "<pre>";
-		print_r($value);
+		foreach ($value as $index => $val) {
+			buy13\adapter::inHTML($val);
+		}
 		print "</pre>";
 	}
 

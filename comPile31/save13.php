@@ -368,6 +368,7 @@
 		function __construct(array $content) {
 			$divisionsCount = count($content);
 			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
+				$this->detectCommonIdentification($content);
 				foreach ($content as $index1 => $division) {
 					$divisionNumber = $index1 + 1;
 					$sections = explode(":", $division);
@@ -384,8 +385,17 @@
 			}
 		}
 
-		private function detectCommonIdentification(): ?int {
+		private function detectCommonIdentification($content): ?int {
 			$result = null;
+			foreach (structure::commonIdentificationString as $group) {
+				foreach ($group as $index1 => $formats) {
+					foreach ($formats as $index2 => $format) {
+						array_push($this->struct, $index2 . "->" . $format);
+					}
+				}
+			}
+			$t = 1+2;
+			return $result;
 		}
 
 		public function fromErrors(): ?array {
