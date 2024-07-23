@@ -284,7 +284,7 @@
 				18=> [1 => 117]
 			]
 		];
-		private const commonIdentificationString = [ // Moderating
+		private const commonIdentificationString = [ // Monitoring
 			1 => [
 				1 => [1 => "o", 2 => "¶¶"],
 				2 => [1 => "x", 2 => "®®"],
