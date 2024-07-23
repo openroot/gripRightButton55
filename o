@@ -26,6 +26,6 @@
 :24:chip15             :2024    7   20  8   8   00  000   PM IST                     SAT:±corner(s)                    ±:29 :
 :25:new15              :2024    7   20  8   9   00  000   PM IST                     SAT:±m(no)                        ±:15 :
 :26:pin13              :2024    7   20  8   12  00  000   PM IST                     SAT:±lid(near)                    ±:28 :
-:t :rate13             :2024    7   20  6   19  00  000   PM IST                     SAT:±are(range)           698 628 ±:***:
+:t :rate13             :2024    7   20  6   19  00  000   PM IST                     SAT:±are(range)           698 628 ±:###:
 :u :move15             :2024    7   20  6   1   00  000   PM IST                     SAT:±add(resin)                   ±:###:
 :+-:tor12              :2024    7   20  4   53  00  000   PM IST                     SAT:±c(ore)                       ±:15 :
