@@ -400,9 +400,7 @@
 
 		public function isStructure(array $divisions): bool {
 			if ($this->struct) {
-				foreach ($this->struct as $divison) {
-
-				}
+				//foreach ($this->struct as $divison) { }
 			}
 			return false;
 		}
