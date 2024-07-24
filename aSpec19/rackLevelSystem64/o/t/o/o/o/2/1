@@ -1,4 +1,4 @@
-:o :esb10              :*+                                                              :=Extra Sheet Base             #:45 :
+:o :esb10              :++                                                              :=Extra Sheet Base             #:45 :
 :x :pvs12              :%u                                                              :=Push Vector Stress           #:64 :
 :1 :aon13              :&d                                                              :=Appendix Ordered Numerical   #:91 :
 :2 :awc13              :&w                                                              :=Alphanumeric Words Count     #:95 :
@@ -28,4 +28,4 @@
 :26:coa11              :;p                                                              :=Continuation Of Appendix     #:86 :
 :t :ioa11              :%j                                                              :=Increase One Addition22042014#:___:
 :u :hlb13              :%k                                                              :=Hook Line Border             #:@@@:
-:+-:cfd11              :*-                                                              :=Colour Flat Distribute       #:81 :
+:..:cfd11              :--                                                              :=Colour Flat Distribute       #:81 :
