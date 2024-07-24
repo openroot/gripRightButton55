@@ -1,31 +1,31 @@
-:o :gravity24          :                                                                :(Team                         ):14 :
-:x :application45      :                                                                :(Pull                         ):24 :
-:1 :a                  :                                                                :(Arrange                      ):25 :
-:2 :b                  :                                                                :(Surplus                      ):36 :
-:3 :c                  :                                                                :(Lift                         ):18 :
-:4 :d                  :                                                                :(Cover                        ):17 :
-:5 :e                  :                                                                :(Numeric                      ):28 :
-:6 :f                  :                                                                :(Glide                        ):19 :
-:7 :g                  :                                                                :(Side                         ):14 :
-:8 :h                  :                                                                :(Memory                       ):28 :
-:9 :i                  :                                                                :(Threshold                    ):38 :
-:10:j                  :                                                                :(Deal                         ):16 :
-:11:k                  :                                                                :(Motion                       ):26 :
-:12:l                  :                                                                :(Hertz                        ):26 :
-:13:m                  :                                                                :(Extract                      ):13 :
-:14:n                  :                                                                :(Play                         ):21 :
-:15:o                  :                                                                :(Version                      ):27 :
-:16:p                  :                                                                :(Object                       ):21 :
-:17:q                  :                                                                :(Error                        ):20 :
-:18:r                  :                                                                :(Roll                         ):23 :
-:19:s                  :                                                                :(Curve                        ):17 :
-:20:t                  :                                                                :(Tag                          ):9  :
-:21:u                  :                                                                :(Render                       ):22 :
-:22:v                  :                                                                :(Balance                      ):26 :
-:23:w                  :                                                                :(Temporary                    ):38 :
-:24:x                  :                                                                :(Pseudo                       ):26 :
-:25:y                  :                                                                :(Count                        ):21 :
-:26:z                  :                                                                :(Reference                    ):33 :
-:t :cycle22            :Changed shape of concentration represented in delayed grid tile.:(Upgrade              662 608 ):###:
-:u :slim20             :                                                                :(Save                         ):@@@:
-:+-:mirror25           :                                                                :(Pipe                         ):16 :
+:o :gravity24          :                                                                :=Team                         #:14 :
+:x :application45      :                                                                :=Pull                         #:24 :
+:1 :a                  :                                                                :=Arrange                      #:25 :
+:2 :b                  :                                                                :=Surplus                      #:36 :
+:3 :c                  :                                                                :=Lift                         #:18 :
+:4 :d                  :                                                                :=Cover                        #:17 :
+:5 :e                  :                                                                :=Numeric                      #:28 :
+:6 :f                  :                                                                :=Glide                        #:19 :
+:7 :g                  :                                                                :=Side                         #:14 :
+:8 :h                  :                                                                :=Memory                       #:28 :
+:9 :i                  :                                                                :=Threshold                    #:38 :
+:10:j                  :                                                                :=Deal                         #:16 :
+:11:k                  :                                                                :=Motion                       #:26 :
+:12:l                  :                                                                :=Hertz                        #:26 :
+:13:m                  :                                                                :=Extract                      #:13 :
+:14:n                  :                                                                :=Play                         #:21 :
+:15:o                  :                                                                :=Version                      #:27 :
+:16:p                  :                                                                :=Object                       #:21 :
+:17:q                  :                                                                :=Error                        #:20 :
+:18:r                  :                                                                :=Roll                         #:23 :
+:19:s                  :                                                                :=Curve                        #:17 :
+:20:t                  :                                                                :=Tag                          #:9  :
+:21:u                  :                                                                :=Render                       #:22 :
+:22:v                  :                                                                :=Balance                      #:26 :
+:23:w                  :                                                                :=Temporary                    #:38 :
+:24:x                  :                                                                :=Pseudo                       #:26 :
+:25:y                  :                                                                :=Count                        #:21 :
+:26:z                  :                                                                :=Reference                    #:33 :
+:t :cycle22            :Changed shape of concentration represented in delayed grid tile.:=Upgrade              662 608 #:___:
+:u :slim20             :                                                                :=Save                         #:@@@:
+:+-:mirror25           :                                                                :=Pipe                         #:16 :
