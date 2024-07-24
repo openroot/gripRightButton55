@@ -67,6 +67,7 @@
 		</div>
 
 		<?php
+		echo mb_convert_encoding("©", "UTF-8", "HTML-ENTITIES");
 			$fileAddresses = [
 				"o",
 				//"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
