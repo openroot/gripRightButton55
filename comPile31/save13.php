@@ -366,7 +366,8 @@
 		private array $struct = [];
 
 		function __construct(array $divisions) {
-			if (array_key_exists(count($divisions), structure::acceptableTableMultiplier)) {
+			$divisionsCount = count($divisions);
+			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
 				foreach ($divisions as $division) {
 					$sections = explode(":", $division);
 					array_shift($sections);
