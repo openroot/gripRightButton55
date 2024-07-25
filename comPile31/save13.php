@@ -284,6 +284,28 @@
 			return $identification;
 		}
 
+		private function isVerifyCountTotal(int $identification): bool {
+			$isVerified = true;
+			if ($this->struct) {
+				if (count(structure::verifyCountTotal[$identification]) === count ($this->struct)) {
+					$i = 0;
+					foreach ($this->struct as $index1 => $value1) {
+						$temp = 0;
+						foreach ($value1 as $value2) {
+							$temp += strlen($value2);
+						}
+						if (structure::verifyCountTotal[$identification][$i++] !== $temp) {
+							$isVerified = false;
+						}
+					}
+				}
+				else {
+					$isVerified = false;
+				}
+			}
+			return $isVerified;
+		}
+
 		public function isStructure(): bool {
 			if ($this->struct) {
 				print "<br><br>";
@@ -291,13 +313,11 @@
 				$identification = $this->findCommonIdentificationString();
 				if ($identification !== null) {
 					print "Identification: " . $identification . "<br>";
-
-					foreach ($this->struct as $index1 => $value1) {
-						$temp = 0;
-						foreach ($value1 as $value2) {
-							$temp += strlen($value2);
-						}
-						print $temp . "<br>";
+					if ($this->isVerifyCountTotal($identification)) {
+						print "Verify count total: TRUE<br>";
+					}
+					else {
+						print "Verify count total: FALSE<br>";
 					}
 				}
 
