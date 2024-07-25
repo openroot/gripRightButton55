@@ -400,6 +400,8 @@
 
 		public function isStructure(): bool {
 			if ($this->struct) {
+				print "<br><br>";
+
 				$identificationItems = [];
 				foreach ($this->struct as $division) {
 					array_push($identificationItems,  rtrim($division[0]));
@@ -408,10 +410,12 @@
 				foreach (structure::commonIdentificationString as $index1 => $value1) {
 					foreach ($value1 as $index2 => $value2) {
 						foreach ($value2 as $index3 => $value3) {
-							//print $index3 . "=" . $value3 . ", ";
+							print "<br>[" . $index1 . "] {". $index2 . "} (" . $index3 . ">" . $value3 . ")";
 						}
 					}
 				}
+
+				print "<br><br>";
 			}
 			return false;
 		}
