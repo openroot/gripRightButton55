@@ -207,13 +207,13 @@
 			]
 		];
 		private const verifyCountTotal = [ // Verifying
-			1 => [117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117,
-				 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 114, 114, 117],
-			2 => [117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117,
-				 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 114, 114, 117],
-			3 => [117, 117,  114, 114, 117],
-			4 => [117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 114, 114, 117],
-			5 => [117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 117, 114, 114, 117]
+			1 => [119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119,
+				 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 116, 116, 119],
+			2 => [119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119,
+				 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 116, 116, 119],
+			3 => [119, 119,  116, 116, 119],
+			4 => [119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 116, 116, 119],
+			5 => [119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 116, 116, 119]
 		];
 		private const commonIdentificationString = [ // Monitoring
 			1 => ["o", "x", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
@@ -237,7 +237,7 @@
 					$secs = [];
 					foreach ($sections as $section) {
 						$sectionLength = strlen($section);
-						if (!($section === $this->createDummyString("#", $sectionLength) || $section === $this->createDummyString("@", $sectionLength))) {
+						if (!($section === $this->createDummyString("_", $sectionLength) || $section === $this->createDummyString("@", $sectionLength))) {
 							array_push($secs, $section);
 						}
 					}
@@ -291,6 +291,14 @@
 				$identification = $this->findCommonIdentificationString();
 				if ($identification !== null) {
 					print "Identification: " . $identification . "<br>";
+
+					foreach ($this->struct as $index1 => $value1) {
+						$temp = 0;
+						foreach ($value1 as $value2) {
+							$temp += strlen($value2);
+						}
+						print $temp . "<br>";
+					}
 				}
 
 				print "<br><br>";
