@@ -45,10 +45,10 @@
 <?php
 	class structure {
 		public const acceptableTableMultiplier = [ // Addressing
-			31 => 1,
-			5 => 2,
-			14 => 3,
-			18 => 4
+			31 => "",
+			5 => "",
+			14 => "",
+			18 => ""
 		];
 		public const rangeSectionNumber = [ // Registering
 			1 => [
