@@ -404,7 +404,14 @@
 				foreach ($this->struct as $division) {
 					array_push($identificationItems,  rtrim($division[0]));
 				}
-				var_dump($identificationItems);
+				print_r($identificationItems);
+				foreach (structure::commonIdentificationString as $index1 => $value1) {
+					foreach ($value1 as $index2 => $value2) {
+						foreach ($value2 as $index3 => $value3) {
+							//print $index3 . "=" . $value3 . ", ";
+						}
+					}
+				}
 			}
 			return false;
 		}
