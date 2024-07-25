@@ -316,14 +316,14 @@
 				28 => [1 => "26", 2 => "=o"],
 				29 => [1 => "t", 2 => "=9"],
 				30 => [1 => "u", 2 => "=k"],
-				31 => [1 => "+-", 2 => "--"]
+				31 => [1 => "..", 2 => "--"]
 			],
 			2 => [
 				1 => [1 => "o"],
 				2 => [1 => "x"],
 				3 => [1 => "t"],
 				4 => [1 => "u"],
-				5 => [1 => "+-"]
+				5 => [1 => ".."]
 			],
 			3 => [
 				1 => [1 => "o"],
@@ -339,7 +339,7 @@
 				11 => [1 => "9"],
 				12 => [1 => "t"],
 				13 => [1 => "u"],
-				14 => [1 => "+-"]
+				14 => [1 => ".."]
 			],
 			4 => [
 				1 => [1 => "o"],
@@ -359,7 +359,7 @@
 				15 => [1 => "13"],
 				16 => [1 => "t"],
 				17 => [1 => "u"],
-				18 => [1 => "+-"]
+				18 => [1 => ".."]
 			]
 		];
 		private array $errors = [];
@@ -381,7 +381,7 @@
 					}
 					array_push($this->struct, $secs);
 				}
-				$this->isStructure($divisions);
+				$this->isStructure();
 			}
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
@@ -398,9 +398,13 @@
 			return $result;
 		}
 
-		public function isStructure(array $divisions): bool {
+		public function isStructure(): bool {
 			if ($this->struct) {
-				//foreach ($this->struct as $divison) { }
+				$identificationItems = [];
+				foreach ($this->struct as $division) {
+						array_push($identificationItems,  rtrim($division[0]));
+				}
+				var_dump($identificationItems);
 			}
 			return false;
 		}
