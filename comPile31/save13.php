@@ -402,7 +402,7 @@
 			if ($this->struct) {
 				$identificationItems = [];
 				foreach ($this->struct as $division) {
-						array_push($identificationItems,  rtrim($division[0]));
+					array_push($identificationItems,  rtrim($division[0]));
 				}
 				var_dump($identificationItems);
 			}
