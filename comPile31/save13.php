@@ -214,7 +214,15 @@
 				";l" => 26, ";i" => 27, ";p" => 28, "%j" => 29, "%k" => 30,
 				"--" => 31
 			],
-			"delta" => [],
+			"delta" => [
+				"a.mount" => 1, "fs.arcade" => 2, "l.apps" => 3, "axe.store" => 4, "meet.them" => 5,
+				"re.press" => 6, "oi.vice" => 7, "mass.vis" => 8, "de.min" => 9, "row.s" => 10,
+				"in.tense" => 11, "be.lows" => 12, "b.ore" => 13, "in.stead" => 14, "con.next" => 15,
+				"quo.star" => 16, "pro.via" => 17, "not.e" => 18, "numb.or" => 19, "hug.e" => 20,
+				"spec.al" => 21, "blue.far" => 22, "co.unite" => 23, "same.sad" => 24, "re.cord" => 25,
+				"corner.s" => 26, "m.no" => 27, "lid.near" => 28, "are.range" => 29, "add.resin" => 30,
+				"c.ore" => 31
+			],
 			"theta" => [],
 			1 => [1 => ["alpha"], 2 => ["alpha"], 3 => ["alpha"], 4 => ["alpha", "beta"], 5 => ["alpha"]],
 			11 => [
