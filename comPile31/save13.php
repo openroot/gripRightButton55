@@ -196,7 +196,15 @@
 				"u" => 5, "v" => 2, "w" => 7, "x" => 1, "y" => 6,
 				"z" => 6
 			],
-			"gamma" => [],
+			"gamma" => [
+				"save13.php" => 1, "buy13.php" => 2, "date12.php" => 3, "time14.php" => 4, "mint16.php" => 5,
+				"race13.php" => 6, "rush18.php" => 7, "roof19.php" => 8, "expo14.php" => 9, "clue18.php" => 10,
+				"fact14.php" => 11, "back13.php" => 12, "air10.php" => 13, "miss18.php" => 14, "start18.php" => 15,
+				"cold18.php" => 16, "zero18.php" => 17, "hero16.php" => 18, "err11.php" => 19, "gap11.php" => 20,
+				"pass18.php" => 21, "low19.php" => 22, "tick14.php" => 23, "pure17.php" => 24, "rep12.php" => 25,
+				"chip15.php" => 26, "new15.php" => 27, "pin13.php" => 28, "rate13.php" => 29, "move15.php" => 30,
+				"tor12.php" => 31
+			],
 			"beta" => [
 				"++" => 1, "%u" => 2, "&d" => 3, "&w" => 4, "&a" => 5,
 				"&s" => 6, "&e" => 7, "&q" => 8, "/g" => 9, "/n" => 10,
