@@ -44,7 +44,7 @@
 
 <?php
 	class structure {
-		public const acceptableTableMultiplier = [ // Addressing
+		public const acceptableDivisionMultiplier = [ // Addressing
 			31 => "",
 			5 => "",
 			14 => "",
@@ -295,7 +295,7 @@
 
 		function __construct(array $divisions) {
 			$divisionsCount = count($divisions);
-			if (array_key_exists($divisionsCount, structure::acceptableTableMultiplier)) {
+			if (array_key_exists($divisionsCount, structure::acceptableDivisionMultiplier)) {
 				foreach ($divisions as $division) {
 					$sections = explode(":", $division);
 					array_shift($sections);
@@ -312,7 +312,7 @@
 				$this->isStructure();
 			}
 			else {
-				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableTableMultiplier)) . ", provided " . $divisionsCount . ".");
+				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableDivisionMultiplier)) . ", provided " . $divisionsCount . ".");
 			}
 		}
 
