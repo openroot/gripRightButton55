@@ -292,6 +292,7 @@
 		];
 		private array $errors = [];
 		private array $struct = [];
+		private ?int $identification = null;
 
 		function __construct(array $divisions) {
 			$divisionsCount = count($divisions);
@@ -350,17 +351,17 @@
 			return $identification;
 		}
 
-		private function isVerifyCountTotal(int $identification): bool {
+		private function isVerifyCountTotal(): bool {
 			$isVerified = true;
-			if ($this->struct) {
-				if (count(structure::verifyCountTotal[$identification]) === count ($this->struct)) {
+			if ($this->struct && $this->identification) {
+				if (count(structure::verifyCountTotal[$this->identification]) === count ($this->struct)) {
 					$i = 0;
 					foreach ($this->struct as $index1 => $value1) {
 						$temp = 0;
 						foreach ($value1 as $value2) {
 							$temp += strlen($value2);
 						}
-						if (structure::verifyCountTotal[$identification][$i++] !== $temp) {
+						if (structure::verifyCountTotal[$this->identification][$i++] !== $temp) {
 							$isVerified = false;
 						}
 					}
@@ -372,14 +373,23 @@
 			return $isVerified;
 		}
 
+		private function toStruct2() {
+			if ($this->struct) {
+				$structTemp = [];
+				foreach ($this->struct as $index1 => $value1) {
+
+				}
+			}
+		}
+
 		public function isStructure(): bool {
 			if ($this->struct) {
 				print "<br><br>";
 
-				$identification = $this->findCommonIdentificationString();
-				if ($identification !== null) {
-					print "Identification: " . $identification . "<br>";
-					if ($this->isVerifyCountTotal($identification)) {
+				$this->identification = $this->findCommonIdentificationString();
+				if ($this->identification) {
+					print "Identification: " . $this->identification . "<br>";
+					if ($this->isVerifyCountTotal()) {
 						print "Verify count total: TRUE<br>";
 					}
 					else {
