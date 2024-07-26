@@ -377,8 +377,17 @@
 			if ($this->struct && $this->identification) {
 				$structTemp = [];
 				foreach ($this->struct as $index1 => $value1) {
-
+					foreach ($value1 as $index2 => $value2) {
+						$temp = 0;
+						foreach (structure::allowedLengthUnit[$this->identification][$index1 + 1][$index2 + 1] as $index3 => $value3) {
+							print $value3 . ", ";
+							print substr($value2, $temp, $value3) . " / ";
+							$temp += $value3;
+						}
+						print "<br>";
+					}
 				}
+				print_r($structTemp);
 			}
 		}
 
