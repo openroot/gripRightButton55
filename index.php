@@ -80,7 +80,7 @@
 					
 					$structure = new save13\structure($file->fromContent());
 					if (!$structure->fromErrors()) {
-						//displayCode($structure->fromStruct());
+						displayCode($structure->fromStruct());
 					}
 					else {
 						displayError($structure->fromErrors());

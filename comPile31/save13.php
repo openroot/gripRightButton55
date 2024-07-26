@@ -373,21 +373,23 @@
 			return $isVerified;
 		}
 
-		private function toStruct2() {
+		private function toStruct() {
 			if ($this->struct && $this->identification) {
 				$structTemp = [];
 				foreach ($this->struct as $index1 => $value1) {
+					$divisions = [];
 					foreach ($value1 as $index2 => $value2) {
+						$sections = [];
 						$temp = 0;
 						foreach (structure::allowedLengthUnit[$this->identification][$index1 + 1][$index2 + 1] as $index3 => $value3) {
-							print $value3 . ", ";
-							print substr($value2, $temp, $value3) . " / ";
+							array_push($sections, substr($value2, $temp, $value3));
 							$temp += $value3;
 						}
-						print "<br>";
+						array_push($divisions, $sections);
 					}
+					array_push($structTemp, $divisions);
 				}
-				print_r($structTemp);
+				$this->struct = $structTemp;
 			}
 		}
 
@@ -400,7 +402,7 @@
 					print "Identification: " . $this->identification . "<br>";
 					if ($this->isVerifyCountTotal()) {
 						print "Verify count total: TRUE<br>";
-						$this->toStruct2();
+						$this->toStruct();
 					}
 					else {
 						print "Verify count total: FALSE<br>";
