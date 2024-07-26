@@ -69,6 +69,10 @@
 		</div>
 
 		<?php
+			print "<pre>";
+			print_r(save13\structure::rangeSectionNumber);
+			print "</pre>";
+
 			$fileAddresses = [
 				"o",
 				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
