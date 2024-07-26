@@ -71,7 +71,7 @@
 		<?php
 			$fileAddresses = [
 				"o",
-				//"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
+				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
 			];
 
 			foreach ($fileAddresses as $fileAddress) {
