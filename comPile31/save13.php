@@ -374,7 +374,7 @@
 		}
 
 		private function toStruct2() {
-			if ($this->struct) {
+			if ($this->struct && $this->identification) {
 				$structTemp = [];
 				foreach ($this->struct as $index1 => $value1) {
 
@@ -391,6 +391,7 @@
 					print "Identification: " . $this->identification . "<br>";
 					if ($this->isVerifyCountTotal()) {
 						print "Verify count total: TRUE<br>";
+						$this->toStruct2();
 					}
 					else {
 						print "Verify count total: FALSE<br>";
