@@ -223,8 +223,9 @@
 				"corner.s" => 26, "m.no" => 27, "lid.near" => 28, "are.range" => 29, "add.resin" => 30,
 				"c.ore" => 31
 			],
-			"theta" => [],
-			1 => [1 => ["alpha"], 2 => ["alpha"], 3 => ["alpha"], 4 => ["alpha", "beta"], 5 => ["alpha"]],
+			"theta" => ["en_uk" => "*", "en_us" => "*", "en_in" => "*", "en_nz" => ":"],
+
+			1 => [1 => ["alpha", "gamma", "delta", "theta"], 2 => ["alpha", "gamma", "delta", "theta"], 3 => ["alpha", "gamma", "delta", "theta"], 4 => ["alpha", "gamma", "beta", "delta", "theta"], 5 => ["gamma", "delta", "theta"]],
 			11 => [
 				1 => [1 => [], 2 => [], 3 => [], 4 => [], 5 => []],
 				2 => [1 => [], 2 => [], 3 => [], 4 => [], 5 => []],
@@ -343,7 +344,7 @@
 			$divisionsCount = count($divisions);
 			if (array_key_exists($divisionsCount, structure::acceptableDivisionMultiplier)) {
 				foreach ($divisions as $division) {
-					$sections = explode(":", $division);
+					$sections = explode("*", $division);
 					array_shift($sections);
 					array_pop($sections);
 					$secs = [];
