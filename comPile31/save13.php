@@ -373,11 +373,11 @@
 			print "<pre>"; print_r($tempArr); print "</pre>";
 		}
 
-		private function strposAll($haystack, $needle) {
+		private function strposAll($haystack, $needle): array {
 			$offset = 0;
-			$allpos = array();
+			$allpos = [];
 			while (($pos = strpos($haystack, $needle, $offset)) !== false) {
-				$offset   = $pos + 1;
+				$offset = $pos + 1;
 				$allpos[] = $pos;
 			}
 			return $allpos;
