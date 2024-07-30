@@ -366,10 +366,25 @@
 		}
 
 		private function one(array $divisions) {
+			$tempArr = [];
+			foreach ($divisions as $index1 => $value1) {
+				array_push($tempArr, $this->strposAll($value1, "::"));
+			}
+			print "<pre>"; print_r($tempArr); print "</pre>";
+		}
 
+		private function strposAll($haystack, $needle) {
+			$offset = 0;
+			$allpos = array();
+			while (($pos = strpos($haystack, $needle, $offset)) !== false) {
+				$offset   = $pos + 1;
+				$allpos[] = $pos;
+			}
+			return $allpos;
 		}
 
 		private function createDummyString(string $content, int $count): string {
+			// echo str_repeat("-=", 10);
 			$result = "";
 			if ($count > 0) {
 				for ($i = 1; $i <= $count; $i++) {
