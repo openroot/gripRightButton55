@@ -71,7 +71,8 @@
 		<?php
 			$fileAddresses = [
 				"o",
-				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1"
+				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/1",
+				"aSpec19/rackLevelSystem64/o/t/o/o/o/2/26"
 			];
 
 			foreach ($fileAddresses as $fileAddress) {
@@ -80,7 +81,7 @@
 					
 					$structure = new save13\structure($file->fromContent());
 					if (!$structure->fromErrors()) {
-						displayCode($structure->fromStruct());
+						//displayCode($structure->fromStruct());
 					}
 					else {
 						displayError($structure->fromErrors());

@@ -342,7 +342,8 @@
 		private ?int $identification = null;
 
 		function __construct(array $divisions) {
-			$divisionsCount = count($divisions);
+			$this->one($divisions);
+			/*$divisionsCount = count($divisions);
 			if (array_key_exists($divisionsCount, structure::acceptableDivisionMultiplier)) {
 				foreach ($divisions as $division) {
 					$sections = explode("::", $division);
@@ -361,7 +362,11 @@
 			}
 			else {
 				array_push($this->errors, "Allowed count of divisions are " . implode(", ", array_keys(structure::acceptableDivisionMultiplier)) . ", provided " . $divisionsCount . ".");
-			}
+			}*/
+		}
+
+		private function one(array $divisions) {
+
 		}
 
 		private function createDummyString(string $content, int $count): string {
