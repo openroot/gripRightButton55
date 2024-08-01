@@ -1,22 +1,29 @@
-&1d
-
 # Leverage Any Complications
-
-&3w   /n /c
-&97a  /n /c
-&28s  /n /c
-&1e   /n /c
-&LACq /n /c
+.
+.
+&1d
+&3w
+&97a
+&28s
+&1e
+&LACq
+/n
+/c
 /2g
-
-&2d
-
+.
+.
 Weightless medium near solutions.
 Everything is first and few things are just movie.
-
-&13w  /n /c
-&284a /n /c
-&84s  /n /c
-&1e   /n /c
-&q    /n /c
+.
+.
+&2d
+&13w
+&284a
+&84s
+&1e
+&q
+/n
+/c
 /g
+.
+.
