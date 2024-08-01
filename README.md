@@ -1,17 +1,22 @@
-(#1:leverageAnyComplications97)
 &1d
 
 # Leverage Any Complications
 
-Weightless medium near solutions.
-Everything is first and few things are just movie.
-
-&16w  /8x2n /3+4+9c
-&381a /n    /c
-&116s /n    /c
-&2e   /n    /c
-&LACq /n    /c
+&3w   /n /c
+&97a  /n /c
+&28s  /n /c
+&1e   /n /c
+&LACq /n /c
 /2g
 
 &2d
+
+Weightless medium near solutions.
+Everything is first and few things are just movie.
+
+&13w  /n /c
+&284a /n /c
+&84s  /n /c
+&1e   /n /c
+&q    /n /c
 /g
