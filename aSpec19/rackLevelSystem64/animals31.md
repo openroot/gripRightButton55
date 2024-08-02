@@ -1,0 +1,1 @@
+# Galaxy Light Temperature
