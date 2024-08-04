@@ -189,43 +189,51 @@
 		];
 		public const rangeSectionNumber = [ // Registering
 			"alpha" => [
-				"a" => 3, "b" => 2, "c" => 3, "d" => 3, "e" => 3,
-				"f" => 5, "g" => 3, "h" => 4, "i" => 3, "j" => 5,
-				"k" => 5, "l" => 7, "m" => 5, "n" => 5, "o" => 5,
-				"p" => 5, "q" => 4, "r" => 4, "s" => 5, "t" => 3,
-				"u" => 5, "v" => 2, "w" => 7, "x" => 1, "y" => 6,
-				"z" => 6
+				"aSpec19/rackLevelSystem64/transportSystem64/fishVila32/bell19" => [
+					"a" => 3, "b" => 2, "c" => 3, "d" => 3, "e" => 3,
+					"f" => 5, "g" => 3, "h" => 4, "i" => 3, "j" => 5,
+					"k" => 5, "l" => 7, "m" => 5, "n" => 5, "o" => 5,
+					"p" => 5, "q" => 4, "r" => 4, "s" => 5, "t" => 3,
+					"u" => 5, "v" => 2, "w" => 7, "x" => 1, "y" => 6,
+					"z" => 6
+				]
 			],
 			"gamma" => [
-				"save13.php" => 1, "buy13.php" => 2, "date12.php" => 3, "time14.php" => 4, "mint16.php" => 5,
-				"race13.php" => 6, "rush18.php" => 7, "roof19.php" => 8, "expo14.php" => 9, "clue18.php" => 10,
-				"fact14.php" => 11, "back13.php" => 12, "air10.php" => 13, "miss18.php" => 14, "start18.php" => 15,
-				"cold18.php" => 16, "zero18.php" => 17, "hero16.php" => 18, "err11.php" => 19, "gap11.php" => 20,
-				"pass18.php" => 21, "low19.php" => 22, "tick14.php" => 23, "pure17.php" => 24, "rep12.php" => 25,
-				"chip15.php" => 26, "new15.php" => 27, "pin13.php" => 28, "rate13.php" => 29, "move15.php" => 30,
-				"tor12.php" => 31
+				"comPile31/o" => [
+					"save13" => 1, "buy13" => 2, "date12" => 3, "time14" => 4, "mint16" => 5,
+					"race13" => 6, "rush18" => 7, "roof19" => 8, "expo14" => 9, "clue18" => 10,
+					"fact14" => 11, "back13" => 12, "air10" => 13, "miss18" => 14, "start18" => 15,
+					"cold18" => 16, "zero18" => 17, "hero16" => 18, "err11" => 19, "gap11" => 20,
+					"pass18" => 21, "low19" => 22, "tick14" => 23, "pure17" => 24, "rep12" => 25,
+					"chip15" => 26, "new15" => 27, "pin13" => 28, "rate13" => 29, "move15" => 30,
+					"tor12" => 31
+				]
 			],
 			"beta" => [
-				"++" => 1, "%u" => 2, "&d" => 3, "&w" => 4, "&a" => 5,
-				"&s" => 6, "&e" => 7, "&q" => 8, "/g" => 9, "/n" => 10,
-				"/c" => 11, "!f" => 12, "!r" => 13, "!h" => 14, "!y" => 15,
-				"?z" => 16, "=|" => 17, "==" => 18, "=#" => 19, "?x" => 20,
-				"?d" => 21, "?a" => 22, "?s" => 23, "?r" => 24, "?e" => 25,
-				";l" => 26, ";i" => 27, ";p" => 28, "%j" => 29, "%k" => 30,
-				"--" => 31
+				"aSpec19/rackLevelSystem64/transportSystem64/return24SilkRatio38/settingsSymmetric67/o" => [
+					"++" => 1, "%u" => 2, "&d" => 3, "&w" => 4, "&a" => 5,
+					"&s" => 6, "&e" => 7, "&q" => 8, "/g" => 9, "/n" => 10,
+					"/c" => 11, "!f" => 12, "!r" => 13, "!h" => 14, "!y" => 15,
+					"?z" => 16, "=|" => 17, "==" => 18, "=#" => 19, "?x" => 20,
+					"?d" => 21, "?a" => 22, "?s" => 23, "?r" => 24, "?e" => 25,
+					";l" => 26, ";i" => 27, ";p" => 28, "%j" => 29, "%k" => 30,
+					"--" => 31
+				]
 			],
 			"delta" => [
-				"a.mount" => 1, "fs.arcade" => 2, "l.apps" => 3, "axe.store" => 4, "meet.them" => 5,
-				"re.press" => 6, "oi.vice" => 7, "mass.vis" => 8, "de.min" => 9, "row.s" => 10,
-				"in.tense" => 11, "be.lows" => 12, "b.ore" => 13, "in.stead" => 14, "con.next" => 15,
-				"quo.star" => 16, "pro.via" => 17, "not.e" => 18, "numb.or" => 19, "hug.e" => 20,
-				"spec.al" => 21, "blue.far" => 22, "co.unite" => 23, "same.sad" => 24, "re.cord" => 25,
-				"corner.s" => 26, "m.no" => 27, "lid.near" => 28, "are.range" => 29, "add.resin" => 30,
-				"c.ore" => 31
+				"comPile31/o" => [
+					"a.mount" => 1, "fs.arcade" => 2, "l.apps" => 3, "axe.store" => 4, "meet.them" => 5,
+					"re.press" => 6, "oi.vice" => 7, "mass.vis" => 8, "de.min" => 9, "row.s" => 10,
+					"in.tense" => 11, "be.lows" => 12, "b.ore" => 13, "in.stead" => 14, "con.next" => 15,
+					"quo.star" => 16, "pro.via" => 17, "not.e" => 18, "numb.or" => 19, "hug.e" => 20,
+					"spec.al" => 21, "blue.far" => 22, "co.unite" => 23, "same.sad" => 24, "re.cord" => 25,
+					"corner.s" => 26, "m.no" => 27, "lid.near" => 28, "are.range" => 29, "add.resin" => 30,
+					"c.ore" => 31
+				]
 			],
 			"theta" => [
-				"en_uk" => "*", "en_us" => "*",
-				"en_in" => "*", "en_nz" => ":"
+				"*" => ["en_uk" => 1, "en_us" => 2, "en_in" => 3],
+				":" => ["en_nz" => 1]
 			],
 			1 => [
 				1 => [1 => ["alpha", "gamma", "delta", "theta"], 2 => ["alpha", "gamma", "delta", "theta"], 3 => ["alpha", "gamma", "delta", "theta"], 4 => ["alpha", "gamma", "beta", "delta", "theta"], 5 => ["gamma", "delta", "theta"]],
