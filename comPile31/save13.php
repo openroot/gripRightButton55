@@ -189,7 +189,7 @@
 		];
 		public const rangeSectionNumber = [ // Registering
 			"alpha" => [
-				"aSpec19/rackLevelSystem64/transportSystem64/fishVila32/bell19" => [
+				"aSpec19/rackLevelSystem64/transportSystem64/fishVila32/bell19/o" => [
 					"a" => 3, "b" => 2, "c" => 3, "d" => 3, "e" => 3,
 					"f" => 5, "g" => 3, "h" => 4, "i" => 3, "j" => 5,
 					"k" => 5, "l" => 7, "m" => 5, "n" => 5, "o" => 5,
