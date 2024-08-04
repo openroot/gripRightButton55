@@ -1,0 +1,1 @@
+# Educate These Properties
