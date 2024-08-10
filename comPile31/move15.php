@@ -31,10 +31,14 @@
 				}
 
 				print "<pre>";
-				print "Directories:<br>";
-				print_r($directoryList);
-				print "Files:<br>";
-				print_r($fileList);
+				if (count($directoryList) > 0) {
+					print "Directories:<br>";
+					print_r($directoryList);
+				}
+				if (count($fileList) > 0) {
+					print "Files:<br>";
+					print_r($fileList);
+				}
 				print "</pre>";
 				print "<br>";
 
