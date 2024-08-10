@@ -88,7 +88,8 @@
 
 					$assembly = new tor12\assembly($file->fromContent());
 					$i = 1;
-					print '<div class="wrap"><table>';
+					print "<div class='horizontalGap'></div>";
+					print "<div class='autoScroll'><table>";
 					print "<tbody>";
 					foreach ($assembly->fromStruct() as $index1 => $value1) {
 						if ($i === 2 || $i === 4 || $i === 5) {

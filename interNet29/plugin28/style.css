@@ -40,6 +40,13 @@
 	color: #FFF842;
 }
 
+div.autoScroll {
+	overflow: auto;
+}
+div.horizontalGap {
+	height: 1.7em;
+}
+
 body {
 	font-family: robotoMono44, "Courier New";
 	color: #5F727F;
@@ -48,9 +55,6 @@ body {
 	background-repeat: repeat;
 	line-height: 1.42em;
 	margin: 17px;
-}
-.wrap {
-	overflow: auto;
 }
 
 h1 {
