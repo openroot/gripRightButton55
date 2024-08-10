@@ -89,6 +89,9 @@
 					*/
 
 					$assembly = new tor12\assembly($file->fromContent());
+					print "<pre>";
+					print_r($assembly->fromStruct());
+					print "</pre>";
 
 					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}

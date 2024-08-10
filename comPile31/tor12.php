@@ -17,18 +17,24 @@
 		private array $struct = [];
 
 		function __construct(array $divisions) {
+			$valid = true;
 			foreach ($divisions as $index => $division) {
 				$sections = explode("::", $division);
 				array_shift($sections);
 				array_pop($sections);
+				if (count($sections) !== 5) {
+					$this->struct = [];
+					break;
+				}
 				$this->struct[0][$index] = trim($sections[0]);
 				$this->struct[1][$index] = trim($sections[1]);
 				$this->struct[2][$index] = trim($sections[2]);
 				$this->struct[3][$index] = trim(ltrim(rtrim($sections[3], "#"), "="));
 				$this->struct[4][$index] = trim($sections[4]);
 			}
-			print "<pre>";
-			print_r($this->struct);
-			print "</pre>";
+		}
+
+		public function fromStruct () {
+			return $this->struct;
 		}
 	}
