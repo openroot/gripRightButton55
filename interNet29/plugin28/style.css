@@ -83,6 +83,13 @@ body {
 	}
 }
 
+.blue {
+	color: #185875;
+}
+.yellow {
+	color: #FFF842;
+}
+
 h1 {
 	font-size:3em;
 	font-weight: 300;
@@ -103,12 +110,6 @@ h2 a {
 	text-transform: uppercase;
 	color: #FB667A;
 	text-decoration: none;
-}
-.blue {
-	color: #185875;
-}
-.yellow {
-	color: #FFF842;
 }
 
 table {
@@ -159,8 +160,7 @@ td:hover {
 	font-weight: bold;
 	box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
 	transform: translate3d(6px, -6px, 0);
-
-transition-delay: 0s;
+	transition-delay: 0s;
 	transition-duration: 0.4s;
 	transition-property: all;
 	transition-timing-function: line;
