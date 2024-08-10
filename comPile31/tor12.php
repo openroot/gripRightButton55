@@ -34,7 +34,7 @@
 			}
 		}
 
-		public function fromStruct () {
+		public function fromStruct(): array {
 			return $this->struct;
 		}
 	}

@@ -1,10 +1,12 @@
 <?php
 	require_once("comPile31/save13.php");
 	require_once("comPile31/buy13.php");
+	require_once("comPile31/move15.php");
 	require_once("comPile31/tor12.php");
 
 	use comPile31\save13 as save13;
 	use comPile31\buy13 as buy13;
+	use comPile31\move15 as move15;
 	use comPile31\tor12 as tor12;
 ?>
 
@@ -76,6 +78,9 @@
 		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
 
 		<?php
+			$context = new move15\context();
+			$context->fromHologram();
+
 			$fileAddresses = [
 				"o",
 				"compile31/o",
