@@ -75,7 +75,6 @@
 		<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
 		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
 
-		<div class="">
 		<?php
 			$fileAddresses = [
 				"o",
@@ -87,17 +86,7 @@
 				try {
 					$file = new save13\readFile($fileAddress);
 
-					/*$structure = new save13\structure($file->fromContent());
-					if (!$structure->fromErrors()) {
-						//displayCode($structure->fromStruct());
-					}
-					else {
-						displayError($structure->fromErrors());
-					}*/
-					
-
 					$assembly = new tor12\assembly($file->fromContent());
-					//print "<pre>";
 					$i = 1;
 					print '<div class="wrap"><table>';
 					print "<tbody>";
@@ -113,15 +102,22 @@
 					}
 					print "</tbody>";
 					print "</table></div>";
-					//print "</pre>";
 
-					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
+
+					/*$structure = new save13\structure($file->fromContent());
+					if (!$structure->fromErrors()) {
+						//displayCode($structure->fromStruct());
+					}
+					else {
+						displayError($structure->fromErrors());
+					}*/
+
+					/*displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);*/
 				}
 				catch (Exception $e) {
 					displayError([$e]);
 				}
 			}
 		?>
-		</div>
 	</body>
 </html>
