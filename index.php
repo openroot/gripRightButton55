@@ -95,9 +95,9 @@
 					
 
 					$assembly = new tor12\assembly($file->fromContent());
-					print "<pre>";
+					//print "<pre>";
 					$i = 1;
-					print '<table class="container">';
+					print "<table>";
 					print "<tbody>";
 					foreach ($assembly->fromStruct() as $index1 => $value1) {
 						if ($i === 2 || $i === 4 || $i === 5) {
@@ -111,7 +111,7 @@
 					}
 					print "</tbody>";
 					print "</table>";
-					print "</pre>";
+					//print "</pre>";
 
 					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
