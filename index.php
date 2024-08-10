@@ -63,16 +63,14 @@
 		<script src="interNet29/plugin28/script.js"></script>
 	</head>
 	<body>
-			<!--dust particle start-->
-			<div class="marginBody">
-				<div>
-					<div class="starSec"></div>
-					<div class="starThird"></div>
-					<div class="starFourth"></div>
-					<div class="starFifth"></div>
-				</div>
+		<div class="dustParticle">
+			<div>
+				<div class="starSec"></div>
+				<div class="starThird"></div>
+				<div class="starFourth"></div>
+				<div class="starFifth"></div>
 			</div>
-			<!--dust particle end-->
+		</div>
 
 		<?php
 			$fileAddresses = [

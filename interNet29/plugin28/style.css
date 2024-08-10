@@ -12,7 +12,7 @@ body {
 	padding-bottom: 50px;
 }
 
-.marginBody {
+.dustParticle {
 	position: relative;
 	width: 90%;
 	box-sizing: border-box;
@@ -61,39 +61,4 @@ body {
 	100% {
 		transform: translateY(-2000px);
 	}
-}
-
-
-table {
-
-}
-
-.table-wrap {
-	overflow-x: scroll;
-}
-table {
-	min-width: 1000px !important;
-	width: 100%;
-}
-table thead th {
-	border: none;
-	padding: 20px 30px;
-	font-size: 14px;
-	color: #fff;
-	border-bottom: 4px solid #2b3035;
-}
-thead {
-	display: table-header-group;
-	vertical-align: middle;
-	unicode-bidi: isolate;
-	border-color: inherit;
-}
-table tbody tr {
-	margin-bottom: 10px;
-}
-table tbody th, table tbody td {
-	border: none;
-	padding: 20px 30px;
-	border-bottom: 3px solid #2b3035;
-	font-size: 14px;
 }
