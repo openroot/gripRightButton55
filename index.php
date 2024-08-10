@@ -63,10 +63,16 @@
 		<script src="interNet29/plugin28/script.js"></script>
 	</head>
 	<body>
-		<div>
-			<h1>Ready Page</h1>
-			<p>See the effect.</p>
-		</div>
+			<!--dust particle start-->
+			<div class="marginBody">
+				<div>
+					<div class="starSec"></div>
+					<div class="starThird"></div>
+					<div class="starFourth"></div>
+					<div class="starFifth"></div>
+				</div>
+			</div>
+			<!--dust particle end-->
 
 		<?php
 			$fileAddresses = [
@@ -88,10 +94,23 @@
 					}
 					*/
 
-					$assembly = new tor12\assembly($file->fromContent());
+					/*$assembly = new tor12\assembly($file->fromContent());
 					print "<pre>";
-					print_r($assembly->fromStruct());
-					print "</pre>";
+					//print_r($assembly->fromStruct());
+					$i = 1;
+					print "<table>";
+					foreach ($assembly->fromStruct() as $index1 => $value1) {
+						if ($i === 2 || $i === 4 || $i === 5) {
+							print "<tr>";
+							foreach ($value1 as $value2) {
+									print "<td>" . $value2 . "</td>";
+							}
+							print "</tr>";
+						}
+						$i++;
+					}
+					print "</table>";
+					print "</pre>";*/
 
 					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
