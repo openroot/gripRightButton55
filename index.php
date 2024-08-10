@@ -65,7 +65,7 @@
 	<body>
 		<div class="dustParticle">
 			<div>
-				<div class="starSec"></div>
+				<div class="starSecond"></div>
 				<div class="starThird"></div>
 				<div class="starFourth"></div>
 				<div class="starFifth"></div>
