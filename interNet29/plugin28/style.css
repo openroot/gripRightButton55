@@ -138,7 +138,7 @@ tr:nth-child(even) {
 th {
 	background-color: #1F2739;
 }
-td:first-child {
+td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
 	color: #FB667A;
 }
 tr:hover {
