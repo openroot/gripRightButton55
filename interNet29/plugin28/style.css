@@ -16,6 +16,7 @@
 	}
 	30% {
 		transform: translateX(-5%);
+		opacity: 0.15;
 	}
 	45% {
 		transform: translateX(-1%);
@@ -23,11 +24,9 @@
 	}
 	80% {
 		transform: rotate3d(-0.1, -1, 1, 50deg);
-		opacity: 0.8;
 	}
 	to {
 		transform: translateX(0);
-		opacity: 1;
 	}
 }
 @keyframes starAnimation {
@@ -70,7 +69,6 @@ body {
 	background-repeat: repeat;
 	line-height: 1.42em;
 }
-
 div.banner {
 	position: fixed;
 	top: 0px;
