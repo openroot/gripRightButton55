@@ -75,6 +75,7 @@
 		<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
 		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
 
+		<div class="wrap">
 		<?php
 			$fileAddresses = [
 				"o",
@@ -121,5 +122,6 @@
 				}
 			}
 		?>
+		</div>
 	</body>
 </html>

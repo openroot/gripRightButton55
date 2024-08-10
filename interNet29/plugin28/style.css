@@ -11,6 +11,12 @@ body {
 	background-repeat: repeat;
 	line-height: 1.42em;
 }
+
+.wrap {
+	overflow: auto;
+	margin: 17px;
+}
+
 ::-webkit-scrollbar {
 	width: 15px;
 }
