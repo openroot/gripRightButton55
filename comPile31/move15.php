@@ -21,11 +21,11 @@
 				$fileList = [];
 				foreach (scandir($path) as $value) {
 					if (!in_array($value, $this->extraReservedName, true)) {
-						if (is_dir($path . "/" . "$value") && !in_array($value, $this->extraDirectoryName, true)) {
-							array_push($directoryList, $path . "/" . "$value");
+						if (is_dir($path . "\\" . "$value") && !in_array($value, $this->extraDirectoryName, true)) {
+							array_push($directoryList, $path . "\\" . "$value");
 						}
-						if (is_file($path . "/" . "$value") && !in_array($value, $this->extraFileName, true)) {
-							array_push($fileList, $path . "/" . "$value");
+						if (is_file($path . "\\" . "$value") && !in_array($value, $this->extraFileName, true)) {
+							array_push($fileList, $path . "\\" . "$value");
 						}
 					}
 				}
