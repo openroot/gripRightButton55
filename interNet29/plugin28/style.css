@@ -9,8 +9,22 @@ body {
 	background-color: #181828;
 	background-image: url("https://1.bp.blogspot.com/-Fo3iRt97ZXY/XvSG4EMwi0I/AAAAAAAAVEo/mrApRTcVVRk1m-fX9K-ffNwRUXlHUocdwCLcBGAsYHQ/s1600/h.jpg");
 	background-repeat: repeat;
-	padding-bottom: 50px;
+	padding: 50px 0 50px 0;
 	line-height: 1.42em;
+}
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1px #FFF842;
+	border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background: #FFF842;
+	border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #FFF842;
 }
 
 .dustParticle {
@@ -85,9 +99,12 @@ h2 a {
 	color: #FB667A;
 	text-decoration: none;
 }
-
-.blue { color: #185875; }
-.yellow { color: #FFF842; }
+.blue {
+	color: #185875;
+}
+.yellow {
+	color: #FFF842;
+}
 
 table {
 	text-align: left;
@@ -95,7 +112,7 @@ table {
 	width: 80%;
 	margin: 0 auto;
 	display: table;
-	padding: 0 0 8em 0;
+	padding: 1em 0 1em 0;
 }
 th h1 {
 	font-weight: bold;
@@ -111,15 +128,11 @@ td {
 	box-shadow: 0 2px 2px -2px #0E1119;
 }
 td, th {
-	padding-bottom: 2px;
-	padding-top: 2px;
-	padding-left:2px;
+	padding: 3px 3px 3px 3px;
 }
-/* Background-color of the odd rows */
 tr:nth-child(odd) {
 	background-color: #323C50;
 }
-/* Background-color of the even rows */
 tr:nth-child(even) {
 	background-color: #2C3446;
 }
