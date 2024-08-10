@@ -27,7 +27,7 @@
 			var_dump($value);
 			//print_r($value);
 			//foreach ($value as $index => $val) {
-				 //buy13\adapter::inHTML("\n«" . ($index + 1) . "» " .  $val);
+				 //buy13\adapter::portHTML("\n«" . ($index + 1) . "» " .  $val);
 			//}
 			print "<br>-<br>";
 		}
@@ -39,7 +39,7 @@
 			var_dump($value);
 			//print_r($value);
 			//foreach ($value as $index => $val) {
-				//buy13\adapter::inHTML("\n«" . ($index + 1) . "» " .  $val);
+				//buy13\adapter::portHTML("\n«" . ($index + 1) . "» " .  $val);
 			//}
 			print "</pre>";
 		}
@@ -72,13 +72,14 @@
 			</div>
 		</div>
 
-		<h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Responsive</pan></h1>
-		<h2>Created with love by <a href="https://github.com/pablorgarcia" target="_blank">Pablo García</a></h2>
+		<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
+		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
 
 		<?php
 			$fileAddresses = [
+				"o",
 				"compile31/o",
-				"aSpec19/rackLevelSystem64/transportSystem64/return24SilkRatio38/settingsSymmetric67/o"
+				//"aSpec19/rackLevelSystem64/transportSystem64/return24SilkRatio38/settingsSymmetric67/o"
 			];
 
 			foreach ($fileAddresses as $fileAddress) {
@@ -103,7 +104,7 @@
 						if ($i === 2 || $i === 4 || $i === 5) {
 							print "<tr>";
 							foreach ($value1 as $value2) {
-								print "<td>" . $value2 . "</td>";
+								print "<td>" . buy13\adapter::portHTML($value2) . "</td>";
 							}
 							print "</tr>";
 						}
