@@ -75,7 +75,7 @@
 		<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
 		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
 
-		<div class="wrap">
+		<div class="">
 		<?php
 			$fileAddresses = [
 				"o",
@@ -99,7 +99,7 @@
 					$assembly = new tor12\assembly($file->fromContent());
 					//print "<pre>";
 					$i = 1;
-					print "<table>";
+					print '<div class="wrap"><table>';
 					print "<tbody>";
 					foreach ($assembly->fromStruct() as $index1 => $value1) {
 						if ($i === 2 || $i === 4 || $i === 5) {
@@ -112,7 +112,7 @@
 						$i++;
 					}
 					print "</tbody>";
-					print "</table>";
+					print "</table></div>";
 					//print "</pre>";
 
 					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);

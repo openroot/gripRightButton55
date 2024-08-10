@@ -66,7 +66,6 @@ h2 {
 	line-height: 1em;
 	text-align: center;
 	color: #FB667A;
-	padding-bottom: 2em;
 }
 h2 a {
 	font-weight: 700;
@@ -77,11 +76,6 @@ h2 a {
 
 table {
 	text-align: left;
-	overflow: hidden;
-	width: 80%;
-	margin: 0 auto;
-	display: table;
-	padding: 1em 0 1em 0;
 }
 th h1 {
 	font-weight: bold;
@@ -91,13 +85,13 @@ th h1 {
 }
 td {
 	font-weight: normal;
-	font-size: 1em;
+	font-size: 1.34em;
 	-webkit-box-shadow: 0 2px 2px -2px #0E1119;
 	-moz-box-shadow: 0 2px 2px -2px #0E1119;
 	box-shadow: 0 2px 2px -2px #0E1119;
 }
 td, th {
-	padding: 3px 3px 3px 3px;
+	padding: 2px 5px 2px 5px;
 }
 tr:nth-child(odd) {
 	background-color: #323C50;
