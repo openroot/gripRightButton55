@@ -13,7 +13,20 @@
 
 		private function scanDirectories(string $path) {
 			if (is_dir($path)) {
-				print_r(scandir($path));
+				$directoryList = [];
+				$fileList = [];
+				foreach (scandir($path) as $value) {
+					if (!($value === "." || $value === "..")) {
+						if (is_dir($value)) {
+							array_push($directoryList, $value);
+						}
+						if (is_file($value)) {
+							array_push($fileList, $value);
+						}
+					}
+				}
+				print_r($directoryList);
+				print_r($fileList);
 			}
 		}
 
