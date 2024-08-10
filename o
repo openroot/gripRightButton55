@@ -1,7 +1,7 @@
 ::o ::o5                 ::                                                                ::=snack.s                      #::26 ::
 ::x ::aSpec19            ::                                                                ::=roo.f                        #::19 ::
-::1 ::cLouds28           ::                                                                ::=sig.ma                       #::19 ::
-::2 ::break17Bound20     ::                                                                ::=pin.k                        #::18 ::
+::1 ::cLouds28           ::Shield.                                                         ::=sig.ma                       #::19 ::
+::2 ::break17Bound20     ::Neighbour.                                                      ::=pin.k                        #::18 ::
 ::3 ::sandBoxAreas42     ::Wiper.                                                          ::=el.antra                     #::28 ::
 ::4 ::instaLl33          ::Spring.                                                         ::=s.trap                       #::20 ::
 ::5 ::simulTaneous54     ::Cylinder.                                                       ::=fig.lan.ter.ns               #::46 ::
