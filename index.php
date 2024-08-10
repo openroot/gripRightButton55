@@ -79,18 +79,12 @@
 
 		<?php
 			$context = new move15\context();
-			print "<pre>";
-			print_r($context->fromHologramDirectoryPath());
-			print "</pre>";
-			print "<pre>";
-			print_r($context->fromHologramFilePath());
-			print "</pre>";
-
-			$fileAddresses = [
-				"o",
-				"compile31/o",
-				//"aSpec19/rackLevelSystem64/transportSystem64/return24SilkRatio38/settingsSymmetric67/o"
-			];
+			$fileAddresses = [];
+			foreach ($context->fromHologramFilePath() as $path => $name) {
+				if ($name === $context->fromSignatureFileName()) {
+					array_push($fileAddresses, $path);
+				}
+			}
 
 			foreach ($fileAddresses as $fileAddress) {
 				try {

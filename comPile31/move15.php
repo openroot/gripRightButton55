@@ -41,11 +41,11 @@
 		}
 
 		public function fromBasePath(): string {
-			return $this->$basePath;
+			return $this->basePath;
 		}
 
 		public function fromSignatureFileName(): string {
-			return $this->$signatureFileName;
+			return $this->signatureFileName;
 		}
 
 		public function fromHologramDirectoryPath(): array {
