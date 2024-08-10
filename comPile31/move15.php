@@ -4,15 +4,17 @@
 
 <?php
 	class context {
-		private string $basePath = __DIR__ . "\..";
-		private string $signatureFileName = "o";
 		private array $extraReservedName = [".", ".."];
 		private array $extraDirectoryName = [".git", ".vs"];
 		private array $extraFileName = [".gitattributes", ".gitignore"];
+		private string $basePath = "";
+		private string $signatureFileName = "";
 		private array $hologramDirectoryPath = [];
 		private array $hologramFilePath = [];
 
-		function __construct() {
+		function __construct(string $basePath = "", string $signatureFileName = "") {
+			$this->basePath = empty($basePath) ? __DIR__ . "\.." : $basePath;
+			$this->signatureFileName = empty($signatureFileName) ? "o" : $signatureFileName;
 			$this->scanDirectories($this->basePath);
 		}
 
@@ -39,6 +41,14 @@
 					}
 				}
 			}
+		}
+
+		public function fromBasePath(): string {
+			return $this->$basePath;
+		}
+
+		public function fromSignatureFileName(): string {
+			return $this->$signatureFileName;
 		}
 
 		public function fromHologramDirectoryPath(): array {
