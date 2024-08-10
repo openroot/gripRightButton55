@@ -5,11 +5,12 @@
 
 body {
 	font-family: robotoMono44, "Courier New";
-	color: #5f727f;
+	color: #5F727F;
 	background-color: #181828;
 	background-image: url("https://1.bp.blogspot.com/-Fo3iRt97ZXY/XvSG4EMwi0I/AAAAAAAAVEo/mrApRTcVVRk1m-fX9K-ffNwRUXlHUocdwCLcBGAsYHQ/s1600/h.jpg");
 	background-repeat: repeat;
 	padding-bottom: 50px;
+	line-height: 1.42em;
 }
 
 .dustParticle {
@@ -62,3 +63,28 @@ body {
 		transform: translateY(-2000px);
 	}
 }
+
+h1 {
+	font-size:3em;
+	font-weight: 300;
+	line-height: 1em;
+	text-align: center;
+	color: #4DC3FA;
+}
+h2 {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1em;
+	text-align: center;
+	color: #FB667A;
+	padding-bottom: 2em;
+}
+h2 a {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FB667A;
+	text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }

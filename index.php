@@ -72,6 +72,9 @@
 			</div>
 		</div>
 
+		<h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Responsive</pan></h1>
+		<h2>Created with love by <a href="https://github.com/pablorgarcia" target="_blank">Pablo García</a></h2>
+
 		<?php
 			$fileAddresses = [
 				"compile31/o",
@@ -81,34 +84,34 @@
 			foreach ($fileAddresses as $fileAddress) {
 				try {
 					$file = new save13\readFile($fileAddress);
-					
-					/*
-					$structure = new save13\structure($file->fromContent());
+
+					/*$structure = new save13\structure($file->fromContent());
 					if (!$structure->fromErrors()) {
 						//displayCode($structure->fromStruct());
 					}
 					else {
 						displayError($structure->fromErrors());
-					}
-					*/
+					}*/
+					
 
-					/*$assembly = new tor12\assembly($file->fromContent());
+					$assembly = new tor12\assembly($file->fromContent());
 					print "<pre>";
-					//print_r($assembly->fromStruct());
 					$i = 1;
-					print "<table>";
+					print '<table class="container">';
+					print "<tbody>";
 					foreach ($assembly->fromStruct() as $index1 => $value1) {
 						if ($i === 2 || $i === 4 || $i === 5) {
 							print "<tr>";
 							foreach ($value1 as $value2) {
-									print "<td>" . $value2 . "</td>";
+								print "<td>" . $value2 . "</td>";
 							}
 							print "</tr>";
 						}
 						$i++;
 					}
+					print "</tbody>";
 					print "</table>";
-					print "</pre>";*/
+					print "</pre>";
 
 					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
