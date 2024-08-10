@@ -64,7 +64,7 @@
 		<link rel="stylesheet" href="interNet29/plugin28/style.css">
 		<script src="interNet29/plugin28/script.js"></script>
 	</head>
-	<body>
+	<body class="frame">
 		<div class="dustParticle">
 			<div>
 				<div class="starSecond"></div>
