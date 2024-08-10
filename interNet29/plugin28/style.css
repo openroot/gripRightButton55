@@ -12,6 +12,7 @@
 @keyframes frameAnimation {
 	from {
 		transform: translateX(-500%);
+		opacity: 0;
 	}
 	30% {
 		transform: translateX(-5%);
@@ -22,9 +23,11 @@
 	}
 	80% {
 		transform: rotate3d(-0.1, -1, 1, 50deg);
+		opacity: 0.8;
 	}
 	to {
 		transform: translateX(0);
+		opacity: 1;
 	}
 }
 @keyframes starAnimation {
@@ -59,26 +62,6 @@
 	color: #FFF842;
 }
 
-div.banner {
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	margin: 0 auto;
-}
-div.frame {
-	position: relative;
-	top: 10em;
-	margin: 0 34px;
-	animation: 1.5s ease 0s 1 frameAnimation;
-	transform-style: preserve-3d;
-}
-div.autoScroll {
-	overflow: auto;
-}
-div.horizontalGap {
-	height: 1.7em;
-}
-
 body {
 	font-family: robotoMono44, "Courier New";
 	color: #5F727F;
@@ -86,6 +69,25 @@ body {
 	background-image: url("https://1.bp.blogspot.com/-Fo3iRt97ZXY/XvSG4EMwi0I/AAAAAAAAVEo/mrApRTcVVRk1m-fX9K-ffNwRUXlHUocdwCLcBGAsYHQ/s1600/h.jpg");
 	background-repeat: repeat;
 	line-height: 1.42em;
+}
+
+div.banner {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+div.frame {
+	position: relative;
+	top: 10em;
+	animation: 1.5s ease 0s 1 frameAnimation;
+	transform-style: preserve-3d;
+	margin: 0 34px;
+}
+div.autoScroll {
+	overflow: auto;
+}
+div.horizontalGap {
+	height: 1.7em;
 }
 
 h1 {
