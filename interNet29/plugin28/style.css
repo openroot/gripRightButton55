@@ -18,6 +18,10 @@
 	}
 	45% {
 		transform: translateX(-1%);
+		transform: scale3d(2.1, 2.1, 0.5);
+	}
+	80% {
+		transform: rotate3d(-0.1, -1, 1, 50deg);
 	}
 	to {
 		transform: translateX(0);
@@ -55,9 +59,18 @@
 	color: #FFF842;
 }
 
-.frame {
+div.banner {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	margin: 0 auto;
+}
+div.frame {
+	position: relative;
+	top: 10em;
 	margin: 0 34px;
-	animation: 1s ease 0s 1 frameAnimation;
+	animation: 1.5s ease 0s 1 frameAnimation;
+	transform-style: preserve-3d;
 }
 div.autoScroll {
 	overflow: auto;
@@ -107,7 +120,7 @@ th h1 {
 }
 td {
 	font-weight: normal;
-	font-size: 1.34em;
+	font-size: 0.9em;
 	-webkit-box-shadow: 0 2px 2px -2px #0E1119;
 	-moz-box-shadow: 0 2px 2px -2px #0E1119;
 	box-shadow: 0 2px 2px -2px #0E1119;

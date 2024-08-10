@@ -64,7 +64,7 @@
 		<link rel="stylesheet" href="interNet29/plugin28/style.css">
 		<script src="interNet29/plugin28/script.js"></script>
 	</head>
-	<body class="frame">
+	<body>
 		<div class="dustParticle">
 			<div>
 				<div class="starSecond"></div>
@@ -74,9 +74,12 @@
 			</div>
 		</div>
 
-		<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
-		<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
+		<div class="banner">
+			<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</pan></h1>
+			<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
+		</div>
 
+		<div class="frame">
 		<?php
 			$context = new move15\context();
 			$fileAddresses = [];
@@ -126,5 +129,6 @@
 				}
 			}
 		?>
+		</div>
 	</body>
 </html>
