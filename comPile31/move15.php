@@ -24,11 +24,11 @@
 					if (!in_array($value, $this->extraReservedName, true)) {
 						if (is_dir($path . "\\" . "$value") && !in_array($value, $this->extraDirectoryName, true)) {
 							array_push($directoryList, $path . "\\" . $value);
-							array_push($this->hologramDirectoryPath, $path . "\\" . $value);
+							$this->hologramDirectoryPath[$path . "\\" . $value] = $value;
 						}
 						if (is_file($path . "\\" . "$value") && !in_array($value, $this->extraFileName, true)) {
 							array_push($fileList, $path . "\\" . $value);
-							array_push($this->hologramFilePath, $path . "\\" . $value);
+							$this->hologramFilePath[$path . "\\" . $value] = $value;
 						}
 					}
 				}
