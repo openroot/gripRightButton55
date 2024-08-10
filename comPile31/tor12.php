@@ -11,3 +11,14 @@
 		}
 	}
 ?>
+
+<?php
+	class assembly {
+		private array $struct = [];
+
+		function __construct(array $divisions) {
+			foreach ($divisions as $index => $value) {
+
+			}
+		}
+	}
