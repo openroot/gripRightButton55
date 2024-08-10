@@ -5,7 +5,8 @@
 <?php
 	class context {
 		private string $basePath = __DIR__ . "/..";
-		private array $hologram = [];
+		private string $signatureFileName = "o";
+		private array $hologramFilePath = [];
 
 		function __construct() {
 			$this->scanDirectories($this->basePath);
@@ -30,8 +31,8 @@
 			}
 		}
 
-		public function fromHologram(): array {
-			return $this->hologram;
+		public function fromHologramFilePath(): array {
+			return $this->hologramFilePath;
 		}
 	}
 ?>

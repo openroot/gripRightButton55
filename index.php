@@ -79,7 +79,7 @@
 
 		<?php
 			$context = new move15\context();
-			$context->fromHologram();
+			$context->fromHologramFilePath();
 
 			$fileAddresses = [
 				"o",
