@@ -6,6 +6,8 @@
 	class context {
 		private string $basePath = __DIR__ . "/..";
 		private string $signatureFileName = "o";
+		private array $extraDirectoryName = [".git", ".vs"];
+		private array $extraFileName = [".gitattributes", ".gitignore"];
 		private array $hologramFilePath = [];
 
 		function __construct() {
@@ -18,10 +20,10 @@
 				$fileList = [];
 				foreach (scandir($path) as $value) {
 					if (!($value === "." || $value === "..")) {
-						if (is_dir($value)) {
+						if (is_dir($value) && !in_array($value, $this->extraDirectoryName, true)) {
 							array_push($directoryList, $value);
 						}
-						if (is_file($value)) {
+						if (is_file($value) && !in_array($value, $this->extraFileName, true)) {
 							array_push($fileList, $value);
 						}
 					}
