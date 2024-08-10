@@ -9,6 +9,7 @@
 		private array $extraReservedName = [".", ".."];
 		private array $extraDirectoryName = [".git", ".vs"];
 		private array $extraFileName = [".gitattributes", ".gitignore"];
+		private array $hologramDirectoryPath = [];
 		private array $hologramFilePath = [];
 
 		function __construct() {
@@ -22,25 +23,15 @@
 				foreach (scandir($path) as $value) {
 					if (!in_array($value, $this->extraReservedName, true)) {
 						if (is_dir($path . "\\" . "$value") && !in_array($value, $this->extraDirectoryName, true)) {
-							array_push($directoryList, $path . "\\" . "$value");
+							array_push($directoryList, $path . "\\" . $value);
+							array_push($this->hologramDirectoryPath, $path . "\\" . $value);
 						}
 						if (is_file($path . "\\" . "$value") && !in_array($value, $this->extraFileName, true)) {
-							array_push($fileList, $path . "\\" . "$value");
+							array_push($fileList, $path . "\\" . $value);
+							array_push($this->hologramFilePath, $path . "\\" . $value);
 						}
 					}
 				}
-
-				print "<pre>";
-				if (count($directoryList) > 0) {
-					print "Directories:<br>";
-					print_r($directoryList);
-				}
-				if (count($fileList) > 0) {
-					print "Files:<br>";
-					print_r($fileList);
-				}
-				print "</pre>";
-				print "<br>";
 
 				if (count($directoryList) > 0) {
 					foreach ($directoryList as $directoryPath) {
@@ -48,6 +39,10 @@
 					}
 				}
 			}
+		}
+
+		public function fromHologramDirectoryPath(): array {
+			return $this->hologramDirectoryPath;
 		}
 
 		public function fromHologramFilePath(): array {
