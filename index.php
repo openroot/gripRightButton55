@@ -91,22 +91,24 @@
 					$file = new save13\readFile($fileAddress);
 
 					$assembly = new tor12\assembly($file->fromContent());
-					$i = 1;
-					print "<div class='horizontalGap'></div>";
-					print "<div class='autoScroll'><table>";
-					print "<tbody>";
-					foreach ($assembly->fromStruct() as $index1 => $value1) {
-						if ($i === 2 || $i === 4 || $i === 5) {
-							print "<tr>";
-							foreach ($value1 as $value2) {
-								print "<td>" . buy13\adapter::portHTML($value2) . "</td>";
+					if (count($assembly->fromStruct()) > 0) {
+						$i = 1;
+						print "<div class='horizontalGap'></div>";
+						print "<div class='autoScroll'><table>";
+						print "<tbody>";
+						foreach ($assembly->fromStruct() as $index1 => $value1) {
+							if ($i === 2 || $i === 4 || $i === 5) {
+								print "<tr>";
+								foreach ($value1 as $value2) {
+									print "<td>" . buy13\adapter::portHTML($value2) . "</td>";
+								}
+								print "</tr>";
 							}
-							print "</tr>";
+							$i++;
 						}
-						$i++;
+						print "</tbody>";
+						print "</table></div>";
 					}
-					print "</tbody>";
-					print "</table></div>";
 
 
 					/*$structure = new save13\structure($file->fromContent());
