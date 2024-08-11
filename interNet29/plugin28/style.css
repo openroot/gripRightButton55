@@ -83,19 +83,18 @@ div.horizontalGap {
 	height: 1.7em;
 }
 
+h1, h2 {
+	line-height: 1em;
+	font-weight: 300;
+	text-align: right;
+}
 h1 {
 	font-size: 3em;
-	font-weight: 300;
-	line-height: 1em;
 	color: #4DC3FA;
-	text-align: right;
 }
 h2 {
 	font-size: 1em;
-	font-weight: 300;
-	line-height: 1em;
 	color: #FB667A;
-	text-align: right;
 }
 a {
 	font-weight: 700;
