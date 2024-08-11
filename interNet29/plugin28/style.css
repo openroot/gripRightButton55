@@ -83,7 +83,7 @@ div.banner {
 	overflow: hidden;
 }
 div.frame {
-	animation: 2s ease 0s 1 frameAnimation;
+	animation: 3s ease 0s 1 frameAnimation;
 }
 div.autoScroll {
 	overflow: auto;
