@@ -64,7 +64,7 @@ body {
 	font-family: robotoMono44, "Courier New";
 	color: #5F727F;
 	background-color: #181828;
-	background-image: url("https://1.bp.blogspot.com/-Fo3iRt97ZXY/XvSG4EMwi0I/AAAAAAAAVEo/mrApRTcVVRk1m-fX9K-ffNwRUXlHUocdwCLcBGAsYHQ/s1600/h.jpg");
+	background-image: url("resources/texture.jpg");
 	background-repeat: repeat;
 	line-height: 1.42em;
 	margin: 34px;
@@ -75,8 +75,10 @@ div.banner {
 	right: 0px;
 	padding-right: 34px;
 	width: 100%;
-	background-color: #181828;
-	background-repeat: repeat;
+	background: rgba(255,255,255,0.1);
+	-webkit-backdrop-filter: blur(34px);
+	backdrop-filter: blur(34px);
+	border: 1px solid rgba(255,255,255,0.05);
 }
 div.frame {
 	animation: 0.2s ease 0s 1 frameAnimation;
