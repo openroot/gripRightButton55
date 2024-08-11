@@ -89,12 +89,15 @@
 				}
 			}
 
+			$ct = 1;
 			foreach ($fileAddresses as $index => $fileAddress) {
 				try {
 					$file = new save13\readFile($fileAddress);
 
 					$assembly = new tor12\assembly($file->fromContent());
 					if (count($assembly->fromStruct()) > 0) {
+						$realPath = realpath(dirname($fileAddress));
+						print $ct++ . ". <span class='yellow'>" . substr($realPath, strpos($realPath, "gripRightButton55")) . "</span>";
 						$i = 1;
 						print "<div class='autoScroll'><table>";
 						print "<tbody>";
@@ -130,5 +133,10 @@
 			}
 		?>
 		</div>
+
+		<div class="horizontalGap"></div>
+		<div class="horizontalGap"></div>
+		<div class="horizontalGap"></div>
+		<div class="horizontalGap"></div>
 	</body>
 </html>
