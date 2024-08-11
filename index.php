@@ -89,14 +89,13 @@
 				}
 			}
 
-			foreach ($fileAddresses as $fileAddress) {
+			foreach ($fileAddresses as $index => $fileAddress) {
 				try {
 					$file = new save13\readFile($fileAddress);
 
 					$assembly = new tor12\assembly($file->fromContent());
 					if (count($assembly->fromStruct()) > 0) {
 						$i = 1;
-						print "<div class='horizontalGap'></div>";
 						print "<div class='autoScroll'><table>";
 						print "<tbody>";
 						foreach ($assembly->fromStruct() as $index1 => $value1) {
@@ -111,6 +110,7 @@
 						}
 						print "</tbody>";
 						print "</table></div>";
+						print "<div class='horizontalGap'></div>";
 					}
 
 
