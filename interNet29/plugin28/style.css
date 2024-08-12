@@ -71,8 +71,8 @@
 	--red: #FB667AFF;
 	--orange: #FF9966FF;
 	--pink: #E4007CFF;
-	--grey: #181828FF;
-	--greyLight: #5F727FFF;
+	--slateDeep: #181828FF;
+	--greyDawn: #5F727FFF;
 }
 
 ::-webkit-scrollbar {
@@ -115,10 +115,10 @@
 .pink {
 	color: #E4007CFF;
 }
-.grey {
+.slateDeep {
 	color: #181828FF;
 }
-.greyLight {
+.greyDawn {
 	color: #5F727FFF;
 }
 
@@ -131,8 +131,8 @@ div.horizontalGap {
 
 body {
 	font-family: robotoMono44, "Courier New";
-	color: var(--greyLight);
-	background-color: var(--grey);
+	color: var(--greyDawn);
+	background-color: var(--slateDeep);
 	background-image: url("resources/texture.jpg");
 	background-repeat: repeat;
 	line-height: 1.42em;
@@ -188,7 +188,7 @@ div#spectrum {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: var(--grey);
+	background-color: var(--slateDeep);
 	z-index: -1;
 }
 
