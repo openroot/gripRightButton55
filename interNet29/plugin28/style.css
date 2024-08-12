@@ -79,18 +79,20 @@
 }
 
 :root {
-	--grey: #181828FF;
-	--greyLight: #5F727FFF;
-	--yellow: #FFF842FF;
-	--red: #FB667AFF;
 	--blue: #00B9FBFF;
 	--green: #00FF7FFF;
+	--yellow: #FFF842FF;
+	--red: #FB667AFF;
+	--orange: #FF9966FF;
+	--pink: #E4007CFF;
+	--grey: #181828FF;
+	--greyLight: #5F727FFF;
 }
-.grey {
-	color: #181828FF;
+.blue {
+	color: #00B9FBFF;
 }
-.greyLight {
-	color: #5F727FFF;
+.green {
+	color: #00FF7FFF;
 }
 .yellow {
 	color: #FFF842FF;
@@ -98,11 +100,17 @@
 .red {
 	color: #FB667AFF;
 }
-.blue {
-	color: #00B9FBFF;
+.orange {
+	color: #FF9966FF;
 }
-.green {
-	color: #00FF7FFF;
+.pink {
+	color: #E4007CFF;
+}
+.grey {
+	color: #181828FF;
+}
+.greyLight {
+	color: #5F727FFF;
 }
 
 div.autoScroll {
@@ -220,9 +228,12 @@ div#menu table caption > div:first-child {
 div#menu table caption > div:last-child {
 	color: var(--yellow);
 }
+div#menu table tr td {
+	color: var(--blue);
+}
 
 a {
-	color: var(--blue);
+	color: var(--pink);
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -269,7 +280,7 @@ td {
 	box-shadow: 0 2px 2px -2px #0E1119;
 }
 td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
-	color: var(--red);
+	color: var(--orange);
 }
 td:hover {
 	background-color: #FFF842;
