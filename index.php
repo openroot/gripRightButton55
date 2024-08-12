@@ -112,15 +112,15 @@
 					}
 
 
-					/*$structure = new save13\structure($file->fromContent());
-					if (!$structure->fromErrors()) {
-						//displayCode($structure->fromStruct());
-					}
-					else {
-						displayError($structure->fromErrors());
-					}*/
+					//$structure = new save13\structure($file->fromContent());
+					//if (!$structure->fromErrors()) {
+					//	displayCode($structure->fromStruct());
+					//}
+					//else {
+					//	displayError($structure->fromErrors());
+					//}
 
-					/*displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);*/
+					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
 				catch (Exception $e) {
 					displayError([$e]);
