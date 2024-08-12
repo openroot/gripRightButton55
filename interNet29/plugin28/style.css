@@ -66,6 +66,8 @@
 	--blue: #00B9FBFF;
 	--green: #00FF7FFF;
 	--yellow: #FFF842FF;
+	--yellowDark: #7F7C21FF;
+	--yellowDeep: #403E10FF;
 	--red: #FB667AFF;
 	--orange: #FF9966FF;
 	--pink: #E4007CFF;
@@ -97,6 +99,12 @@
 }
 .yellow {
 	color: #FFF842FF;
+}
+.yellowDark {
+	color: #7F7C21FF;
+}
+.yellowDeep {
+	color: #403E10FF;
 }
 .red {
 	color: #FB667AFF;
@@ -284,10 +292,10 @@ td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
 	color: var(--orange);
 }
 td:hover {
-	background-color: #FFF842;
-	color: #403E10;
+	background-color: var(--yellow);
+	color: var(--yellowDeep);
 	font-weight: bold;
-	box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+	box-shadow: var(--yellowDark) -1px 1px, var(--yellowDark) -2px 2px, var(--yellowDark) -3px 3px, var(--yellowDark) -4px 4px, var(--yellowDark) -5px 5px, var(--yellowDark) -6px 6px;
 	transform: translate3d(6px, -6px, 0);
 	transition-delay: 0s;
 	transition-duration: 0.4s;
