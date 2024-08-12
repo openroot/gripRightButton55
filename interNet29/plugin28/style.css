@@ -38,6 +38,8 @@
 	}
 	to {
 		transform: translateX(0);
+		opacity: 1;
+		transform: rotateZ(0deg);
 	}
 }
 @keyframes menuAnimation {
