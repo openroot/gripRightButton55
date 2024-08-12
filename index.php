@@ -76,7 +76,7 @@
 
 		<div class="frame">
 		<?php
-			$context = new move15\context();
+			/*$context = new move15\context();
 			$fileAddresses = [];
 			foreach ($context->fromHologramFilePath() as $path => $name) {
 				if ($name === $context->fromSignatureFileName()) {
@@ -125,7 +125,7 @@
 				catch (Exception $e) {
 					displayError([$e]);
 				}
-			}
+			}*/
 		?>
 		</div>
 
