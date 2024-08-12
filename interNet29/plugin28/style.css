@@ -5,14 +5,14 @@
 
 @media screen and (orientation: landscape) {
 	div#menu {
-		top: 34px;
-		right: 34px;
+		top: 2px;
+		right: 2px;
 	}
 }
 @media screen and (orientation: portrait) {
 	div#menu {
-		bottom: 34px;
-		right: 34px;
+		bottom: 2px;
+		right: 2px;
 	}
 }
 @media print {
