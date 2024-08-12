@@ -53,11 +53,14 @@
 	background: #FFF842;
 }
 
-.blue {
-	color: #185875;
-}
 .yellow {
 	color: #FFF842;
+}
+.red {
+	color: #FB667A;
+}
+.blue {
+	color: #185875;
 }
 
 body {
@@ -68,6 +71,16 @@ body {
 	background-repeat: repeat;
 	line-height: 1.42em;
 	margin: 34px;
+}
+div#menu {
+	position: fixed;
+	top: 34px;
+	right: 34px;
+	background: rgba(255,255,255,0.17);
+	-webkit-backdrop-filter: blur(34px);
+	backdrop-filter: blur(34px);
+	border: 1px solid rgba(255,255,255,0.05);
+	overflow: hidden;
 }
 div.banner {
 	position: fixed;
@@ -83,7 +96,7 @@ div.banner {
 	overflow: hidden;
 }
 div.frame {
-	animation: 3s ease 0s 1 frameAnimation;
+	animation: 1s ease 0s 1 frameAnimation;
 }
 div.autoScroll {
 	overflow: auto;

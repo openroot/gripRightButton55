@@ -74,10 +74,10 @@
 			</div>
 		</div>
 
-		<div class="banner">
+		<!--<div class="banner">
 			<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</span></h1>
 			<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
-		</div>
+		</div>-->
 
 		<div class="frame">
 		<?php
@@ -138,5 +138,60 @@
 		<div class="horizontalGap"></div>
 		<div class="horizontalGap"></div>
 		<div class="horizontalGap"></div>
+
+		<div id="menu">
+			<table>
+				<caption>
+					<div class="red">
+						gripRightButton55
+					</div>
+					<div class="yellow">
+						Leverage Any Complications
+					</div>
+				</caption>
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+					<td>D</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>F</td>
+					<td>G</td>
+					<td>H</td>
+					<td>I</td>
+					<td>J</td>
+				</tr>
+				<tr>
+					<td>K</td>
+					<td>L</td>
+					<td>M</td>
+					<td>N</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>P</td>
+					<td>Q</td>
+					<td>R</td>
+					<td>S</td>
+					<td>T</td>
+				</tr>
+				<tr>
+					<td>U</td>
+					<td>V</td>
+					<td>W</td>
+					<td>X</td>
+					<td>Y</td>
+				</tr>
+				<tr>
+					<td>Z</td>
+					<td>_</td>
+					<td>@</td>
+					<td>&lt;</td>
+					<td>&gt;</td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>
