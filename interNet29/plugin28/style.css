@@ -192,15 +192,26 @@ div#menu {
 	overflow: hidden;
 	animation: 1s ease-in 0s 1 menuAnimation;
 }
-div#menu > div:nth-child(1) {
+div#menu > div:first-child {
 	float: left;
 }
-div#menu > div:nth-child(2) {
+div#menu > div:last-child {
 	float: right;
 	font-size: 0.8em;
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 	color: var(--green);
+}
+div#menu table caption {
+	text-align: center;
+	white-space: wrap;
+	text-overflow: ellipsis;
+}
+div#menu table caption > div:first-child {
+	color: var(--red);
+}
+div#menu table caption > div:last-child {
+	color: var(--yellow);
 }
 
 a {
@@ -213,6 +224,10 @@ a {
 table {
 	margin-top: 6px;
 	text-align: left;
+}
+table caption {
+	text-align: left;
+	white-space: nowrap;
 }
 tr:nth-child(odd) {
 	background-color: #323C50;

@@ -94,9 +94,12 @@
 					$assembly = new tor12\assembly($file->fromContent());
 					if (count($assembly->fromStruct()) > 0) {
 						$realPath = realpath(dirname($fileAddress));
-						print $ct++ . ". <span class='yellow'>" . substr($realPath, strpos($realPath, "gripRightButton55")) . "</span>";
 						$i = 1;
-						print "<div class='autoScroll'><table>";
+						print "<div class='autoScroll'>";
+						print "<table>";
+						print "<caption>";
+						print $ct++ . ". " . substr($realPath, strpos($realPath, "gripRightButton55"));
+						print "</caption>";
 						print "<tbody>";
 						foreach ($assembly->fromStruct() as $index1 => $value1) {
 							if ($i === 2 || $i === 4 || $i === 5) {
@@ -110,7 +113,8 @@
 						}
 						print "</tbody>";
 						print "</table></div>";
-						print "<div class='horizontalGap'></div>";
+						print "<div class='horizontalGap'>";
+						print "</div>";
 					}
 
 
@@ -135,10 +139,10 @@
 			<div>
 				<table>
 					<caption>
-						<div class="red">
+						<div>
 							gripRightButton55
 						</div>
-						<div class="yellow">
+						<div>
 							Leverage Any Complications
 						</div>
 					</caption>
