@@ -118,19 +118,6 @@ div#menu > div:nth-child(2) {
 	text-orientation: upright;
 	color: var(--green);
 }
-div.banner {
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	padding-right: 34px;
-	width: 100%;
-	opacity: 0.4;
-	background: rgba(255,255,255,0.1);
-	-webkit-backdrop-filter: blur(34px);
-	backdrop-filter: blur(34px);
-	border: 1px solid rgba(255,255,255,0.05);
-	overflow: hidden;
-}
 div.frame {
 	animation: 1s ease 0s 1 frameAnimation;
 }
@@ -141,27 +128,15 @@ div.horizontalGap {
 	height: 1.7em;
 }
 
-h1, h2 {
-	line-height: 1em;
-	font-weight: 300;
-	text-align: right;
-}
-h1 {
-	font-size: 3em;
-	color: #4DC3FA;
-}
-h2 {
-	font-size: 1em;
-	color: #FB667A;
-}
 a {
+	color: var(--blue);
 	font-weight: 700;
 	text-transform: uppercase;
-	color: var(--blue);
 	text-decoration: none;
 }
 
 table {
+	margin-top: 6px;
 	text-align: left;
 }
 th h1 {

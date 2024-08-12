@@ -74,11 +74,6 @@
 			</div>
 		</div>
 
-		<!--<div class="banner">
-			<h1><span class="blue">&lt;</span>gripRightButton55<span class="blue">&gt;</span> <span class="yellow">Leverage Any Complications</span></h1>
-			<h2>Created with love by <a href="https://github.com/openroot" target="_blank">D Tapader</a></h2>
-		</div>-->
-
 		<div class="frame">
 		<?php
 			$context = new move15\context();
