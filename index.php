@@ -129,11 +129,6 @@
 		?>
 		</div>
 
-		<div class="horizontalGap"></div>
-		<div class="horizontalGap"></div>
-		<div class="horizontalGap"></div>
-		<div class="horizontalGap"></div>
-
 		<div id="menu">
 			<div>
 				<table>

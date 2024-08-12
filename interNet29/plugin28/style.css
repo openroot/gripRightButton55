@@ -71,10 +71,11 @@
 }
 
 :root {
-  --yellow: #FFF842FF;
-  --red: #FB667AFF;
-  --blue: #00B9FBFF;
-  --green: #00FF7FFF;
+	--grey: #5F727FFF;
+	--yellow: #FFF842FF;
+	--red: #FB667AFF;
+	--blue: #00B9FBFF;
+	--green: #00FF7FFF;
 }
 
 .yellow {
@@ -89,13 +90,14 @@
 
 body {
 	font-family: robotoMono44, "Courier New";
-	color: #5F727F;
+	color: var(--grey);
 	background-color: #181828;
 	background-image: url("resources/texture.jpg");
 	background-repeat: repeat;
 	line-height: 1.42em;
-	margin: 34px;
+	margin: 0px;
 }
+
 div#menu {
 	position: fixed;
 	padding: 3px;
