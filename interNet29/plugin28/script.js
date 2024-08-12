@@ -1,6 +1,6 @@
 let text = "D Tapader";
 
-document.getElementById("spectrum").innerHTML = text;
+//document.getElementById("spectrum").innerHTML = text;
 
 /*
 // grab all DIV elements in the document

@@ -66,13 +66,17 @@
 }
 
 :root {
-	--grey: #5F727FFF;
+	--grey: #181828FF;
+	--greyLight: #5F727FFF;
 	--yellow: #FFF842FF;
 	--red: #FB667AFF;
 	--blue: #00B9FBFF;
 	--green: #00FF7FFF;
 }
 .grey {
+	color: #181828FF;
+}
+.greyLight {
 	color: #5F727FFF;
 }
 .yellow {
@@ -90,15 +94,19 @@
 
 body {
 	font-family: robotoMono44, "Courier New";
-	color: var(--grey);
-	background-color: #181828;
+	color: var(--greyLight);
+	background-color: var(--grey);
 	background-image: url("resources/texture.jpg");
 	background-repeat: repeat;
 	line-height: 1.42em;
 	margin: 34px;
 }
 
-div#spectrum { }
+div#spectrum {
+	width: 300px;
+	height: 5px;
+	background-color: var(--green);
+}
 div.frame {
 	animation: 1s ease 0s 1 frameAnimation;
 }
