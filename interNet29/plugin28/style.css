@@ -73,6 +73,7 @@
 	--pink: #E4007CFF;
 	--slateDeep: #181828FF;
 	--greyDawn: #5F727FFF;
+	--greyDeep: #0E1119;
 }
 
 ::-webkit-scrollbar {
@@ -120,6 +121,9 @@
 }
 .greyDawn {
 	color: #5F727FFF;
+}
+.greyDeep {
+	color: #0E1119;
 }
 
 div.autoScroll {
@@ -264,9 +268,9 @@ tr:nth-child(even) {
 }
 tr:hover {
 	background-color: #464A52;
-	-webkit-box-shadow: 0 6px 6px -6px #0E1119;
-	-moz-box-shadow: 0 6px 6px -6px #0E1119;
-	box-shadow: 0 6px 6px -6px #0E1119;
+	-webkit-box-shadow: 0 6px 6px -6px var(--greyDeep);
+	-moz-box-shadow: 0 6px 6px -6px var(--greyDeep);
+	box-shadow: 0 6px 6px -6px var(--greyDeep);
 }
 th {
 	background-color: #1F2739;
@@ -284,9 +288,9 @@ td {
 	font-weight: normal;
 	font-size: 0.9em;
 	color: var(--green);
-	-webkit-box-shadow: 0 2px 2px -2px #0E1119;
-	-moz-box-shadow: 0 2px 2px -2px #0E1119;
-	box-shadow: 0 2px 2px -2px #0E1119;
+	-webkit-box-shadow: 0 2px 2px -2px var(--greyDeep);
+	-moz-box-shadow: 0 2px 2px -2px var(--greyDeep);
+	box-shadow: 0 2px 2px -2px var(--greyDeep);
 }
 td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
 	color: var(--orange);
