@@ -65,6 +65,8 @@
 		<script src="interNet29/plugin28/script.js"></script>
 	</head>
 	<body>
+		<div id="spectrum"></div>
+
 		<div class="dustParticle">
 			<div>
 				<div class="starSecond"></div>
@@ -73,8 +75,6 @@
 				<div class="starFifth"></div>
 			</div>
 		</div>
-
-		<div id="spectrum"></div>
 
 		<div class="frame">
 		<?php
