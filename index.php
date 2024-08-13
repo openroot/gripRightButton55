@@ -105,7 +105,7 @@
 							if ($i === 2 || $i === 4 || $i === 5) {
 								print "<tr>";
 								foreach ($value1 as $value2) {
-									print "<td>" . buy13\adapter::portHTML($value2) . "</td>";
+									print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
 								}
 								print "</tr>";
 							}
