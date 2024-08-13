@@ -277,19 +277,19 @@ table caption {
 	white-space: nowrap;
 }
 tr:nth-child(odd) {
-	background-color: #323C50;
+	background-color: var(--slateDawn);
 }
 tr:nth-child(even) {
-	background-color: #2C3446;
+	background-color: var(--slateDusk);
 }
 tr:hover {
-	background-color: #464A52;
+	background-color: var(--slateDay);
 	-webkit-box-shadow: 0 6px 6px -6px var(--greyDeep);
 	-moz-box-shadow: 0 6px 6px -6px var(--greyDeep);
 	box-shadow: 0 6px 6px -6px var(--greyDeep);
 }
 th {
-	background-color: #1F2739;
+	background-color: var(--slateDark);
 }
 th h1 {
 	font-weight: bold;
