@@ -65,12 +65,16 @@
 :root {
 	--blue: #00B9FBFF;
 	--green: #00FF7FFF;
-	--yellowDay: #FFF842FF;
-	--yellowDark: #7F7C21FF;
-	--yellowDeep: #403E10FF;
 	--red: #FB667AFF;
 	--orange: #FF9966FF;
 	--pink: #E4007CFF;
+	--yellowDay: #FFF842FF;
+	--yellowDark: #7F7C21FF;
+	--yellowDeep: #403E10FF;
+	--slateDay: #464A52;
+	--slateDawn: #323C50;
+	--slateDusk: #2C3446;
+	--slateDark: #1F2739;
 	--slateDeep: #181828FF;
 	--greyDawn: #5F727FFF;
 	--greyDeep: #0E1119;
@@ -98,15 +102,6 @@
 .green {
 	color: #00FF7FFF;
 }
-.yellowDay {
-	color: #FFF842FF;
-}
-.yellowDark {
-	color: #7F7C21FF;
-}
-.yellowDeep {
-	color: #403E10FF;
-}
 .red {
 	color: #FB667AFF;
 }
@@ -116,6 +111,27 @@
 .pink {
 	color: #E4007CFF;
 }
+.yellowDay {
+	color: #FFF842FF;
+}
+.yellowDark {
+	color: #7F7C21FF;
+}
+.yellowDeep {
+	color: #403E10FF;
+}
+.slateDay {
+	color: #464A52;
+}
+.slateDawn {
+	color: #323C50;
+}
+.slateDusk {
+	color: #2C3446;
+}
+.slateDark {
+	color: #1F2739;
+}
 .slateDeep {
 	color: #181828FF;
 }
@@ -123,7 +139,7 @@
 	color: #5F727FFF;
 }
 .greyDeep {
-	color: #0E1119;
+	color: #0E1119FF;
 }
 
 div.autoScroll {
