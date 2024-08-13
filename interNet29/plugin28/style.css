@@ -312,8 +312,8 @@ td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
 	color: var(--orange);
 }
 td:hover {
-	background-color: var(--yellowDay);
 	color: var(--yellowDeep);
+	background-color: var(--yellowDay);
 	font-weight: bold;
 	box-shadow: var(--yellowDark) -1px 1px, var(--yellowDark) -2px 2px, var(--yellowDark) -3px 3px, var(--yellowDark) -4px 4px, var(--yellowDark) -5px 5px, var(--yellowDark) -6px 6px;
 	transform: translate3d(6px, -6px, 0);
