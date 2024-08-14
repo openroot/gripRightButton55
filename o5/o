@@ -22,7 +22,7 @@
 ::20::marKers29          ::Custom form content, use for advert, sponsor, substitutions etc.::=logo                         #::20 ::
 ::21::liMit21            ::Authentication layer access, use for priority, dash, admins etc.::=classification               #::56 ::
 ::22::exChAnGes30        ::Platform independent processing, use for concurrency, trace etc.::=export                       #::21 ::
-::23::                   ::                                                                ::=                             #::   ::
+::23::exCeption31        ::Local or aero, use for price recycle, trending, replacement etc.::=filter                       #::25 ::
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
 ::26::                   ::                                                                ::=                             #::   ::
