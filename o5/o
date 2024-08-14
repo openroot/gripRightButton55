@@ -16,10 +16,10 @@
 ::14::                   ::                                                                ::=size                         #::17 ::
 ::15::                   ::                                                                ::=playFibonacci                #::53 ::
 ::16::                   ::                                                                ::=zone                         #::19 ::
-::17::uTilITy30          ::                                                                ::=featured                     #::29 ::
+::17::uTilITy30          ::Third party tools, use for preference, shortcuts, selection etc.::=featured                     #::29 ::
 ::18::tranSlate36        ::Artificially synthesised factorization, use for auto, debug etc.::=site                         #::14 ::
 ::19::liFt18             ::Parallel environmental platform, use for IoT, develop cycle etc.::=version                      #::27 ::
-::20::                   ::                                                                ::=                             #::   ::
+::20::marKers29          ::Custom form content, use for advert, sponsor, substitutions etc.::=logo                         #::20 ::
 ::21::                   ::                                                                ::=                             #::   ::
 ::22::                   ::                                                                ::=                             #::   ::
 ::23::                   ::                                                                ::=                             #::   ::
