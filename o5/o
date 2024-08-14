@@ -1,5 +1,5 @@
 ::o ::                   ::                                                                ::=format                       #::25 ::
-::x ::                   ::                                                                ::=start                        #::18 ::
+::x ::baLanCe26          ::Structured network bracket, use for recur, via, main, robot etc.::=start                        #::18 ::
 ::1 ::                   ::                                                                ::=script                       #::23 ::
 ::2 ::                   ::                                                                ::=argument                     #::31 ::
 ::3 ::                   ::                                                                ::=option                       #::26 ::
@@ -7,7 +7,7 @@
 ::5 ::                   ::                                                                ::=series                       #::23 ::
 ::6 ::                   ::                                                                ::=forward                      #::31 ::
 ::7 ::                   ::                                                                ::=source                       #::25 ::
-::8 ::                   ::                                                                ::=cover                        #::17 ::
+::8 ::draWing28          ::Void from regular, use for offer, statement, sensor, report etc.::=cover                        #::17 ::
 ::9 ::                   ::                                                                ::=reference                    #::33 ::
 ::10::                   ::                                                                ::=authorization                #::52 ::
 ::11::                   ::                                                                ::=message                      #::27 ::
