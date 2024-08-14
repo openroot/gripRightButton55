@@ -3,7 +3,7 @@
 ::1 ::                   ::                                                                ::=script                       #::23 ::
 ::2 ::                   ::                                                                ::=argument                     #::31 ::
 ::3 ::                   ::                                                                ::=option                       #::26 ::
-::4 ::                   ::                                                                ::=mode                         #::16 ::
+::4 ::deTail22           ::Specialize theme formation, use for an assistance, guidance etc.::=mode                         #::16 ::
 ::5 ::                   ::                                                                ::=series                       #::23 ::
 ::6 ::                   ::                                                                ::=forward                      #::31 ::
 ::7 ::                   ::                                                                ::=source                       #::25 ::
@@ -11,7 +11,7 @@
 ::9 ::                   ::                                                                ::=reference                    #::33 ::
 ::10::                   ::                                                                ::=authorization                #::52 ::
 ::11::                   ::                                                                ::=message                      #::27 ::
-::12::dRiver19           ::The privileged sphere, use for framework, channels, palaces etc.::=machine                      #::26 ::
+::12::driveR19           ::The privileged sphere, use for framework, channels, palaces etc.::=machine                      #::26 ::
 ::13::                   ::                                                                ::=code                         #::14 ::
 ::14::                   ::                                                                ::=size                         #::17 ::
 ::15::                   ::                                                                ::=playFibonacci                #::53 ::
