@@ -24,7 +24,7 @@
 ::22::exChAnGes30        ::Platform independent processing, use for concurrency, trace etc.::=export                       #::21 ::
 ::23::exCeption31        ::Local or aero, use for price recycle, trending, replacement etc.::=filter                       #::25 ::
 ::24::ranDOm25           ::Extra functional division, use for data, calculus, physical etc.::=inject                       #::22 ::
-::25::                   ::                                                                ::=                             #::   ::
+::25::inStall33          ::A name order, use for wizard, multimedia, pagination, break etc.::=partition                    #::34 ::
 ::26::                   ::                                                                ::=                             #::   ::
 ::t ::                   ::                                                                ::=                             #::___::
 ::u ::                   ::                                                                ::=                             #::@@@::
