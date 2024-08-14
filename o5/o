@@ -11,7 +11,7 @@
 ::9 ::                   ::                                                                ::=reference                    #::33 ::
 ::10::                   ::                                                                ::=authorization                #::52 ::
 ::11::                   ::                                                                ::=message                      #::27 ::
-::12::                   ::                                                                ::=machine                      #::26 ::
+::12::dRiver19           ::The privileged sphere, use for framework, channels, palaces etc.::=machine                      #::26 ::
 ::13::                   ::                                                                ::=code                         #::14 ::
 ::14::                   ::                                                                ::=size                         #::17 ::
 ::15::                   ::                                                                ::=playFibonacci                #::53 ::
