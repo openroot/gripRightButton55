@@ -20,7 +20,7 @@
 ::18::tranSlate36        ::Artificially synthesised factorization, use for auto, debug etc.::=site                         #::14 ::
 ::19::liFt18             ::Parallel environmental platform, use for IoT, develop cycle etc.::=version                      #::27 ::
 ::20::marKers29          ::Custom form content, use for advert, sponsor, substitutions etc.::=logo                         #::20 ::
-::21::                   ::                                                                ::=                             #::   ::
+::21::liMit21            ::Authentication layer access, use for priority, dash, admins etc.::=classification               #::56 ::
 ::22::                   ::                                                                ::=                             #::   ::
 ::23::                   ::                                                                ::=                             #::   ::
 ::24::                   ::                                                                ::=                             #::   ::
