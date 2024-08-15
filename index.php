@@ -97,6 +97,9 @@
 
 					$assembly = new tor12\assembly($file->fromContent());
 					if ($assembly->fromStruct() !== null) {
+						$totalChars = 0;
+						$checkSum1 = 0;
+						$checkSum2 = 0;
 						$realPath = realpath(dirname($fileAddress));
 						print "<div class='autoScroll'>";
 						print "<table class='assembly'>";
@@ -106,8 +109,19 @@
 						print "<tbody>";
 						foreach ($assembly->fromStruct() as $index1 => $value1) {
 							print "<tr>";
-							foreach ($value1 as $value2) {
+							foreach ($value1 as $index2 => $value2) {
 								print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
+								if (!($index2 === 0 || $index2 === 3 || $index2 === 5)) {
+									$totalChars += strlen(trim($value2));
+								}
+								if ($index2 === 6) {
+									$checkSum1 += intval(trim($value2));
+								}
+								if (!($index1 === 0 || $index1 === 1 || $index1 === 28 || $index1 === 29 || $index1 === 30)) {
+									if ($index2 === 6) {
+										$checkSum2 += intval(trim($value2));
+									}
+								}
 							}
 							print "</tr>";
 						}
@@ -115,6 +129,9 @@
 						print "</table></div>";
 						print "<div class='horizontalGap'>";
 						print "</div>";
+
+						$totalChars -= 6;
+						print "Total chars: " . $totalChars . " | Check sum: " . $checkSum1 . " - " . $checkSum2;
 					}
 
 
