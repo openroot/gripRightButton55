@@ -1,4 +1,4 @@
-# Electronics and Computing
+# Electronics And Computing
 
 Electrical equipments and relative devices.
 It improvise this new sector to adaptable coefficients.
