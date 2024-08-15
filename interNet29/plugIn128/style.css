@@ -1,5 +1,5 @@
 @font-face {
-	font-family: robotoMono44;
+	font-family: robotoMono;
 	src: url(fonts/RobotoMono/static/RobotoMono-Regular.ttf);
 }
 
@@ -150,7 +150,7 @@ div.horizontalGap {
 }
 
 body {
-	font-family: robotoMono44, "Courier New";
+	font-family: robotoMono, "Courier New";
 	color: var(--greyDawn);
 	background-color: var(--slateDeep);
 	background-image: url("resources/texture.jpg");
