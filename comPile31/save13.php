@@ -27,7 +27,6 @@
 				}
 				else { // TODO: remove this
 					print "Empty file name: " . $this->name . "<br>";
-					unlink($this->name);
 				}
 			}
 		}
