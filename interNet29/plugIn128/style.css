@@ -308,9 +308,6 @@ td {
 	-moz-box-shadow: 0 2px 2px -2px var(--greyDeep);
 	box-shadow: 0 2px 2px -2px var(--greyDeep);
 }
-td:first-child, td:nth-child(2), td:nth-last-child(-n + 3) {
-	color: var(--orange);
-}
 td:hover {
 	color: var(--yellowDeep);
 	background-color: var(--yellowDay);
@@ -321,4 +318,13 @@ td:hover {
 	transition-duration: 0.4s;
 	transition-property: all;
 	transition-timing-function: line;
+}
+
+table.assembly {
+	width: 100%;
+}
+table.assembly tr:first-child td,
+table.assembly tr:nth-child(2) td,
+table.assembly tr:nth-last-child(-n + 3) td {
+	color: var(--orange);
 }

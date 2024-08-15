@@ -26,20 +26,16 @@
 					$this->struct = null;
 					break;
 				}
-				$this->struct[0][$index] = trim($sections[0]);
-				$this->struct[1][$index] = trim($sections[1]);
-				$this->struct[2][$index] = trim($sections[2]);
-				$this->struct[3][$index] = trim(ltrim(rtrim($sections[3], "#"), "="));
-				$this->struct[4][$index] = ($sections[4] === "___" || $sections[4] === "@@@") ? "" : trim($sections[4]);
-			}
-			$sum = 0;
-			foreach ($this->struct as $value1) {
-				foreach ($value1 as $value2) {
-					$sum += strlen($value2);
-				}
-			}
-			if ($sum === 0 || $sum === 49) {
-				$this->struct = null;
+				$formattedSections = [
+					$sections[0],
+					$sections[1],
+					$sections[2],
+					substr($sections[3], 0, 1),
+					substr($sections[3], 1, strlen($sections[3]) - 2),
+					substr($sections[3], -1),
+					$sections[4]
+				];
+				array_push($this->struct, $formattedSections);
 			}
 		}
 

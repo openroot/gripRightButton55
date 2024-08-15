@@ -98,29 +98,23 @@
 					$assembly = new tor12\assembly($file->fromContent());
 					if ($assembly->fromStruct() !== null) {
 						$realPath = realpath(dirname($fileAddress));
-						$i = 1;
 						print "<div class='autoScroll'>";
-						print "<table>";
+						print "<table class='assembly'>";
 						print "<caption>";
 						print $ct++ . ". " . substr($realPath, strpos($realPath, "gripRightButton55"));
 						print "</caption>";
 						print "<tbody>";
 						foreach ($assembly->fromStruct() as $index1 => $value1) {
-							if ($i !== 3) {
-								print "<tr>";
-								foreach ($value1 as $value2) {
-									print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
-								}
-								print "</tr>";
+							print "<tr>";
+							foreach ($value1 as $value2) {
+								print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
 							}
-							$i++;
+							print "</tr>";
 						}
 						print "</tbody>";
 						print "</table></div>";
 						print "<div class='horizontalGap'>";
 						print "</div>";
-
-						//var_dump($assembly->fromStruct());
 					}
 
 
