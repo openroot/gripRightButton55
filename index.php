@@ -102,7 +102,7 @@
 						print "</caption>";
 						print "<tbody>";
 						foreach ($assembly->fromStruct() as $index1 => $value1) {
-							if ($i === 2 || $i === 4 || $i === 5) {
+							if ($i === 1 || $i === 2 || $i === 4 || $i === 5) {
 								print "<tr>";
 								foreach ($value1 as $value2) {
 									print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
