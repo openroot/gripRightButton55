@@ -101,6 +101,7 @@
 						$checkSum1 = 0;
 						$checkSum2 = 0;
 						$realPath = realpath(dirname($fileAddress));
+						$rowCount = count($assembly->fromStruct());
 						print "<div class='autoScroll'>";
 						print "<table class='assembly'>";
 						print "<caption>";
@@ -117,7 +118,7 @@
 								if ($index2 === 6) {
 									$checkSum1 += intval(trim($value2));
 								}
-								if (!($index1 === 0 || $index1 === 1 || $index1 === 28 || $index1 === 29 || $index1 === 30)) {
+								if (!($index1 === 0 || $index1 === 1 || $index1 === $rowCount - 3 || $index1 === $rowCount - 2 || $index1 === $rowCount - 1)) {
 									if ($index2 === 6) {
 										$checkSum2 += intval(trim($value2));
 									}
