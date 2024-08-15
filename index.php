@@ -85,6 +85,8 @@
 			$context = new move15\context();
 			$fileAddresses = [];
 			foreach ($context->fromHologramFilePath() as $path => $name) {
+				$file = new save13\readFile($path); // TODO: remove this
+
 				if ($name === $context->fromSignatureFileName()) {
 					array_push($fileAddresses, $path);
 				}
