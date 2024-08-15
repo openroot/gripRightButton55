@@ -1,6 +1,6 @@
 @font-face {
 	font-family: robotoMono;
-	src: url(fonts/RobotoMono/static/RobotoMono-Regular.ttf);
+	src: url("fonts/RobotoMono/static/RobotoMono-Regular.ttf");
 }
 
 @media screen and (orientation: landscape) {
