@@ -314,10 +314,6 @@ td:hover {
 	font-weight: bold;
 	box-shadow: var(--yellowDark) -1px 1px, var(--yellowDark) -2px 2px, var(--yellowDark) -3px 3px, var(--yellowDark) -4px 4px, var(--yellowDark) -5px 5px, var(--yellowDark) -6px 6px;
 	transform: translate3d(6px, -6px, 0);
-	transition-delay: 0s;
-	transition-duration: 0.4s;
-	transition-property: all;
-	transition-timing-function: line;
 }
 
 table.assembly {
@@ -327,4 +323,16 @@ table.assembly tr:first-child td,
 table.assembly tr:nth-child(2) td,
 table.assembly tr:nth-last-child(-n + 3) td {
 	color: var(--orange);
+}
+table.assembly tr:first-child td:hover,
+table.assembly tr:nth-child(2) td:hover,
+table.assembly tr:nth-last-child(-n + 3) td:hover {
+	color: var(--yellowDeep);
+}
+
+table.animated td:hover {
+	transition-delay: 0s;
+	transition-duration: 0.4s;
+	transition-property: all;
+	transition-timing-function: line;
 }

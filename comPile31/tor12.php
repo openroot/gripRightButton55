@@ -37,6 +37,28 @@
 				];
 				array_push($this->struct, $formattedSections);
 			}
+			$this->rectifyStruct();
+		}
+
+		private function rectifyStruct() {
+			if ($this->struct !== null) {
+				$sum = 0;
+				$rowNumber = 1;
+				foreach ($this->struct as $value1) {
+					$columnNumber = 1;
+					foreach ($value1 as $value2) {
+						if (!($columnNumber === 1 || $columnNumber === 4 || $columnNumber === 6)) {
+							$sum += strlen(trim($value2));
+						}
+						$columnNumber++;
+					}
+					$rowNumber++;
+				}
+				$sum -= 6;
+				if ($sum === 0) {
+					$this->struct = null;
+				}
+			}
 		}
 
 		public function fromStruct(): ?array {
