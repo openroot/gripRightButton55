@@ -14,15 +14,16 @@
 
 <?php
 	class assembly {
-		private array $struct = [];
+		private ?array $struct = null;
 
 		function __construct(array $divisions) {
+			$this->struct = [];
 			foreach ($divisions as $index => $division) {
 				$sections = explode("::", $division);
 				array_shift($sections);
 				array_pop($sections);
 				if (count($sections) !== 5) {
-					$this->struct = [];
+					$this->struct = null;
 					break;
 				}
 				$this->struct[0][$index] = trim($sections[0]);
@@ -38,11 +39,11 @@
 				}
 			}
 			if ($sum === 0 || $sum === 49) {
-				$this->struct = [];
+				$this->struct = null;
 			}
 		}
 
-		public function fromStruct(): array {
+		public function fromStruct(): ?array {
 			return $this->struct;
 		}
 	}

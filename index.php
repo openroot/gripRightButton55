@@ -53,6 +53,10 @@
 		print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
 		print "<br><br>";
 	}
+
+	function temporaryChecksum() {
+
+	}
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +96,7 @@
 					$file = new save13\readFile($fileAddress);
 
 					$assembly = new tor12\assembly($file->fromContent());
-					if (count($assembly->fromStruct()) > 0) {
+					if ($assembly->fromStruct() !== null) {
 						$realPath = realpath(dirname($fileAddress));
 						$i = 1;
 						print "<div class='autoScroll'>";
@@ -115,7 +119,10 @@
 						print "</table></div>";
 						print "<div class='horizontalGap'>";
 						print "</div>";
+
+						//var_dump($assembly->fromStruct());
 					}
+
 
 
 					//$structure = new save13\structure($file->fromContent());
