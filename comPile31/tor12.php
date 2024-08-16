@@ -3,11 +3,25 @@
 ?>
 
 <?php
-	class trace {
-		function __construct() { }
+	class indicate {
+		public function htmlPre(array $value, string $prefix = "", string $suffix = "") {
+			if (count($value) > 0) {
+				print "<pre>" . $prefix;
+				print_r($value);
+				print $suffix . "</pre>";
+			}
+		}
+	}
 
-		public function report($errstr, $errno, $errfile, $errline): Throwable {
-			throw new \ErrorException($errstr, 0, $errno, $errfile, $errline);
+	class fault {
+		private indicate $indicate;
+
+		function __construct() {
+			$this->indicate = new indicate();
+		}
+
+		public function show(array $value): void {
+			$this->indicate->htmlPre($value, "-Error Information ", "<br>-");
 		}
 	}
 ?>
@@ -65,3 +79,12 @@
 			return $this->struct;
 		}
 	}
+?>
+
+<?php
+	class example {
+		public static function anError(): void {
+			throw new \ErrorException("It is an error.");
+		}
+	}
+?>

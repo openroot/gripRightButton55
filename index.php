@@ -10,55 +10,6 @@
 	use comPile31\tor12 as tor12;
 ?>
 
-<?php
-	error_reporting(E_ALL);
-	set_error_handler("error");
-
-	function error($errno, $errstr, $errfile, $errline): void {
-		if (error_reporting() !== 0) {
-			$trace = new tor12\trace();
-			$trace->report($errstr, $errno, $errfile, $errline);
-		}
-	}
-?>
-
-<?php
-	function displayError($value) {
-		if (count($value) > 0) {
-			print "<br>-";
-			var_dump($value);
-			//print_r($value);
-			//foreach ($value as $index => $val) {
-				 //buy13\adapter::portHTML("\n«" . ($index + 1) . "» " .  $val);
-			//}
-			print "<br>-<br>";
-		}
-	}
-
-	function displayCode($value) {
-		if (count($value) > 0) {
-			print "<pre>";
-			var_dump($value);
-			//print_r($value);
-			//foreach ($value as $index => $val) {
-				//buy13\adapter::portHTML("\n«" . ($index + 1) . "» " .  $val);
-			//}
-			print "</pre>";
-		}
-	}
-
-	function displayHTML($value) {
-		print "File name: " . $value[0] . "<br>";
-		print "File size: " . $value[1] . "<br>";
-		print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
-		print "<br><br>";
-	}
-
-	function temporaryChecksum() {
-
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -68,7 +19,7 @@
 		<link rel="stylesheet" href="interNet29/plugIn128/n.umber/style.css">
 		<script src="interNet29/plugIn128/n.umber/script.js"></script>
 	</head>
-	<body>	
+	<body>
 		<div id="spectrum"></div>
 
 		<div class="dustParticle">
@@ -82,17 +33,20 @@
 
 		<div class="frame">
 		<?php
-			$context = new move15\context();
-			$fileAddresses = [];
-			foreach ($context->fromHologramFilePath() as $path => $name) {
-				if ($name === $context->fromSignatureFileName()) {
-					array_push($fileAddresses, $path);
-				}
-			}
+			$fault = new tor12\fault();
 
-			$ct = 1;
-			foreach ($fileAddresses as $index => $fileAddress) {
-				try {
+			try {
+				throw new \ErrorException("Error testing 1.");
+
+				$context = new move15\context();
+				$fileAddresses = [];
+				foreach ($context->fromHologramFilePath() as $path => $name) {
+					if ($name === $context->fromSignatureFileName()) {
+						array_push($fileAddresses, $path);
+					}
+				}
+				$ct = 1;
+				foreach ($fileAddresses as $index => $fileAddress) {
 					$file = new save13\readFile($fileAddress);
 
 					$assembly = new tor12\assembly($file->fromContent());
@@ -116,22 +70,10 @@
 						print "<div class='horizontalGap'>";
 						print "</div>";
 					}
-
-
-
-					//$structure = new save13\structure($file->fromContent());
-					//if (!$structure->fromErrors()) {
-					//	displayCode($structure->fromStruct());
-					//}
-					//else {
-					//	displayError($structure->fromErrors());
-					//}
-
-					//displayHTML([$file->fromName(), $file->fromSize(), $file->fromContent()]);
 				}
-				catch (Exception $e) {
-					displayError([$e]);
-				}
+			}
+			catch (Exception $e) {
+				$fault->show([$e]);
 			}
 		?>
 		</div>

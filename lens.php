@@ -11,18 +11,6 @@
 ?>
 
 <?php
-	error_reporting(E_ALL);
-	set_error_handler("error");
-
-	function error($errno, $errstr, $errfile, $errline): void {
-		if (error_reporting() !== 0) {
-			$trace = new tor12\trace();
-			$trace->report($errstr, $errno, $errfile, $errline);
-		}
-	}
-?>
-
-<?php
 	function displayError($value) {
 		if (count($value) > 0) {
 			print "<br>-";
@@ -53,10 +41,6 @@
 		print "File content:<br>". (new buy13\adapter($value[2], buy13\adapterInputType::array))->convert(buy13\adapterOutputType::html);
 		print "<br><br>";
 	}
-
-	function temporaryChecksum() {
-
-	}
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +52,7 @@
 		<link rel="stylesheet" href="interNet29/plugIn128/n.umber/style.css">
 		<script src="interNet29/plugIn128/n.umber/script.js"></script>
 	</head>
-	<body>	
+	<body>
 		<div id="spectrum"></div>
 
 		<div class="dustParticle">
@@ -89,7 +73,6 @@
 					array_push($fileAddresses, $path);
 				}
 			}
-
 			$ct = 1;
 			foreach ($fileAddresses as $index => $fileAddress) {
 				try {
