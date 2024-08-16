@@ -37,10 +37,13 @@
 
 		<div class="frame">
 		<?php
-			$fault = new tor12\fault();
 
 			try {
-				tor12\example::error();
+				$example = new tor12\example();
+				$example->htmlTable();
+				$example->error();
+
+				$fault = new tor12\fault();
 
 				$context = new move15\context();
 				$fileAddresses = [];
@@ -56,7 +59,7 @@
 					$assembly = new tor12\assembly($file->fromContent());
 					if ($assembly->fromStruct() !== null) {
 						$realPath = realpath(dirname($fileAddress));
-						print "<div class='autoScroll'>";
+						/*print "<div class='autoScroll'>";
 						print "<table class='assembly'>";
 						print "<caption>";
 						print $ct++ . ". " . substr($realPath, strpos($realPath, "gripRightButton55"));
@@ -72,7 +75,7 @@
 						print "</tbody>";
 						print "</table></div>";
 						print "<div class='horizontalGap'>";
-						print "</div>";
+						print "</div>";*/
 					}
 				}
 			}

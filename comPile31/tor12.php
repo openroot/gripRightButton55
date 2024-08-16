@@ -1,66 +1,92 @@
 <?php
 	namespace comPile31\tor12;
+	
+	require_once("c.ore/kernel27.php");
+
+	use comPile31\tor12\kernel27 as kernel27;
 ?>
 
 <?php
 	class html {
-		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): string {
-			$cascade = "";
+		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): ?string {
+			$cascade = null;
 			// TODO: Put coding.
-			$cascade += " ";
+			$cascade .= " ";
 			return $cascade;
 		}
 
-		public function pre(array $value, string $prefix = "", string $suffix = "", string $htmlAttribute = ""): void {
+		public function pre(array $value, string $prefix = "", string $suffix = "", string $htmlAttribute = ""): ?string {
+			$cascade = null;
 			if (count($value) > 0) {
-				print "<pre" . $htmlAttribute . ">" . $prefix;
-				print_r($value);
-				print $suffix . "</pre>";
+				$cascade .= "<pre" . $htmlAttribute . ">" . $prefix . print_r($value, true) .  $suffix . "</pre>";
 			}
+			return $cascade;
 		}
 
-		public function table(array $value, array $headers = [], string $caption = "", string $htmlAttribute = ""): void {
-			$cascade = "";
+		public function table(array $value, array $headers = [], string $caption = "", string $htmlAttribute = ""): ?string {
+			$cascade = null;
 			if (!empty($caption)) {
-				$cascade += "<caption>" . $caption . "</caption>";
+				$cascade .= "<caption>" . $caption . "</caption>";
 			}
 			if (count($headers) > 0) {
 				foreach ($headers as $header) {
-					$cascade += "<th>" . $header . "</th>";
+					$cascade .= "<th>" . $header . "</th>";
 				}
 			}
 			foreach ($value as $row) {
 				$t1 = "";
-				foreach ($value as $column) {
-					$t1 += "<td>" . $column . "</td>";
+				foreach ($row as $column) {
+					$t1 .= "<td>" . $column . "</td>";
 				}
 				if (!empty($t1)) {
-					$cascade += "<tr>" . $t1 . "</tr>";
+					$cascade .= "<tr>" . $t1 . "</tr>";
 				}
 			}
 			if (!empty($cascade)) {
 				$cascade = "<table" . $htmlAttribute . ">" . $cascade . "</table>";
 			}
+			return $cascade;
 		}
 	}
 
 	class fault {
+		private kernel27\display $display;
 		private html $html;
 
 		function __construct() {
+			$this->display = new kernel27\display();
 			$this->html = new html();
 		}
 
 		public function show(array $value): void {
-			$this->html->pre($value, "<hr>Error Information ", "<hr>");
+			$this->display->show($this->html->pre($value, "<hr>Error Information ", "<hr>"));
 		}
 	}
 ?>
 
 <?php
 	class example {
-		public static function error(): void {
+		private kernel27\display $display;
+
+		function __construct() {
+			$this->display = new kernel27\display();
+		}
+
+		public function error(): void {
 			throw new \ErrorException("It is an error.");
+		}
+
+		public function htmlTable(): void {
+			$result = (new html())->table(
+				[
+					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
+				],
+				["o.", "First Name", "Last Name", "Email Address", "Location", "Profession"],
+				"Profiles"
+			);
+			if (!empty($result)) {
+				$this->display->show($result);
+			}
 		}
 	}
 ?>
