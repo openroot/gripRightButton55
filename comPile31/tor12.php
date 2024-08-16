@@ -1,6 +1,6 @@
 <?php
 	namespace comPile31\tor12;
-	
+
 	require_once("c.ore/kernel27.php");
 
 	use comPile31\tor12\kernel27 as kernel27;
@@ -8,14 +8,35 @@
 
 <?php
 	class html {
-		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): ?string {
+		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", array $custom = []): ?string {
 			$cascade = null;
-			// TODO: Put coding.
-			$cascade .= " ";
+			if (!empty($class)) {
+				$cascade .= ' class="' . $class . '"';
+			}
+			if (!empty($id)) {
+				$cascade .= ' id="' . $id . '"';
+			}
+			if (!empty($name)) {
+				$cascade .= ' name="' . $name . '"';
+			}
+			if (!empty($style)) {
+				$cascade .= ' style="' . $style . '"';
+			}
+			if (count($custom) > 0) {
+				$t1 = "";
+				foreach ($custom as $index => $value) {
+					if (!empty($index) && !empty($value)) {
+						$t1 .= ' ' . $index . '="' . $value . '"';
+					}
+				}
+				if (!empty($t1)) {
+					$cascade .= $t1;
+				}
+			}
 			return $cascade;
 		}
 
-		public function pre(array $value, string $prefix = "", string $suffix = "", string $htmlAttribute = ""): ?string {
+		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = ""): ?string {
 			$cascade = null;
 			if (count($value) > 0) {
 				$cascade .= "<pre" . $htmlAttribute . ">" . $prefix . print_r($value, true) .  $suffix . "</pre>";
@@ -23,24 +44,32 @@
 			return $cascade;
 		}
 
-		public function table(array $value, array $headers = [], string $caption = "", string $htmlAttribute = ""): ?string {
+		public function table(array $value, array $headers = [], string $caption = "", ?string $htmlAttribute = ""): ?string {
 			$cascade = null;
 			if (!empty($caption)) {
 				$cascade .= "<caption>" . $caption . "</caption>";
 			}
 			if (count($headers) > 0) {
+				$thead = "";
 				foreach ($headers as $header) {
-					$cascade .= "<th>" . $header . "</th>";
+					$thead .= "<th>" . $header . "</th>";
+				}
+				if (!empty($thead)) {
+					$cascade .= "<thead>" . $thead . "</thead>";
 				}
 			}
+			$tbody = "";
 			foreach ($value as $row) {
 				$t1 = "";
 				foreach ($row as $column) {
 					$t1 .= "<td>" . $column . "</td>";
 				}
 				if (!empty($t1)) {
-					$cascade .= "<tr>" . $t1 . "</tr>";
+					$tbody .= "<tr>" . $t1 . "</tr>";
 				}
+			}
+			if (!empty($tbody)) {
+				$cascade .= "<tbody>" . $tbody . "</tbody>";
 			}
 			if (!empty($cascade)) {
 				$cascade = "<table" . $htmlAttribute . ">" . $cascade . "</table>";
@@ -62,9 +91,7 @@
 			$this->display->show($this->html->pre($value, "<hr>Error Information ", "<hr>"));
 		}
 	}
-?>
 
-<?php
 	class example {
 		private kernel27\display $display;
 
@@ -77,12 +104,14 @@
 		}
 
 		public function htmlTable(): void {
-			$result = (new html())->table(
+			$html = new html();
+			$result = $html->table(
 				[
 					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
 				],
 				["o.", "First Name", "Last Name", "Email Address", "Location", "Profession"],
-				"Profiles"
+				"Profiles",
+				$html->attribute("animated", "anExampleTable", "exampleTable", "border: 3px dotted #FFFFFF;", ["data-randomNumber" => "876234", "spellcheck" => "true"])
 			);
 			if (!empty($result)) {
 				$this->display->show($result);
