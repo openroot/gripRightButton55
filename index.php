@@ -40,6 +40,8 @@
 
 			try {
 				$example = new tor12\example();
+				$example->plainText();
+				$example->htmlSegment();
 				$example->htmlTable();
 				$example->error();
 

@@ -8,7 +8,7 @@
 
 <?php
 	class html {
-		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", array $custom = []): ?string {
+		public function attribute(string $class = "", string $id = "", string $name = "", string $title = "", string $style = "", array $custom = []): ?string {
 			$cascade = null;
 			if (!empty($class)) {
 				$cascade .= ' class="' . $class . '"';
@@ -18,6 +18,9 @@
 			}
 			if (!empty($name)) {
 				$cascade .= ' name="' . $name . '"';
+			}
+			if (!empty($title)) {
+				$cascade .= ' title="' . $title . '"';
 			}
 			if (!empty($style)) {
 				$cascade .= ' style="' . $style . '"';
@@ -36,15 +39,23 @@
 			return $cascade;
 		}
 
-		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = ""): ?string {
+		public function segment(string $value, string $element = "span", ?string $htmlAttribute = null): ?string {
 			$cascade = null;
-			if (count($value) > 0) {
-				$cascade .= "<pre" . $htmlAttribute . ">" . $prefix . print_r($value, true) .  $suffix . "</pre>";
+			if (!empty($value) && !empty($element)) {
+				$cascade = "<" . $element . $htmlAttribute . ">" . $value . "</" . $element . ">";
 			}
 			return $cascade;
 		}
 
-		public function table(array $value, array $headers = [], string $caption = "", ?string $htmlAttribute = ""): ?string {
+		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = null): ?string {
+			$cascade = null;
+			if (count($value) > 0) {
+				$cascade .= "<pre" . $htmlAttribute . ">" . $prefix . print_r($value, true) . $suffix . "</pre>";
+			}
+			return $cascade;
+		}
+
+		public function table(array $value, array $headers = [], string $caption = "", ?string $htmlAttribute = null): ?string {
 			$cascade = null;
 			if (!empty($caption)) {
 				$cascade .= "<caption>" . $caption . "</caption>";
@@ -88,34 +99,46 @@
 		}
 
 		public function show(array $value): void {
-			$this->display->show($this->html->pre($value, "<hr>Error Information ", "<hr>"));
+			date_default_timezone_set("Asia/Kolkata");
+			$date = date("Y/m/d h:i:s a", time());
+			$this->display->show($this->html->pre($value, "Error Information ", $date));
 		}
 	}
 
 	class example {
 		private kernel27\display $display;
+		private html $html;
 
 		function __construct() {
 			$this->display = new kernel27\display();
+			$this->html = new html();
+		}
+
+		public function plainText(): void {
+			$this->display->show("gripRightButton55");
+		}
+
+		public function htmlSegment(): void {
+			$this->display->show($this->html->segment(
+				"Website's goal is to provide " . $this->html->segment("Synchronized Active Platform", "q") . ".",
+				"p"
+			));
+		}
+
+		public function htmlTable(): void {
+			$this->display->show($this->html->table([
+					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
+				],
+				["o", "First Name", "Last Name", "Email Address", "Location", "Profession"],
+				"Profiles",
+				$this->html->attribute("animated", "anExampleTable", "exampleTable", "A list of profiles.", "border: 3px dotted #FFFFFF;",
+					["data-randomNumber" => "876234", "dir" => "rtl", "accesskey" => "t"]
+				)
+			));
 		}
 
 		public function error(): void {
 			throw new \ErrorException("It is an error.");
-		}
-
-		public function htmlTable(): void {
-			$html = new html();
-			$result = $html->table(
-				[
-					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
-				],
-				["o.", "First Name", "Last Name", "Email Address", "Location", "Profession"],
-				"Profiles",
-				$html->attribute("animated", "anExampleTable", "exampleTable", "border: 3px dotted #FFFFFF;", ["data-randomNumber" => "876234", "spellcheck" => "true"])
-			);
-			if (!empty($result)) {
-				$this->display->show($result);
-			}
 		}
 	}
 ?>

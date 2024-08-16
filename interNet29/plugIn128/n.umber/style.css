@@ -261,6 +261,10 @@ div#menu table tr td {
 	color: var(--blue);
 }
 
+pre {
+	border: 3px dotted #FFFFFF;
+}
+
 a {
 	color: var(--pink);
 	font-weight: 700;
