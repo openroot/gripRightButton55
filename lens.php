@@ -97,7 +97,11 @@
 
 					$assembly = new tor12\assembly($file->fromContent());
 					if ($assembly->fromStruct() !== null) {
+						$totalChars = 0;
+						$checkSum1 = 0;
+						$checkSum2 = 0;
 						$realPath = realpath(dirname($fileAddress));
+						$rowCount = count($assembly->fromStruct());
 						print "<div class='autoScroll'>";
 						print "<table class='assembly'>";
 						print "<caption>";
@@ -108,6 +112,17 @@
 							print "<tr>";
 							foreach ($value1 as $index2 => $value2) {
 								print "<td title=''>" . buy13\adapter::portHTML($value2) . "</td>";
+								if (!($index2 === 0 || $index2 === 3 || $index2 === 5)) {
+									$totalChars += strlen(trim($value2));
+								}
+								if ($index2 === 6) {
+									$checkSum1 += intval(trim($value2));
+								}
+								if (!($index1 === 0 || $index1 === 1 || $index1 === $rowCount - 3 || $index1 === $rowCount - 2 || $index1 === $rowCount - 1)) {
+									if ($index2 === 6) {
+										$checkSum2 += intval(trim($value2));
+									}
+								}
 							}
 							print "</tr>";
 						}
@@ -115,6 +130,9 @@
 						print "</table></div>";
 						print "<div class='horizontalGap'>";
 						print "</div>";
+
+						$totalChars -= 6;
+						print "<div class='pink'>[CHECK] Total Characters: " . $totalChars . " | Theta Sum: " . $checkSum1 . " / " . $checkSum2 . "</div>";
 					}
 
 

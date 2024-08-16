@@ -275,6 +275,7 @@ table {
 table caption {
 	text-align: left;
 	white-space: nowrap;
+	color: var(--yellowDay);
 }
 tr:nth-child(odd) {
 	background-color: var(--slateDawn);
