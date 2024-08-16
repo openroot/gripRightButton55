@@ -42,6 +42,7 @@
 				$example = new tor12\example();
 				$example->plainText();
 				$example->htmlSegment();
+				$example->htmlPre();
 				$example->htmlTable();
 				$example->error();
 

@@ -41,7 +41,7 @@
 
 		public function segment(string $value, string $element = "span", ?string $htmlAttribute = null): ?string {
 			$cascade = null;
-			if (!empty($value) && !empty($element)) {
+			if (!empty($element)) {
 				$cascade = "<" . $element . $htmlAttribute . ">" . $value . "</" . $element . ">";
 			}
 			return $cascade;
@@ -123,6 +123,10 @@
 				"Website's goal is to provide " . $this->html->segment("Synchronized Active Platform", "q") . ".",
 				"p"
 			));
+		}
+
+		public function htmlPre(): void {
+			$this->display->show($this->html->pre(["A quick note.", "Question" => "Answer"], "Cap ", "Box"));
 		}
 
 		public function htmlTable(): void {
