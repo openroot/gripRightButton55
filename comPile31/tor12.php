@@ -4,9 +4,11 @@
 
 <?php
 	class html {
-		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): ?string {
+		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): string {
+			$cascade = "";
 			// TODO: Put coding.
-			return " ";
+			$cascade += " ";
+			return $cascade;
 		}
 
 		public function pre(array $value, string $prefix = "", string $suffix = "", string $htmlAttribute = ""): void {
