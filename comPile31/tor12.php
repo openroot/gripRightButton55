@@ -58,6 +58,14 @@
 ?>
 
 <?php
+	class example {
+		public static function error(): void {
+			throw new \ErrorException("It is an error.");
+		}
+	}
+?>
+
+<?php
 	class assembly {
 		private ?array $struct = null;
 
@@ -108,14 +116,6 @@
 
 		public function fromStruct(): ?array {
 			return $this->struct;
-		}
-	}
-?>
-
-<?php
-	class example {
-		public static function error(): void {
-			throw new \ErrorException("It is an error.");
 		}
 	}
 ?>
