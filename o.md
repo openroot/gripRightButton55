@@ -1,4 +1,3 @@
-(a)..
 # Leverage Any Complications
 .
 .
