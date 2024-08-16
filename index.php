@@ -10,6 +10,10 @@
 	use comPile31\tor12 as tor12;
 ?>
 
+<?php
+	$fault = new tor12\fault();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -36,7 +40,7 @@
 			$fault = new tor12\fault();
 
 			try {
-				throw new \ErrorException("Error testing 1.");
+				tor12\example::error();
 
 				$context = new move15\context();
 				$fileAddresses = [];

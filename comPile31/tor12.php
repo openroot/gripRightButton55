@@ -3,25 +3,54 @@
 ?>
 
 <?php
-	class indicate {
-		public function htmlPre(array $value, string $prefix = "", string $suffix = "") {
+	class html {
+		public function attribute(string $class = "", string $id = "", string $name = "", string $style = "", string $data = "", array $custom = []): ?string {
+			// TODO: Put coding.
+			return " ";
+		}
+
+		public function pre(array $value, string $prefix = "", string $suffix = "", string $htmlAttribute = ""): void {
 			if (count($value) > 0) {
-				print "<pre>" . $prefix;
+				print "<pre" . $htmlAttribute . ">" . $prefix;
 				print_r($value);
 				print $suffix . "</pre>";
+			}
+		}
+
+		public function table(array $value, array $headers = [], string $caption = "", string $htmlAttribute = ""): void {
+			$cascade = "";
+			if (!empty($caption)) {
+				$cascade += "<caption>" . $caption . "</caption>";
+			}
+			if (count($headers) > 0) {
+				foreach ($headers as $header) {
+					$cascade += "<th>" . $header . "</th>";
+				}
+			}
+			foreach ($value as $row) {
+				$t1 = "";
+				foreach ($value as $column) {
+					$t1 += "<td>" . $column . "</td>";
+				}
+				if (!empty($t1)) {
+					$cascade += "<tr>" . $t1 . "</tr>";
+				}
+			}
+			if (!empty($cascade)) {
+				$cascade = "<table" . $htmlAttribute . ">" . $cascade . "</table>";
 			}
 		}
 	}
 
 	class fault {
-		private indicate $indicate;
+		private html $html;
 
 		function __construct() {
-			$this->indicate = new indicate();
+			$this->html = new html();
 		}
 
 		public function show(array $value): void {
-			$this->indicate->htmlPre($value, "-Error Information ", "<br>-");
+			$this->html->pre($value, "<hr>Error Information ", "<hr>");
 		}
 	}
 ?>
@@ -83,7 +112,7 @@
 
 <?php
 	class example {
-		public static function anError(): void {
+		public static function error(): void {
 			throw new \ErrorException("It is an error.");
 		}
 	}
