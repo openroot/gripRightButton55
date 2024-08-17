@@ -1,7 +1,7 @@
-::o ::keep16End11Vision23::                                                                ::=                             #::   ::
-::x ::panel23Set11       ::                                                                ::=                             #::   ::
-::1 ::killer29Machine26  ::                                                                ::=                             #::   ::
-::2 ::timer18Machine26   ::                                                                ::=                             #::   ::
+::o ::keep16End11Vision23::Number? Space.                                                  ::=hunger                       #::24 ::
+::x ::panel23Set11       ::Balance? Re-establish.                                          ::=business                     #::33 ::
+::1 ::killer29Machine26  ::One? Lines.                                                     ::=lines                        #::23 ::
+::2 ::timer18Machine26   ::Drop? Area.                                                     ::=probable                     #::31 ::
 ::3 ::word19Forest25     ::                                                                ::=                             #::   ::
 ::4 ::Word19POC13        ::                                                                ::=                             #::   ::
 ::5 ::aviator23Shape20   ::                                                                ::=                             #::   ::
@@ -23,9 +23,9 @@
 ::21::top13Bar9          ::                                                                ::=                             #::   ::
 ::22::bottom23Bar9       ::                                                                ::=                             #::   ::
 ::23::panel23Bar9        ::                                                                ::=                             #::   ::
-::24::abbreviated31Join18::                                                                ::=                             #::   ::
-::25::origin23Resume25   ::                                                                ::=                             #::   ::
-::26::origin23Covers22   ::                                                                ::=                             #::   ::
-::t ::month22Summery33   ::                                                                ::=                             #::___::
-::u ::royal25Animate25   ::                                                                ::=                             #::@@@::
-::..::code14Configure36  ::                                                                ::=                             #::   ::
+::24::abbreviated31Join18::Abbreviation? Banks of World.                                   ::=back.bone                    #::28 ::
+::25::origin23Resume25   ::Monolithic? Word.                                               ::=links                        #::25 ::
+::26::origin23Covers22   ::Plain? Biologic.                                                ::=associate                    #::33 ::
+::t ::month22Summery33   ::Ranges? Concatenation.                                          ::=action                       #::___::
+::u ::royal25Animate25   ::Blink? Eye.                                                     ::=organic                      #::@@@::
+::..::code14Configure36  ::Used? Solution.                                                 ::=inorganic                    #::34 ::
