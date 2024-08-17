@@ -1,5 +1,5 @@
-::o ::indicate26         ::Environmental snooze.                                           ::=Product Access Name          #::66 ::
-::x ::alphaNumeric50     ::26 letters of the alphabet (A order Z) & the digits (0 order 9).::=English Alphabets Reserved QR#::100::
+::o ::indicate26         ::Environmental snooze.                                           ::=product.access.name          #::66 ::
+::x ::alphaNumeric50     ::26 letters of the alphabet (A order Z) & the digits (0 order 9).::=english.alphabets.reserved.qr#::100::
 ::1 ::a3                 ::                                                                ::=a                            #::3  ::
 ::2 ::b2                 ::                                                                ::=b                            #::2  ::
 ::3 ::c3                 ::                                                                ::=c                            #::3  ::
@@ -26,6 +26,6 @@
 ::24::x1                 ::                                                                ::=x                            #::1  ::
 ::25::y6                 ::                                                                ::=y                            #::6  ::
 ::26::z6                 ::                                                                ::=z                            #::6  ::
-::t ::summation39        ::Addition from total system, extrude "o", "x", "t", "u" and "+-".::=Light View           382 109 #::___::
-::u ::extraReference47   ::Collect an external pointing instrumentation providing cap here.::=Amplification Form           #::@@@::
-::..::thresholdKit49     ::"A quick brown fox jumps over the lazy dog", is machine address.::=National English Dictionaries#::107::
+::t ::summation39        ::Addition from total system, extrude "o", "x", "t", "u" and "+-".::=light.view           382 109 #::___::
+::u ::extraReference47   ::Collect an external pointing instrumentation providing cap here.::=amplification.form           #::@@@::
+::..::thresholdKit49     ::"A quick brown fox jumps over the lazy dog", is machine address.::=national.english.dictionaries#::107::
