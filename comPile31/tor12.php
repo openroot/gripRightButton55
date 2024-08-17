@@ -1,7 +1,7 @@
 <?php
 	namespace comPile31\tor12;
 
-	require_once("c.ore/kernel27.php");
+	require_once("tor12/c.ore/kernel27.php");
 
 	use comPile31\tor12\kernel27 as kernel27;
 ?>
