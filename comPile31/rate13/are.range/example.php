@@ -1,8 +1,8 @@
 <?php
-	require_once("comPile31/save13.php");
-	require_once("comPile31/buy13.php");
-	require_once("comPile31/move15.php");
-	require_once("comPile31/tor12.php");
+	require_once("../../../comPile31/save13.php");
+	require_once("../../../comPile31/buy13.php");
+	require_once("../../../comPile31/move15.php");
+	require_once("../../../comPile31/tor12.php");
 
 	use comPile31\save13 as save13;
 	use comPile31\buy13 as buy13;
