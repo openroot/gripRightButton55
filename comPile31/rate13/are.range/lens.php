@@ -1,8 +1,8 @@
 <?php
-	require_once("comPile31/save13.php");
-	require_once("comPile31/buy13.php");
-	require_once("comPile31/move15.php");
-	require_once("comPile31/tor12.php");
+	require_once("../../../comPile31/save13.php");
+	require_once("../../../comPile31/buy13.php");
+	require_once("../../../comPile31/move15.php");
+	require_once("../../../comPile31/tor12.php");
 
 	use comPile31\save13 as save13;
 	use comPile31\buy13 as buy13;
@@ -49,8 +49,8 @@
 		<title>gripRightButton55</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="interNet29/plugIn128/n.umber/style.css">
-		<script src="interNet29/plugIn128/n.umber/script.js"></script>
+		<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">
+		<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>
 	</head>
 	<body>
 		<div id="spectrum"></div>
@@ -115,7 +115,7 @@
 						print "</div>";
 
 						$totalChars -= 6;
-						print "<div class='pink'>[CHECK] Total Characters: " . $totalChars . " | Theta Sum: " . $checkSum1 . " / " . $checkSum2 . "</div>";
+						print "<div class='blue'>[CHECK] Total Characters: " . $totalChars . " | Theta Sum: " . $checkSum1 . " / " . $checkSum2 . "</div>";
 					}
 
 
