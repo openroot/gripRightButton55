@@ -26,6 +26,6 @@
 ::24::                   ::                               ||                               ::=                             #::   ::
 ::25::                   ::                               ||                               ::=                             #::   ::
 ::26::boring22           ::                             |loud|                             ::=slower.for.loud.decibel.books#::111::
-::t ::vector20           ::                               ||                               ::=                             #::___::
+::t ::vector20           ::                             |bias|                             ::=prompt.moment.ago.too        #::___::
 ::u ::data12             ::                               ||                               ::=                             #::@@@::
 ::..::flash24            ::                           |capsules|                           ::=system.row.scoop.adjoin.count#::111::
