@@ -24,7 +24,7 @@
 ::22::market23           ::                           |exchange|                           ::=                             #::   ::
 ::23::make16             ::                            |screen|                            ::=                             #::   ::
 ::24::bonus22            ::                           |circuits|                           ::=                             #::   ::
-::25::highlight34        ::                             |load|                               ::=                             #::   ::
+::25::highlight34        ::                             |load|                             ::=                             #::   ::
 ::26::boring22           ::                             |loud|                             ::=slower.for.loud.decibel.books#::111::
 ::t ::vector20           ::                             |bias|                             ::=prompt.moment.ago.too        #::___::
 ::u ::data12             ::                           |activate|                           ::=strip.alt.value.inbuilt.check#::@@@::
