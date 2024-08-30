@@ -27,5 +27,5 @@
 ::25::                   ::                                                                ::=                             #::   ::
 ::26::certificate36      ::------------------"EK JE CHHILO RAKHAL CHHELE - SANKHIPTO GALPO"::=                             #::   ::
 ::t ::state17            ::------------------------------"IS SE HUM KO YAAD AYA - AVDHARNA"::=instrumentation.box          #::___::
-::u ::uniform32          ::-----------------------------------"GALA DABA DENGE - MAJAK HAI"::=                             #::@@@::
-::..::paper20            ::"NODIR EPAR KAHE CHHARIA NISSAS OPARETE SWARGO SUKH AMAR BISSAS"::=                             #::   ::
+::u ::uniform32          ::-----------------------------------"GALA DABA DENGE - MAJAK HAI"::=aquarium.zone                #::@@@::
+::..::paper20            ::"NODIR EPAR KAHE CHHARIA NISSAS OPARETE SWARGO SUKH AMAR BISSAS"::=painted.kitchen              #::51 ::
