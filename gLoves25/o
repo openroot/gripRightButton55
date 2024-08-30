@@ -1,5 +1,5 @@
-::o ::idea12             ::"KE WAAD HOLI AYI RE HOLY AYI RE HOLY AYI RE - LOKPRIYA SANGEET"::=                             #::   ::
-::x ::space19            ::----"MACHHLI JAL KI RANI HAI JIWAN USKA PANI HAI - URF DEVNAGRI"::=                             #::   ::
+::o ::idea12             ::"KE WAAD HOLI AYI RE HOLY AYI RE HOLY AYI RE - LOKPRIYA SANGEET"::=toy.set                      #::25 ::
+::x ::space19            ::----"MACHHLI JAL KI RANI HAI JIWAN USKA PANI HAI - URF DEVNAGRI"::=wheel.stick                  #::43 ::
 ::1 ::asset19            ::----"BHAIYER KOPALE DILAM FOTA JOM DUARE PORLO KATA - DHONNOBAD"::=                             #::   ::
 ::2 ::object21           ::-------------------------"PINE KA PANI UPLABDH HAI - SHITAL JAL"::=                             #::   ::
 ::3 ::work21             ::----------------"SAT KANDO RAMAYAN SITA KAR MASI - VIKRAM BETAL"::=                             #::   ::
@@ -26,6 +26,6 @@
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
 ::26::certificate36      ::------------------"EK JE CHHILO RAKHAL CHHELE - SANKHIPTO GALPO"::=                             #::   ::
-::t ::state17            ::------------------------------"IS SE HUM KO YAAD AYA - AVDHARNA"::=                             #::___::
+::t ::state17            ::------------------------------"IS SE HUM KO YAAD AYA - AVDHARNA"::=instrumentation.box          #::___::
 ::u ::uniform32          ::-----------------------------------"GALA DABA DENGE - MAJAK HAI"::=                             #::@@@::
 ::..::paper20            ::"NODIR EPAR KAHE CHHARIA NISSAS OPARETE SWARGO SUKH AMAR BISSAS"::=                             #::   ::
