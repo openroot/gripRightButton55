@@ -18,7 +18,7 @@
 ::16::tank16             ::                                                                ::=documentation.libraries      #::85 ::
 ::17::guide17            ::                                                                ::=assembly.campaign            #::66 ::
 ::18::skip18             ::                                                                ::=conditional.audio            #::64 ::
-::19::thumb19            ::                                                                ::=                             #::   ::
+::19::thumb19            ::                                                                ::=cylindrical.filtration       #::88 ::
 ::20::chess20            ::                                                                ::=                             #::   ::
 ::21::retina21           ::                                                                ::=                             #::   ::
 ::22::loop22             ::                                                                ::=                             #::   ::
