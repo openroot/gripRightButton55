@@ -4,7 +4,7 @@
 ::2 ::day12              ::                                                                ::=arbitrary.variables          #::64 ::
 ::3 ::boat13             ::                                                                ::=pre.increment                #::46 ::
 ::4 ::tick14             ::                                                                ::=dictionary.identities        #::72 ::
-::5 ::new15              ::                                                                ::=                             #::   ::
+::5 ::new15              ::                                                                ::=user.name                    #::33 ::
 ::6 ::main16             ::                                                                ::=                             #::   ::
 ::7 ::door17             ::                                                                ::=                             #::   ::
 ::8 ::spot18             ::                                                                ::=                             #::   ::
