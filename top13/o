@@ -1,4 +1,4 @@
-::o ::repairBand35       ::                                                                ::=automatic.park               #::50 ::
+::o ::repairBand35       ::Hand to hand exchange / Exo-spatial modification zone i.e., Bank::=automatic.park               #::50 ::
 ::x ::                   ::                                                                ::=                             #::   ::
 ::1 ::                   ::                                                                ::=                             #::   ::
 ::2 ::                   ::                                                                ::=                             #::   ::
@@ -28,9 +28,4 @@
 ::26::                   ::                                                                ::=                             #::   ::
 ::t ::                   ::                                                                ::=                             #::___::
 ::u ::                   ::                                                                ::=                             #::@@@::
-::..::trolleyGain49      ::                                                                ::=ship.yard                    #::33 ::
-
-::7 ::top13              ::Pad: Constant movements amongst / Customer & product i.e., Stock::=d.if.fe.rent                 #::34 ::
-::7 ::resource32         ::----------------------------"KACHCHA PAPAD PAKKA PAPAD - PAHELI"::=organic.house                #::48 ::
-::7 ::scruTiny34         ::The balcony platforms, use for wallets, logs, confirmations etc.::=source                       #::25 ::
-
+::..::trolleyGain49      ::Three horse engine diary / Manual pipe deliver agency i.e., Seal::=ship.yard                    #::33 ::
