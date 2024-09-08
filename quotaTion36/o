@@ -25,7 +25,7 @@
 ::23::                   ::                                                                ::=                             #::   ::
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
-::26::verified26         ::                                                                ::=recognize.compensation       #::85 ::
+::26::verified26         ::Session [ Total turnover { applied | grade | tax } = (revenue) ]::=recognize.compensation       #::85 ::
 ::t ::                   ::                                                                ::=                             #::___::
 ::u ::                   ::                                                                ::=                             #::@@@::
 ::..::passport35         ::Statistic [ Process ingredient { x | angle | form } = ( leaf ) ]::=insurance.box                #::44 ::
