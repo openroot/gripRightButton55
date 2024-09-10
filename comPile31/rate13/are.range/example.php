@@ -10,15 +10,15 @@
 	use comPile31\tor12 as tor12;
 ?>
 
+<?php
+	$frame = new tor12\frame();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>gripRightButton55</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">
-		<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>
-	</head>
+	<?php
+		$frame->head();
+	?>
 	<body>
 		<div id="spectrum"></div>
 

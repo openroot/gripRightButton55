@@ -47,6 +47,18 @@
 			return $cascade;
 		}
 
+		public function head(): ?string {
+			$cascade = null;
+			$cascade = '<head>
+							<title>gripRightButton55</title>
+							<meta charset="utf-8">
+							<meta name="viewport" content="width=device-width, initial-scale=1">
+							<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">
+							<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>
+						</head>';
+			return $cascade;
+		}
+
 		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = null): ?string {
 			$cascade = null;
 			if (count($value) > 0) {
@@ -143,6 +155,20 @@
 
 		public function error(): void {
 			throw new \ErrorException("It is an error.");
+		}
+	}
+
+	class frame {
+		private kernel27\display $display;
+		private html $html;
+		
+		function __construct() {
+			$this->display = new kernel27\display();
+			$this->html = new html();
+		}
+
+		public function head(): void {
+			$this->display->show($this->html->head());
 		}
 	}
 ?>
