@@ -115,7 +115,7 @@
 						print "</div>";
 
 						$totalChars -= 6;
-						print "<div class='blue'>[CHECK] Total Characters: " . $totalChars . " | Theta Sum: " . $checkSum1 . " / " . $checkSum2 . "</div>";
+						print "<div class='blue'>[CHECK] Total Characters: " . $totalChars . " | Theta Sum: " . $checkSum1 . " / " . $checkSum2 . " (~" . ($checkSum1 - $checkSum2) . ")</div>";
 					}
 
 
