@@ -18,99 +18,95 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php
-		$example = new tor12\example();
+		try {
+			$example = new tor12\example();
 
-		$panel->head();
-		$panel->body(
-			'<!--<div id="spectrum"></div>
-			<div class="dustParticle">
-				<div>
-					<div class="starSecond"></div>
-					<div class="starThird"></div>
-					<div class="starFourth"></div>
-					<div class="starFifth"></div>
-				</div>
-			</div>-->' .
-			$example->plainText()
-		);
+			$panel->head();
+			$panel->body([
+				'<!--<div id="spectrum"></div>
+				<div class="dustParticle">
+					<div>
+						<div class="starSecond"></div>
+						<div class="starThird"></div>
+						<div class="starFourth"></div>
+						<div class="starFifth"></div>
+					</div>
+				</div>-->',
+				'<div class="frame">',
+				$example->plainText(),
+				$example->htmlSegment(),
+				$example->htmlPre(),
+				$example->htmlTable(),
+				'</div>',
+				'
+					<div id="menu">
+						<div>
+							<table>
+								<caption>
+									<div>
+										gripRightButton55
+									</div>
+									<div>
+										Leverage Any Complications
+									</div>
+								</caption>
+								<tr>
+									<td>A</td>
+									<td>B</td>
+									<td>C</td>
+									<td>D</td>
+									<td>E</td>
+								</tr>
+								<tr>
+									<td>F</td>
+									<td>G</td>
+									<td>H</td>
+									<td>I</td>
+									<td>J</td>
+								</tr>
+								<tr>
+									<td>K</td>
+									<td>L</td>
+									<td>M</td>
+									<td>N</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>P</td>
+									<td>Q</td>
+									<td>R</td>
+									<td>S</td>
+									<td>T</td>
+								</tr>
+								<tr>
+									<td>U</td>
+									<td>V</td>
+									<td>W</td>
+									<td>X</td>
+									<td>Y</td>
+								</tr>
+								<tr>
+									<td>Z</td>
+									<td>_</td>
+									<td>@</td>
+									<td>&lt;</td>
+									<td>&gt;</td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							&copy; D Tapader 
+							<a href="https://github.com/openroot" target="_blank">g</a> 
+							<a href="https://www.facebook.com/larrypage34" target="_blank">f</a>
+						</div>
+					</div>
+				'
+			]);
+
+			$example->error();
+		}
+		catch (Exception $e) {
+			$fault->show([$e]);
+		}
 	?>
-	<body>
-		
-		<div class="frame">
-		<?php
-			try {
-				
-				$example->htmlSegment();
-				$example->htmlPre();
-				$example->htmlTable();
-				$example->error();
-			}
-			catch (Exception $e) {
-				$fault->show([$e]);
-			}
-		?>
-		</div>
-
-		<div id="menu">
-			<div>
-				<table>
-					<caption>
-						<div>
-							gripRightButton55
-						</div>
-						<div>
-							Leverage Any Complications
-						</div>
-					</caption>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-						<td>C</td>
-						<td>D</td>
-						<td>E</td>
-					</tr>
-					<tr>
-						<td>F</td>
-						<td>G</td>
-						<td>H</td>
-						<td>I</td>
-						<td>J</td>
-					</tr>
-					<tr>
-						<td>K</td>
-						<td>L</td>
-						<td>M</td>
-						<td>N</td>
-						<td>O</td>
-					</tr>
-					<tr>
-						<td>P</td>
-						<td>Q</td>
-						<td>R</td>
-						<td>S</td>
-						<td>T</td>
-					</tr>
-					<tr>
-						<td>U</td>
-						<td>V</td>
-						<td>W</td>
-						<td>X</td>
-						<td>Y</td>
-					</tr>
-					<tr>
-						<td>Z</td>
-						<td>_</td>
-						<td>@</td>
-						<td>&lt;</td>
-						<td>&gt;</td>
-					</tr>
-				</table>
-			</div>
-			<div>
-				&copy; D Tapader 
-				<a href="https://github.com/openroot" target="_blank">g</a> 
-				<a href="https://www.facebook.com/larrypage34" target="_blank">f</a>
-			</div>
-		</div>
-	</body>
 </html>

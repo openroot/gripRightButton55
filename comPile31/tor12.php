@@ -197,8 +197,8 @@
 			));
 		}
 
-		public function body(string $value): void {
-			$this->display->show($this->html->body());
+		public function body(array $values): void {
+			$this->display->show($this->html->body($values));
 		}
 	}
 ?>
