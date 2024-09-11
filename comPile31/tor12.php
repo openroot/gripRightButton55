@@ -7,7 +7,7 @@
 ?>
 
 <?php
-	class html {
+	class material {
 		public function attribute(string $class = "", string $id = "", string $name = "", string $title = "", string $style = "", array $custom = []): ?string {
 			$cascade = null;
 			if (!empty($class)) {
@@ -39,17 +39,24 @@
 			return $cascade;
 		}
 
-		public function segment(string $value, string $element = "span", ?string $htmlAttribute = null): ?string {
+		public function top(string $language, ?string $value = null, ?string $attribute = null): ?string {
 			$cascade = null;
-			if (!empty($element)) {
-				$cascade = "<" . $element . $htmlAttribute . ">" . $value . "</" . $element . ">";
-			}
+			$cascade = "<!DOCTYPE html>";
+			$cascade .= '<html' . $attribute . ' lang="' . $language . '">';
+			$cascade .= $value;
 			return $cascade;
 		}
 
-		public function head(string $title, array $metas = [], array $links = [], array $scripts = [], ?string $htmlAttribute = null): ?string {
+		public function bottom(?string $value = null): ?string {
 			$cascade = null;
-			$cascade = "<head" . $htmlAttribute . ">";
+			$cascade = $value;
+			$cascade .= "</html>";
+			return $cascade;
+		}
+
+		public function head(string $title, array $metas = [], array $links = [], array $scripts = [], ?string $attribute = null): ?string {
+			$cascade = null;
+			$cascade = "<head" . $attribute . ">";
 			$cascade .= "<title>" . $title . "</title>";
 			if (count($metas) > 0) {
 				foreach ($metas as $meta) {
@@ -70,9 +77,9 @@
 			return $cascade;
 		}
 
-		public function body(array $values): ?string {
+		public function body(array $values, ?string $attribute = null): ?string {
 			$cascade = null;
-			$cascade = "<body>";
+			$cascade = "<body" .$attribute . ">";
 			if (count($values) > 0) {
 				foreach($values as $key => $value) {
 					if ($key === "spectrum" && $value === true) {
@@ -166,15 +173,23 @@
 			return $cascade;
 		}
 
-		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = null): ?string {
+		public function segment(string $value, string $element = "span", ?string $attribute = null): ?string {
 			$cascade = null;
-			if (count($value) > 0) {
-				$cascade .= "<pre" . $htmlAttribute . ">" . $prefix . print_r($value, true) . $suffix . "</pre>";
+			if (!empty($element)) {
+				$cascade = "<" . $element . $attribute . ">" . $value . "</" . $element . ">";
 			}
 			return $cascade;
 		}
 
-		public function table(array $value, array $headers = [], string $caption = "", ?string $htmlAttribute = null): ?string {
+		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $attribute = null): ?string {
+			$cascade = null;
+			if (count($value) > 0) {
+				$cascade .= "<pre" . $attribute . ">" . $prefix . print_r($value, true) . $suffix . "</pre>";
+			}
+			return $cascade;
+		}
+
+		public function table(array $value, array $headers = [], string $caption = "", ?string $attribute = null): ?string {
 			$cascade = null;
 			if (!empty($caption)) {
 				$cascade .= "<caption>" . $caption . "</caption>";
@@ -202,7 +217,7 @@
 				$cascade .= "<tbody>" . $tbody . "</tbody>";
 			}
 			if (!empty($cascade)) {
-				$cascade = "<table" . $htmlAttribute . ">" . $cascade . "</table>";
+				$cascade = "<table" . $attribute . ">" . $cascade . "</table>";
 			}
 			return $cascade;
 		}
@@ -210,49 +225,49 @@
 
 	class fault {
 		private kernel27\display $display;
-		private html $html;
+		private material $material;
 
 		function __construct() {
 			$this->display = new kernel27\display();
-			$this->html = new html();
+			$this->material = new material();
 		}
 
 		public function show(array $value): void {
 			date_default_timezone_set("Asia/Kolkata");
 			$date = date("Y/m/d h:i:s a", time());
-			$this->display->show($this->html->pre($value, "Error Information ", $date));
+			$this->display->show($this->material->pre($value, "Error Information ", $date));
 		}
 	}
 
 	class example {
-		private html $html;
+		private material $material;
 
 		function __construct() {
-			$this->html = new html();
+			$this->material = new material();
 		}
 
 		public function plainText(): string {
 			return "gripRightButton55";
 		}
 
-		public function htmlSegment(): string {
-			return $this->html->segment(
-				"Website's goal is to provide " . $this->html->segment("Synchronized Active Platform", "q") . ".",
+		public function materialSegment(): string {
+			return $this->material->segment(
+				"Website's goal is to provide " . $this->material->segment("Synchronized Active Platform", "q") . ".",
 				"p"
 			);
 		}
 
-		public function htmlPre(): string {
-			return $this->html->pre(["A quick note.", "Question" => "Answer"], "Cap ", "Box");
+		public function materialPre(): string {
+			return $this->material->pre(["A quick note.", "Question" => "Answer"], "Cap ", "Box");
 		}
 
-		public function htmlTable(): string {
-			return $this->html->table([
+		public function materialTable(): string {
+			return $this->material->table([
 					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
 				],
 				["o", "First Name", "Last Name", "Email Address", "Location", "Profession"],
 				"Profiles",
-				$this->html->attribute("animated", "anExampleTable", "exampleTable", "A list of profiles.", "border: 3px dotted #FFFFFF;",
+				$this->material->attribute("animated", "anExampleTable", "exampleTable", "A list of profiles.", "border: 3px dotted #FFFFFF;",
 					["data-randomNumber" => "876234", "dir" => "rtl", "accesskey" => "t"]
 				)
 			);
@@ -265,15 +280,23 @@
 
 	class panel {
 		private kernel27\display $display;
-		private html $html;
-		
+		private material $material;
+
 		function __construct() {
 			$this->display = new kernel27\display();
-			$this->html = new html();
+			$this->material = new material();
+		}
+
+		public function top(string $language = "en", ?string $value = null): void {
+			$this->display->show($this->material->top($language, $value));
+		}
+
+		public function bottom(?string $value): void {
+			$this->display->show($this->material->bottom($value));
 		}
 
 		public function head(): void {
-			$this->display->show($this->html->head(
+			$this->display->show($this->material->head(
 				"gripRightButton55",
 				['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'],
 				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
@@ -282,7 +305,7 @@
 		}
 
 		public function body(array $values): void {
-			$this->display->show($this->html->body($values));
+			$this->display->show($this->material->body($values));
 		}
 	}
 ?>

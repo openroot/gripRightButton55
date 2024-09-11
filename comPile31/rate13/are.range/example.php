@@ -15,28 +15,26 @@
 	$panel = new tor12\panel();
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-	<?php
-		try {
-			$example = new tor12\example();
+<?php
+	try {
+		$example = new tor12\example();
 
-			$panel->head();
-			$panel->body([
-				'spectrum' => false,
-				'frame' => [
-					$example->plainText(),
-					$example->htmlSegment(),
-					$example->htmlPre(),
-					$example->htmlTable()
-				],
-				'menu' => true
-			]);
-
-			$example->error();
-		}
-		catch (Exception $e) {
-			$fault->show([$e]);
-		}
-	?>
-</html>
+		$panel->top();
+		$panel->head();
+		$panel->body([
+			'spectrum' => false,
+			'frame' => [
+				$example->plainText(),
+				$example->materialSegment(),
+				$example->materialPre(),
+				$example->materialTable()
+			],
+			'menu' => true
+		]);
+		$example->error();
+		$panel->bottom();
+	}
+	catch (Exception $e) {
+		$fault->show([$e]);
+	}
+?>
