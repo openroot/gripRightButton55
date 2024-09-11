@@ -11,6 +11,7 @@
 ?>
 
 <?php
+	$fault = new tor12\fault();
 	$panel = new tor12\panel();
 ?>
 
@@ -18,10 +19,10 @@
 <html lang="en">
 	<?php
 		$panel->head();
+		$panel->body();
 	?>
 	<body>
-		<div id="spectrum"></div>
-		<!--
+		<!--<div id="spectrum"></div>
 		<div class="dustParticle">
 			<div>
 				<div class="starSecond"></div>
@@ -29,11 +30,9 @@
 				<div class="starFourth"></div>
 				<div class="starFifth"></div>
 			</div>
-		</div>
-		-->
+		</div>-->
 		<div class="frame">
 		<?php
-			$fault = new tor12\fault();
 			try {
 				$example = new tor12\example();
 				$example->plainText();

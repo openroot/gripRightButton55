@@ -137,8 +137,8 @@
 			$this->html = new html();
 		}
 
-		public function plainText(): void {
-			$this->display->show("gripRightButton55");
+		public function plainText(): string {
+			return "gripRightButton55";
 		}
 
 		public function htmlSegment(): void {
@@ -185,6 +185,10 @@
 				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
 				['src="../../../interNet29/plugIn128/n.umber/script.js"']
 			));
+		}
+
+		public function body(string $value): void {
+			$this->display->show("<body>" . $value . "</body>");
 		}
 	}
 ?>
