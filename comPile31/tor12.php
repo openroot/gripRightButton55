@@ -187,12 +187,12 @@
 			return $cascade;
 		}
 
-		public function table(array $value, array $header = [], string $caption = "", ?string $attribute = null): ?string {
+		public function table(array $data, ?array $header = null, ?string $caption = null, ?string $attribute = null): ?string {
 			$cascade = null;
 			if (!empty($caption)) {
 				$cascade .= "<caption>" . $caption . "</caption>";
 			}
-			if (count($header) > 0) {
+			if (!empty($header)) {
 				$thead = "";
 				foreach ($header as $heading) {
 					$thead .= "<th>" . $heading . "</th>";
@@ -202,13 +202,13 @@
 				}
 			}
 			$tbody = "";
-			foreach ($value as $row) {
-				$t1 = "";
+			foreach ($data as $row) {
+				$td = "";
 				foreach ($row as $column) {
-					$t1 .= "<td>" . $column . "</td>";
+					$td .= "<td>" . $column . "</td>";
 				}
-				if (!empty($t1)) {
-					$tbody .= "<tr>" . $t1 . "</tr>";
+				if (!empty($td)) {
+					$tbody .= "<tr>" . $td . "</tr>";
 				}
 			}
 			if (!empty($tbody)) {
