@@ -16,14 +16,14 @@
 		$panel->top();
 		$panel->head();
 		$panel->body([
-			'spectrum' => false,
-			'frame' => [
+			"spectrum" => false,
+			"frame" => [
 				$example->plainText(),
 				$example->materialSegment(),
 				$example->materialPre(),
 				$example->materialTable()
 			],
-			'menu' => true
+			"menu" => true
 		]);
 		$panel->bottom();
 
