@@ -47,13 +47,25 @@
 			return $cascade;
 		}
 
-		public function head(string $title, ?string $htmlAttribute = null): ?string {
+		public function head(string $title, array $metas = [], array $links = [], array $scripts = [], ?string $htmlAttribute = null): ?string {
 			$cascade = null;
 			$cascade = "<head" . $htmlAttribute . ">";
 			$cascade .= "<title>" . $title . "</title>";
-			$cascade .= '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">';
-			$cascade .= '<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">';
-			$cascade .= '<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>';
+			if (count($metas) > 0) {
+				foreach ($metas as $meta) {
+					$cascade .= "<meta " . $meta . ">";
+				}
+			}
+			if (count($links) > 0) {
+				foreach ($links as $link) {
+					$cascade .= "<link " . $link . ">";
+				}
+			}
+			if (count($scripts) > 0) {
+				foreach ($scripts as $script) {
+					$cascade .= "<script " . $script . "></script>";
+				}
+			}
 			$cascade .= "</head>";
 			return $cascade;
 		}
@@ -167,7 +179,12 @@
 		}
 
 		public function head(): void {
-			$this->display->show($this->html->head("gripRightButton55"));
+			$this->display->show($this->html->head(
+				"gripRightButton55",
+				['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'],
+				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
+				['src="../../../interNet29/plugIn128/n.umber/script.js"']
+			));
 		}
 	}
 ?>
