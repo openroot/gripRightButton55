@@ -54,21 +54,21 @@
 			return $cascade;
 		}
 
-		public function head(string $title, array $meta = [], array $link = [], array $script = [], ?string $attribute = null): ?string {
+		public function head(string $title, ?array $meta = null, ?array $link = null, ?array $script = null, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<head" . $attribute . ">";
 			$cascade .= "<title>" . $title . "</title>";
-			if (count($meta) > 0) {
+			if (!empty($meta)) {
 				foreach ($meta as $line) {
 					$cascade .= "<meta " . $line . ">";
 				}
 			}
-			if (count($link) > 0) {
+			if (!empty($link)) {
 				foreach ($link as $style) {
 					$cascade .= "<link " . $style . ">";
 				}
 			}
-			if (count($script) > 0) {
+			if (!empty($script)) {
 				foreach ($script as $embed) {
 					$cascade .= "<script " . $embed . "></script>";
 				}
@@ -80,7 +80,7 @@
 		public function body(array $strip, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<body" .$attribute . ">";
-			if (count($strip) > 0) {
+			if (!empty($strip)) {
 				foreach($strip as $key => $section) {
 					if ($key === "spectrum" && $section === true) {
 						$cascade .= '
@@ -95,7 +95,7 @@
 							</div>
 						';
 					}
-					if ($key === "frame" && count($section) > 0) {
+					if ($key === "frame" && !empty($section)) {
 						$cascade .= '<div class="frame">';
 						foreach ($section as $segment) {
 							$cascade .= $segment;
@@ -179,10 +179,10 @@
 			return $cascade;
 		}
 
-		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $attribute = null): ?string {
+		public function pre(array $text, ?string $prefix = null, ?string $suffix = null, ?string $attribute = null): ?string {
 			$cascade = null;
-			if (count($value) > 0) {
-				$cascade .= "<pre" . $attribute . ">" . $prefix . print_r($value, true) . $suffix . "</pre>";
+			if (!empty($text)) {
+				$cascade .= "<pre" . $attribute . ">" . $prefix . print_r($text, true) . $suffix . "</pre>";
 			}
 			return $cascade;
 		}
