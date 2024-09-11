@@ -39,17 +39,17 @@
 			return $cascade;
 		}
 
-		public function top(string $language, ?string $value = null, ?string $attribute = null): ?string {
+		public function top(string $language, ?string $suffix = null, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<!DOCTYPE html>";
 			$cascade .= '<html' . $attribute . ' lang="' . $language . '">';
-			$cascade .= $value;
+			$cascade .= $suffix;
 			return $cascade;
 		}
 
-		public function bottom(?string $value = null): ?string {
+		public function bottom(?string $prefix = null): ?string {
 			$cascade = null;
-			$cascade = $value;
+			$cascade = $prefix;
 			$cascade .= "</html>";
 			return $cascade;
 		}
@@ -77,11 +77,11 @@
 			return $cascade;
 		}
 
-		public function body(array $value, ?string $attribute = null): ?string {
+		public function body(array $strip, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<body" .$attribute . ">";
-			if (count($value) > 0) {
-				foreach($value as $key => $section) {
+			if (count($strip) > 0) {
+				foreach($strip as $key => $section) {
 					if ($key === "spectrum" && $section === true) {
 						$cascade .= '
 							<div id="spectrum"></div>
@@ -173,11 +173,9 @@
 			return $cascade;
 		}
 
-		public function segment(string $value, string $element = "span", ?string $attribute = null): ?string {
+		public function segment(string $content, string $tag = "span", ?string $attribute = null): ?string {
 			$cascade = null;
-			if (!empty($element)) {
-				$cascade = "<" . $element . $attribute . ">" . $value . "</" . $element . ">";
-			}
+			$cascade = "<" . $tag . $attribute . ">" . $content . "</" . $tag . ">";
 			return $cascade;
 		}
 
