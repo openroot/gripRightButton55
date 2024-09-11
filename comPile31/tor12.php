@@ -8,7 +8,7 @@
 
 <?php
 	class material {
-		public function attribute(string $class = "", string $id = "", string $name = "", string $title = "", string $style = "", array $custom = []): ?string {
+		public function attribute(?string $class = null, ?string $id = null, ?string $name = null, ?string $title = null, ?string $style = null, ?array $custom = null): ?string {
 			$cascade = null;
 			if (!empty($class)) {
 				$cascade .= ' class="' . $class . '"';
@@ -25,15 +25,15 @@
 			if (!empty($style)) {
 				$cascade .= ' style="' . $style . '"';
 			}
-			if (count($custom) > 0) {
-				$t1 = "";
+			if (!empty($custom)) {
+				$value = "";
 				foreach ($custom as $key => $customization) {
 					if (!empty($index) && !empty($customization)) {
-						$t1 .= ' ' . $key . '="' . $customization . '"';
+						$value .= ' ' . $key . '="' . $customization . '"';
 					}
 				}
-				if (!empty($t1)) {
-					$cascade .= $t1;
+				if (!empty($value)) {
+					$cascade .= $value;
 				}
 			}
 			return $cascade;
