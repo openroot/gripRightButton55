@@ -21,7 +21,7 @@
 	?>
 	<body>
 		<div id="spectrum"></div>
-
+		<!--
 		<div class="dustParticle">
 			<div>
 				<div class="starSecond"></div>
@@ -30,7 +30,7 @@
 				<div class="starFifth"></div>
 			</div>
 		</div>
-
+		-->
 		<div class="frame">
 		<?php
 			$fault = new tor12\fault();
