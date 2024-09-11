@@ -262,10 +262,10 @@
 			$this->material = new material();
 		}
 
-		public function show(array $value): void {
+		public function show(array $log): void {
 			date_default_timezone_set("Asia/Kolkata");
 			$date = date("Y/m/d h:i:s a", time());
-			$this->display->show($this->material->pre($value, "Error Information ", $date));
+			$this->display->show($this->material->pre($log, "Error Information ", $date));
 		}
 	}
 
