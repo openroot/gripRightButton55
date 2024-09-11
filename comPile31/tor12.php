@@ -88,6 +88,13 @@
 							</div>
 						';
 					}
+					if ($key === "frame" && count($value) > 0) {
+						$cascade .= '<div class="frame">';
+						foreach ($value as $val) {
+							$cascade .= $val;
+						}
+						$cascade .= "</div>";
+					}
 					if ($key === "menu" && $value === true) {
 						$cascade .= '
 							<div id="menu">
@@ -152,9 +159,6 @@
 								</div>
 							</div>
 						';
-					}
-					else {
-						$cascade .= $value;
 					}
 				}
 			}

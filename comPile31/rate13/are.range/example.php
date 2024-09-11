@@ -24,12 +24,12 @@
 			$panel->head();
 			$panel->body([
 				'spectrum' => false,
-				'<div class="frame">',
-				$example->plainText(),
-				$example->htmlSegment(),
-				$example->htmlPre(),
-				$example->htmlTable(),
-				'</div>',
+				'frame' => [
+					$example->plainText(),
+					$example->htmlSegment(),
+					$example->htmlPre(),
+					$example->htmlTable()
+				],
 				'menu' => true
 			]);
 
