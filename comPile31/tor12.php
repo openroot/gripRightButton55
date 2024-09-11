@@ -51,11 +51,10 @@
 			$cascade = null;
 			$cascade = "<head" . $htmlAttribute . ">";
 			$cascade .= "<title>" . $title . "</title>";
-			$cascade .= '<meta charset="utf-8">
-							<meta name="viewport" content="width=device-width, initial-scale=1">
-							<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">
-							<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>
-						</head>';
+			$cascade .= '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">';
+			$cascade .= '<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">';
+			$cascade .= '<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>';
+			$cascade .= "</head>";
 			return $cascade;
 		}
 
