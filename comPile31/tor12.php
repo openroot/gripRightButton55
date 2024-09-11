@@ -47,11 +47,11 @@
 			return $cascade;
 		}
 
-		public function head(): ?string {
+		public function head(string $title, ?string $htmlAttribute = null): ?string {
 			$cascade = null;
-			$cascade = '<head>
-							<title>gripRightButton55</title>
-							<meta charset="utf-8">
+			$cascade = "<head" . $htmlAttribute . ">";
+			$cascade .= "<title>" . $title . "</title>";
+			$cascade .= '<meta charset="utf-8">
 							<meta name="viewport" content="width=device-width, initial-scale=1">
 							<link rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css">
 							<script src="../../../interNet29/plugIn128/n.umber/script.js"></script>
@@ -168,7 +168,7 @@
 		}
 
 		public function head(): void {
-			$this->display->show($this->html->head());
+			$this->display->show($this->html->head("gripRightButton55"));
 		}
 	}
 ?>
