@@ -169,7 +169,7 @@
 		}
 	}
 
-	class frame {
+	class panel {
 		private kernel27\display $display;
 		private html $html;
 		

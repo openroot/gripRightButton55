@@ -11,13 +11,13 @@
 ?>
 
 <?php
-	$frame = new tor12\frame();
+	$panel = new tor12\panel();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<?php
-		$frame->head();
+		$panel->head();
 	?>
 	<body>
 		<div id="spectrum"></div>
