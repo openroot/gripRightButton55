@@ -173,7 +173,7 @@
 			return $cascade;
 		}
 
-		public function segment(string $content, string $tag = "span", ?string $attribute = null): ?string {
+		public function segment(string $content, string $tag, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<" . $tag . $attribute . ">" . $content . "</" . $tag . ">";
 			return $cascade;
