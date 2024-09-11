@@ -26,6 +26,7 @@
 			'menu' => true
 		]);
 		$panel->bottom();
+
 		$example->error();
 	}
 	catch (Exception $e) {
