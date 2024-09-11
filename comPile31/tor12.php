@@ -230,25 +230,26 @@
 			$this->material = new material();
 		}
 
-		public function top(string $language = "en", ?string $value = null): void {
-			$this->display->show($this->material->top($language, $value));
+		public function top(?string $language = null, ?string $suffix = null, ?string $attribute = null): void {
+			$language = !empty($language) ? $language : "en";
+			$this->display->show($this->material->top($language, $suffix, $attribute));
 		}
 
-		public function bottom(?string $value = null): void {
-			$this->display->show($this->material->bottom($value));
+		public function bottom(?string $prefix = null): void {
+			$this->display->show($this->material->bottom($prefix));
 		}
 
-		public function head(): void {
-			$this->display->show($this->material->head(
-				"gripRightButton55",
-				['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'],
-				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
-				['src="../../../interNet29/plugIn128/n.umber/script.js"']
-			));
+		public function head(?string $title = null, ?array $meta = null, ?array $link = null, ?array $script = null, ?string $attribute = null): void {
+			$title = !empty($title) ? $title : "gripRightButton55";
+			$meta = !empty($meta) ? $meta : ['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'];
+			$link = !empty($link) ? $link : ['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'];
+			$script = !empty($script) ? $script : ['src="../../../interNet29/plugIn128/n.umber/script.js"'];
+			$this->display->show($this->material->head($title, $meta, $link, $script));
 		}
 
-		public function body(array $values): void {
-			$this->display->show($this->material->body($values));
+		public function body(?array $strip = null): void {
+			$strip = !empty($strip) ? $strip : [];
+			$this->display->show($this->material->body($strip));
 		}
 	}
 
