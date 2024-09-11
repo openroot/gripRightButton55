@@ -25,8 +25,8 @@
 			],
 			'menu' => true
 		]);
-		$example->error();
 		$panel->bottom();
+		$example->error();
 	}
 	catch (Exception $e) {
 		$fault->show([$e]);

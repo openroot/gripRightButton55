@@ -291,7 +291,7 @@
 			$this->display->show($this->material->top($language, $value));
 		}
 
-		public function bottom(?string $value): void {
+		public function bottom(?string $value = null): void {
 			$this->display->show($this->material->bottom($value));
 		}
 
