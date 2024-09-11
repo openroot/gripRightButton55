@@ -221,6 +221,37 @@
 		}
 	}
 
+	class panel {
+		private kernel27\display $display;
+		private material $material;
+
+		function __construct() {
+			$this->display = new kernel27\display();
+			$this->material = new material();
+		}
+
+		public function top(string $language = "en", ?string $value = null): void {
+			$this->display->show($this->material->top($language, $value));
+		}
+
+		public function bottom(?string $value = null): void {
+			$this->display->show($this->material->bottom($value));
+		}
+
+		public function head(): void {
+			$this->display->show($this->material->head(
+				"gripRightButton55",
+				['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'],
+				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
+				['src="../../../interNet29/plugIn128/n.umber/script.js"']
+			));
+		}
+
+		public function body(array $values): void {
+			$this->display->show($this->material->body($values));
+		}
+	}
+
 	class fault {
 		private kernel27\display $display;
 		private material $material;
@@ -273,37 +304,6 @@
 
 		public function error(): void {
 			throw new \ErrorException("It is an error.");
-		}
-	}
-
-	class panel {
-		private kernel27\display $display;
-		private material $material;
-
-		function __construct() {
-			$this->display = new kernel27\display();
-			$this->material = new material();
-		}
-
-		public function top(string $language = "en", ?string $value = null): void {
-			$this->display->show($this->material->top($language, $value));
-		}
-
-		public function bottom(?string $value = null): void {
-			$this->display->show($this->material->bottom($value));
-		}
-
-		public function head(): void {
-			$this->display->show($this->material->head(
-				"gripRightButton55",
-				['charset="utf-8"', 'name="viewport" content="width=device-width, initial-scale=1"'],
-				['rel="stylesheet" href="../../../interNet29/plugIn128/n.umber/style.css"'],
-				['src="../../../interNet29/plugIn128/n.umber/script.js"']
-			));
-		}
-
-		public function body(array $values): void {
-			$this->display->show($this->material->body($values));
 		}
 	}
 ?>
