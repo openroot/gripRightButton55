@@ -18,24 +18,28 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php
+		$example = new tor12\example();
+
 		$panel->head();
-		$panel->body();
+		$panel->body(
+			'<!--<div id="spectrum"></div>
+			<div class="dustParticle">
+				<div>
+					<div class="starSecond"></div>
+					<div class="starThird"></div>
+					<div class="starFourth"></div>
+					<div class="starFifth"></div>
+				</div>
+			</div>-->' .
+			$example->plainText()
+		);
 	?>
 	<body>
-		<!--<div id="spectrum"></div>
-		<div class="dustParticle">
-			<div>
-				<div class="starSecond"></div>
-				<div class="starThird"></div>
-				<div class="starFourth"></div>
-				<div class="starFifth"></div>
-			</div>
-		</div>-->
+		
 		<div class="frame">
 		<?php
 			try {
-				$example = new tor12\example();
-				$example->plainText();
+				
 				$example->htmlSegment();
 				$example->htmlPre();
 				$example->htmlTable();

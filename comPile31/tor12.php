@@ -70,6 +70,18 @@
 			return $cascade;
 		}
 
+		public function body(array $values): ?string {
+			$cascade = null;
+			$cascade = "<body>";
+			if (count($values) > 0) {
+				foreach($values as $value) {
+					$cascade .= $value;
+				}
+			}
+			$cascade .= "</body>";
+			return $cascade;
+		}
+
 		public function pre(array $value, string $prefix = "", string $suffix = "", ?string $htmlAttribute = null): ?string {
 			$cascade = null;
 			if (count($value) > 0) {
@@ -129,11 +141,9 @@
 	}
 
 	class example {
-		private kernel27\display $display;
 		private html $html;
 
 		function __construct() {
-			$this->display = new kernel27\display();
 			$this->html = new html();
 		}
 
@@ -141,19 +151,19 @@
 			return "gripRightButton55";
 		}
 
-		public function htmlSegment(): void {
-			$this->display->show($this->html->segment(
+		public function htmlSegment(): string {
+			return $this->html->segment(
 				"Website's goal is to provide " . $this->html->segment("Synchronized Active Platform", "q") . ".",
 				"p"
-			));
+			);
 		}
 
-		public function htmlPre(): void {
-			$this->display->show($this->html->pre(["A quick note.", "Question" => "Answer"], "Cap ", "Box"));
+		public function htmlPre(): string {
+			return $this->html->pre(["A quick note.", "Question" => "Answer"], "Cap ", "Box");
 		}
 
-		public function htmlTable(): void {
-			$this->display->show($this->html->table([
+		public function htmlTable(): string {
+			return $this->html->table([
 					[1, "D", "Tapader", "dev.openroot@gmail.com", "India", "Computer Researcher"]
 				],
 				["o", "First Name", "Last Name", "Email Address", "Location", "Profession"],
@@ -161,7 +171,7 @@
 				$this->html->attribute("animated", "anExampleTable", "exampleTable", "A list of profiles.", "border: 3px dotted #FFFFFF;",
 					["data-randomNumber" => "876234", "dir" => "rtl", "accesskey" => "t"]
 				)
-			));
+			);
 		}
 
 		public function error(): void {
@@ -188,7 +198,7 @@
 		}
 
 		public function body(string $value): void {
-			$this->display->show("<body>" . $value . "</body>");
+			$this->display->show($this->html->body());
 		}
 	}
 ?>
