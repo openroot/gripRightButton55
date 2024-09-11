@@ -5,8 +5,8 @@
 ?>
 
 <?php
-	$fault = new tor12\fault();
 	$panel = new tor12\panel();
+	$fault = new tor12\fault();
 ?>
 
 <?php

@@ -27,9 +27,9 @@
 			}
 			if (count($custom) > 0) {
 				$t1 = "";
-				foreach ($custom as $index => $value) {
-					if (!empty($index) && !empty($value)) {
-						$t1 .= ' ' . $index . '="' . $value . '"';
+				foreach ($custom as $key => $customization) {
+					if (!empty($index) && !empty($customization)) {
+						$t1 .= ' ' . $key . '="' . $customization . '"';
 					}
 				}
 				if (!empty($t1)) {
@@ -54,35 +54,35 @@
 			return $cascade;
 		}
 
-		public function head(string $title, array $metas = [], array $links = [], array $scripts = [], ?string $attribute = null): ?string {
+		public function head(string $title, array $meta = [], array $link = [], array $script = [], ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<head" . $attribute . ">";
 			$cascade .= "<title>" . $title . "</title>";
-			if (count($metas) > 0) {
-				foreach ($metas as $meta) {
-					$cascade .= "<meta " . $meta . ">";
+			if (count($meta) > 0) {
+				foreach ($meta as $line) {
+					$cascade .= "<meta " . $line . ">";
 				}
 			}
-			if (count($links) > 0) {
-				foreach ($links as $link) {
-					$cascade .= "<link " . $link . ">";
+			if (count($link) > 0) {
+				foreach ($link as $style) {
+					$cascade .= "<link " . $style . ">";
 				}
 			}
-			if (count($scripts) > 0) {
-				foreach ($scripts as $script) {
-					$cascade .= "<script " . $script . "></script>";
+			if (count($script) > 0) {
+				foreach ($script as $embed) {
+					$cascade .= "<script " . $embed . "></script>";
 				}
 			}
 			$cascade .= "</head>";
 			return $cascade;
 		}
 
-		public function body(array $values, ?string $attribute = null): ?string {
+		public function body(array $value, ?string $attribute = null): ?string {
 			$cascade = null;
 			$cascade = "<body" .$attribute . ">";
-			if (count($values) > 0) {
-				foreach($values as $key => $value) {
-					if ($key === "spectrum" && $value === true) {
+			if (count($value) > 0) {
+				foreach($value as $key => $section) {
+					if ($key === "spectrum" && $section === true) {
 						$cascade .= '
 							<div id="spectrum"></div>
 							<div class="dustParticle">
@@ -95,14 +95,14 @@
 							</div>
 						';
 					}
-					if ($key === "frame" && count($value) > 0) {
+					if ($key === "frame" && count($section) > 0) {
 						$cascade .= '<div class="frame">';
-						foreach ($value as $val) {
-							$cascade .= $val;
+						foreach ($section as $segment) {
+							$cascade .= $segment;
 						}
 						$cascade .= "</div>";
 					}
-					if ($key === "menu" && $value === true) {
+					if ($key === "menu" && $section === true) {
 						$cascade .= '
 							<div id="menu">
 								<div>
@@ -189,15 +189,15 @@
 			return $cascade;
 		}
 
-		public function table(array $value, array $headers = [], string $caption = "", ?string $attribute = null): ?string {
+		public function table(array $value, array $header = [], string $caption = "", ?string $attribute = null): ?string {
 			$cascade = null;
 			if (!empty($caption)) {
 				$cascade .= "<caption>" . $caption . "</caption>";
 			}
-			if (count($headers) > 0) {
+			if (count($header) > 0) {
 				$thead = "";
-				foreach ($headers as $header) {
-					$thead .= "<th>" . $header . "</th>";
+				foreach ($header as $heading) {
+					$thead .= "<th>" . $heading . "</th>";
 				}
 				if (!empty($thead)) {
 					$cascade .= "<thead>" . $thead . "</thead>";
