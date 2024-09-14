@@ -4,9 +4,9 @@
 ::2 ::leopard30          ::                                                                ::=regular.relay                #::52 ::
 ::3 ::eagle19            ::                                                                ::=heavy.condition              #::53 ::
 ::4 ::seahorse32         ::                                                                ::=main.exit                    #::26 ::
-::5 ::penguin29          ::                                                                ::=                             #::   ::
-::6 ::chimpanzee40       ::                                                                ::=                             #::   ::
-::7 ::cat9               ::                                                                ::=                             #::   ::
+::5 ::penguin29          ::                                                                ::=protect.platform             #::63 ::
+::6 ::chimpanzee40       ::                                                                ::=surface.series               #::51 ::
+::7 ::cat9               ::                                                                ::=potent.socket                #::48 ::
 ::8 ::ostrich27          ::                                                                ::=                             #::   ::
 ::9 ::centipede31        ::                                                                ::=                             #::   ::
 ::10::owl19              ::                                                                ::=                             #::   ::
@@ -21,9 +21,9 @@
 ::19::mouse23            ::                                                                ::=                             #::   ::
 ::20::feather25          ::                                                                ::=                             #::   ::
 ::21::cricket24          ::                                                                ::=                             #::   ::
-::22::oscar20            ::                                                                ::=                             #::   ::
-::23::cobra17            ::                                                                ::=                             #::   ::
-::24::parrot24           ::                                                                ::=                             #::   ::
+::22::oscar20            ::                                                                ::=scope.arm                    #::33 ::
+::23::cobra17            ::                                                                ::=dissect.position             #::59 ::
+::24::parrot24           ::                                                                ::=via.wire                     #::25 ::
 ::25::spider23           ::                                                                ::=many.through                 #::47 ::
 ::26::lion20             ::                                                                ::=base.register                #::41 ::
 ::t ::mimosa26           ::                                                                ::=another.exercise             #::___::
