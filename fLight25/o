@@ -1,9 +1,9 @@
 ::o ::titanium30         ::                                                                ::=double.electric              #::54 ::
 ::x ::insectivorous51    ::                                                                ::=true.memory                  #::43 ::
 ::1 ::shark21            ::                                                                ::=diverse.switch               #::48 ::
-::2 ::leopard30          ::                                                                ::=                             #::   ::
-::3 ::eagle19            ::                                                                ::=                             #::   ::
-::4 ::seahorse32         ::                                                                ::=                             #::   ::
+::2 ::leopard30          ::                                                                ::=regular.relay                #::52 ::
+::3 ::eagle19            ::                                                                ::=heavy.condition              #::53 ::
+::4 ::seahorse32         ::                                                                ::=main.exit                    #::26 ::
 ::5 ::penguin29          ::                                                                ::=                             #::   ::
 ::6 ::chimpanzee40       ::                                                                ::=                             #::   ::
 ::7 ::cat9               ::                                                                ::=                             #::   ::
@@ -24,7 +24,7 @@
 ::22::oscar20            ::                                                                ::=                             #::   ::
 ::23::cobra17            ::                                                                ::=                             #::   ::
 ::24::parrot24           ::                                                                ::=                             #::   ::
-::25::spider23           ::                                                                ::=                             #::   ::
+::25::spider23           ::                                                                ::=many.through                 #::47 ::
 ::26::lion20             ::                                                                ::=base.register                #::41 ::
 ::t ::mimosa26           ::                                                                ::=another.exercise             #::___::
 ::u ::moss20             ::                                                                ::=hit.automation               #::@@@::
