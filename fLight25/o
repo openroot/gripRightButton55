@@ -16,7 +16,7 @@
 ::14::wolf24             ::                                                                ::=                             #::   ::
 ::15::piranha27          ::                                                                ::=                             #::   ::
 ::16::yak14              ::                                                                ::=                             #::   ::
-::17::bee8               ::                                                                ::=                             #::   ::
+::17::bee8               ::                                                                ::=module.power                 #::52 ::
 ::18::dragonfly41        ::                                                                ::=stir.warm                    #::34 ::
 ::19::mouse23            ::                                                                ::=mount.bed                    #::31 ::
 ::20::feather25          ::                                                                ::=probe.from                   #::38 ::
