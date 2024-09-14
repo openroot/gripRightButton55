@@ -8,7 +8,7 @@
 ::6 ::chimpanzee40       ::                                                                ::=surface.series               #::51 ::
 ::7 ::cat9               ::                                                                ::=potent.socket                #::48 ::
 ::8 ::ostrich27          ::                                                                ::=mirror.transit               #::51 ::
-::9 ::centipede31        ::                                                                ::=                             #::   ::
+::9 ::centipede31        ::                                                                ::=beam.thread                  #::33 ::
 ::10::owl19              ::                                                                ::=                             #::   ::
 ::11::jelly28            ::                                                                ::=                             #::   ::
 ::12::angel21            ::                                                                ::=                             #::   ::
@@ -18,8 +18,8 @@
 ::16::yak14              ::                                                                ::=                             #::   ::
 ::17::bee8               ::                                                                ::=                             #::   ::
 ::18::dragonfly41        ::                                                                ::=                             #::   ::
-::19::mouse23            ::                                                                ::=                             #::   ::
-::20::feather25          ::                                                                ::=                             #::   ::
+::19::mouse23            ::                                                                ::=mount.bed                    #::31 ::
+::20::feather25          ::                                                                ::=probe.from                   #::38 ::
 ::21::cricket24          ::                                                                ::=compare.plate                #::49 ::
 ::22::oscar20            ::                                                                ::=scope.arm                    #::33 ::
 ::23::cobra17            ::                                                                ::=dissect.position             #::59 ::
