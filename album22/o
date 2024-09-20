@@ -11,9 +11,9 @@
 ::9 ::palmyra33          ::                                                                ::=material.and.mechanical      #::81 ::
 ::10::coconut29          ::                                                                ::=electronics.and.electrical   #::94 ::
 ::11::jicama22           ::                                                                ::=computer.and.quantum         #::74 ::
-::12::                   ::                                                                ::=acid.and.chemical            #::54 ::
-::13::                   ::                                                                ::=petroleum.and.crud           #::66 ::
-::14::                   ::                                                                ::=robotics.and.machine         #::67 ::
+::12::javaapple36        ::                                                                ::=acid.and.chemical            #::54 ::
+::13::waterchestnut51    ::                                                                ::=petroleum.and.crud           #::66 ::
+::14::javaplum35         ::                                                                ::=robotics.and.machine         #::67 ::
 ::15::                   ::                                                                ::=agricultural.and.cultivation #::103::
 ::16::                   ::                                                                ::=architecture.and.construction#::101::
 ::17::                   ::                                                                ::=mining.and.resource          #::67 ::
