@@ -17,9 +17,9 @@
 ::15::masalaDosa42       ::Reminder:                                                       ::=agricultural.and.cultivation #::103::
 ::16::ravaUttapam39      ::Appliance:                                                      ::=architecture.and.construction#::101::
 ::17::ravaIdli28         ::Machinery:                                                      ::=mining.and.resource          #::67 ::
-::18::kajuBadam34        ::                                                                ::=logistics.and.transport      #::85 ::
-::19::pistaBadam35       ::                                                                ::=recycling.and.textile        #::71 ::
-::20::akhrotBadam40      ::                                                                ::=energy.and.power             #::59 ::
+::18::kajuBadam34        ::Tempered:                                                       ::=logistics.and.transport      #::85 ::
+::19::pistaBadam35       ::Serviced:                                                       ::=recycling.and.textile        #::71 ::
+::20::akhrotBadam40      ::Sealed:                                                         ::=energy.and.power             #::59 ::
 ::21::dugdhChai31        ::                                                                ::=engine.and.vehicle           #::58 ::
 ::22::hotCoffee36        ::                                                                ::=poultry.and.wasteland        #::85 ::
 ::23::shudhPani37        ::                                                                ::=aeronautics.and.territorial  #::95 ::
