@@ -26,6 +26,6 @@
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
 ::26::                   ::                                                                ::=                             #::   ::
-::t ::                   ::                                                                ::=                             #::___::
+::t ::metal21            ::Language; Receipt; Token; Card; Premise; Balance; Property; Bar;::=circuit.bag                  #::___::
 ::u ::                   ::                                                                ::=                             #::@@@::
 ::..::                   ::                                                                ::=                             #::   ::
