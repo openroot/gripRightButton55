@@ -2,7 +2,7 @@
 ::x ::wood20             ::Profession; Ladder; Plain; Currency; Agent; Entry; Bin; Spot; T;::=stock.furniture              #::58 ::
 ::1 ::disaster29         ::Break; Media; Vehicle; Journey; Fest; Draw; Uniform; Date; Bias;::=service.policy               #::52 ::
 ::2 ::packet22           ::Wall; Liquid; Angel; Key; Folder; Port; Kit; Green; Table; Wire;::=capital.bank                 #::42 ::
-::3 ::                   ::                                                                ::=                             #::   ::
+::3 ::band13             ::Garment; Gear; Bangle; Industry; Chair; Celebrate; Asset; Paint;::=ticket.deposit               #::47 ::
 ::4 ::                   ::                                                                ::=                             #::   ::
 ::5 ::                   ::                                                                ::=                             #::   ::
 ::6 ::                   ::                                                                ::=                             #::   ::
