@@ -1,8 +1,8 @@
-::o ::boat13             ::                                                                ::=promotion.trend              #::58 ::
-::x ::product28          ::                                                                ::=routing.dictionary           #::66 ::
-::1 ::television39       ::                                                                ::=communication.nation         #::77 ::
+::o ::boat13             ::                                                                ::=trend.promotion              #::58 ::
+::x ::product28          ::                                                                ::=dictionary.routing           #::66 ::
+::1 ::television39       ::                                                                ::=aerial.intercommunication    #::94 ::
 ::2 ::projector37        ::                                                                ::=exhibit.exposition           #::57 ::
-::3 ::bicycle27          ::                                                                ::=free.ride                    #::28 ::
+::3 ::bicycle27          ::                                                                ::=free.rider                   #::32 ::
 ::4 ::laptop28           ::                                                                ::=                             #::   ::
 ::5 ::                   ::                                                                ::=                             #::   ::
 ::6 ::                   ::                                                                ::=                             #::   ::
@@ -26,6 +26,6 @@
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
 ::26::                   ::                                                                ::=                             #::   ::
-::t ::cookery31          ::                                                                ::=headline.file                #::___::
-::u ::crane18            ::                                                                ::=marketing.aspirate           #::@@@::
-::..::radio18            ::                                                                ::=advertisement.carpet         #::66 ::
+::t ::cookery31          ::                                                                ::=file.headline                #::___::
+::u ::crane18            ::                                                                ::=aspirate.marketing           #::@@@::
+::..::radio18            ::                                                                ::=carpet.advertisement         #::66 ::
