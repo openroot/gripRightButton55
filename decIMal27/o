@@ -18,7 +18,7 @@
 ::16::inductionOven50    ::                                                                ::=a.sum                        #::18 ::
 ::17::waterPurifier52    ::                                                                ::=c.book                       #::20 ::
 ::18::ceilingFan40       ::                                                                ::=an.explore                   #::36 ::
-::19::                   ::                                                                ::=                             #::   ::
+::19::eveningLight44     ::                                                                ::=auto.save                    #::29 ::
 ::20::                   ::                                                                ::=                             #::   ::
 ::21::                   ::                                                                ::=                             #::   ::
 ::22::                   ::                                                                ::=                             #::   ::
