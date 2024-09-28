@@ -20,8 +20,8 @@
 ::18::ceilingFan40       ::                                                                ::=an.explore                   #::36 ::
 ::19::eveningLight44     ::                                                                ::=auto.save                    #::29 ::
 ::20::powerGenerator57   ::                                                                ::=ping.net                     #::27 ::
-::21::                   ::                                                                ::=                             #::   ::
-::22::                   ::                                                                ::=                             #::   ::
+::21::airPurifier42      ::                                                                ::=an.info                      #::26 ::
+::22::officeSofa42       ::                                                                ::=wall.post                    #::42 ::
 ::23::                   ::                                                                ::=                             #::   ::
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
