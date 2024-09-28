@@ -10,9 +10,9 @@
 ::8 ::annualMaintenance69::                                                                ::=enterprise.planning          #::74 ::
 ::9 ::foodRefrigerator62 ::                                                                ::=initial.premium              #::57 ::
 ::10::audioSpeaker47     ::                                                                ::=a.crash                      #::22 ::
-::11::storageWardrobe57  ::                                                                ::=founding.companion           #::73 ::
-::12::airConditioner52   ::                                                                ::=                             #::   ::
-::13::                   ::                                                                ::=                             #::   ::
+::11::storageWardrobe57  ::                                                                ::=mirror.phase                 #::45 ::
+::12::airConditioner52   ::                                                                ::=founding.companion           #::73 ::
+::13::paidSubscription62 ::                                                                ::=as.top                       #::21 ::
 ::14::                   ::                                                                ::=                             #::   ::
 ::15::                   ::                                                                ::=                             #::   ::
 ::16::                   ::                                                                ::=                             #::   ::
