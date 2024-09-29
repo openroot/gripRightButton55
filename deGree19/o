@@ -22,7 +22,7 @@
 ::20::calendar31         ::Place:                                                          ::=running.statistics           #::66 ::
 ::21::bill19             ::Perpendicular:                                                  ::=separate.force               #::49 ::
 ::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
-::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
+::23::profit25           ::Steer: Roof < -depart -heavy -join > ~ #site ~ #cycle ~ #distant::=relay.ready                  #::42 ::
 ::24::return24           ::Paper: Flat < -assemble -context -drive > ~ #lock ~ #grip ~ #pen::=manufacture.sheet            #::62 ::
 ::25::spot18             ::Bend: Accelerate < -fresh -store -raw > ~ #signal ~ #net ~ #pile::=confidential.issue           #::69 ::
 ::26::opinion31          ::Blank: Length < -toss -view -width > ~ #campaign ~ #item ~ #face::=party.unknown                #::58 ::
