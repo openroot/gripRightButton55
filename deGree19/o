@@ -23,7 +23,7 @@
 ::21::bill19             ::Perpendicular:                                                  ::=separate.force               #::49 ::
 ::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
 ::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
-::24::                   ::                                                                ::=                             #::   ::
+::24::return24           ::Paper:                                                          ::=manufacture.sheet            #::62 ::
 ::25::spot18             ::Bend:                                                           ::=confidential.issue           #::69 ::
 ::26::opinion31          ::Blank:                                                          ::=party.unknown                #::58 ::
 ::t ::account27          ::                                                                ::=consumer.expect              #::___::
