@@ -25,7 +25,7 @@
 ::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
 ::24::return24           ::Paper:                                                          ::=manufacture.sheet            #::62 ::
 ::25::spot18             ::Bend:                                                           ::=confidential.issue           #::69 ::
-::26::opinion31          ::Blank:                                                          ::=party.unknown                #::58 ::
+::26::opinion31          ::Blank: Length < -toss -view -width > ~ #campaign ~ #item ~ #face::=party.unknown                #::58 ::
 ::t ::account27          ::Trespasser:                                                     ::=consumer.expect      14711336#::___::
 ::u ::summery33          ::Toll:                                                           ::=device.use                   #::@@@::
 ::..::formula34          ::False:                                                          ::=attribute.source             #::54 ::
