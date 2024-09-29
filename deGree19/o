@@ -21,7 +21,7 @@
 ::19::layer23            ::Corner:                                                         ::=bundle.track                 #::43 ::
 ::20::calendar31         ::Place:                                                          ::=running.statistics           #::66 ::
 ::21::bill19             ::Perpendicular:                                                  ::=separate.force               #::49 ::
-::22::                   ::                                                                ::=                             #::   ::
+::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
 ::23::                   ::                                                                ::=                             #::   ::
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
