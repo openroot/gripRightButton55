@@ -2,7 +2,7 @@
 ::x ::schedule33         ::                                                                ::=time.form                    #::33 ::
 ::1 ::warning30          ::                                                                ::=material.access              #::53 ::
 ::2 ::tickets25          ::                                                                ::=product.group                #::50 ::
-::3 ::                   ::                                                                ::=                             #::   ::
+::3 ::drug15             ::                                                                ::=party.announce               #::55 ::
 ::4 ::                   ::                                                                ::=                             #::   ::
 ::5 ::                   ::                                                                ::=                             #::   ::
 ::6 ::                   ::                                                                ::=                             #::   ::
