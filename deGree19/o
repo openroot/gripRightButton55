@@ -23,7 +23,7 @@
 ::21::bill19             ::Perpendicular:                                                  ::=separate.force               #::49 ::
 ::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
 ::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
-::24::return24           ::Paper:                                                          ::=manufacture.sheet            #::62 ::
+::24::return24           ::Paper: Flat < -assemble -context -drive > ~ #lock ~ #grip ~ #pen::=manufacture.sheet            #::62 ::
 ::25::spot18             ::Bend: Accelerate < -fresh -store -raw > ~ #signal ~ #net ~ #pile::=confidential.issue           #::69 ::
 ::26::opinion31          ::Blank: Length < -toss -view -width > ~ #campaign ~ #item ~ #face::=party.unknown                #::58 ::
 ::t ::account27          ::Trespasser: Pool < -ratio -angle -piece > ~ #in ~ #start ~ #turn::=consumer.expect      14711336#::___::
