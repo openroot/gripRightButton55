@@ -5,7 +5,7 @@
 ::3 ::drug15             ::                                                                ::=party.announce               #::55 ::
 ::4 ::break17            ::                                                                ::=double.quotation             #::61 ::
 ::5 ::refill29           ::                                                                ::=sketch.finish                #::48 ::
-::6 ::                   ::                                                                ::=                             #::   ::
+::6 ::payment30          ::                                                                ::=purchase.refill              #::61 ::
 ::7 ::                   ::                                                                ::=                             #::   ::
 ::8 ::                   ::                                                                ::=                             #::   ::
 ::9 ::                   ::                                                                ::=                             #::   ::
