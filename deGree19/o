@@ -1,4 +1,4 @@
-::o ::calculate37        ::Full:                                                           ::=project.plan                 #::48 ::
+::o ::calculate37        ::Full: Stones < -number -size -mass > ~ #spark ~ #speed ~ #rotate::=project.plan                 #::48 ::
 ::x ::schedule33         ::Light:                                                          ::=time.form                    #::33 ::
 ::1 ::warning30          ::Spring:                                                         ::=material.access              #::53 ::
 ::2 ::tickets25          ::Fast:                                                           ::=product.group                #::50 ::
