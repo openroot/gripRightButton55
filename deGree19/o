@@ -25,7 +25,7 @@
 ::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
 ::24::                   ::                                                                ::=                             #::   ::
 ::25::                   ::                                                                ::=                             #::   ::
-::26::opinion31          ::                                                                ::=party.unknown                #::58 ::
+::26::opinion31          ::Blank:                                                          ::=party.unknown                #::58 ::
 ::t ::account27          ::                                                                ::=consumer.expect              #::___::
 ::u ::summery33          ::                                                                ::=device.use                   #::@@@::
 ::..::formula34          ::                                                                ::=attribute.source             #::54 ::
