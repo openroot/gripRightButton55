@@ -24,7 +24,7 @@
 ::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
 ::23::profit25           ::Steer:                                                          ::=relay.ready                  #::42 ::
 ::24::                   ::                                                                ::=                             #::   ::
-::25::                   ::                                                                ::=                             #::   ::
+::25::spot18             ::Bend:                                                           ::=confidential.issue           #::69 ::
 ::26::opinion31          ::Blank:                                                          ::=party.unknown                #::58 ::
 ::t ::account27          ::                                                                ::=consumer.expect              #::___::
 ::u ::summery33          ::                                                                ::=device.use                   #::@@@::
