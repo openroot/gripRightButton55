@@ -21,7 +21,7 @@
 ::19::layer23            ::Corner: Board < -touch -sector -double > ~ #mark ~ #send ~ #post::=bundle.track                 #::43 ::
 ::20::calendar31         ::Place: Metric < -brand -version -public > ~ #count ~ #yet ~ #new::=running.statistics           #::66 ::
 ::21::bill19             ::Perpendicular: Fuse < -tap -act -cut > ~ #whole ~ #top ~ #symbol::=separate.force               #::49 ::
-::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
+::22::float23            ::Information: Float < -alter -move -drop > ~ #lot ~ #cool ~ #tool::=protection.part              #::54 ::
 ::23::profit25           ::Steer: Roof < -depart -heavy -join > ~ #site ~ #cycle ~ #distant::=relay.ready                  #::42 ::
 ::24::return24           ::Paper: Flat < -assemble -context -drive > ~ #lock ~ #grip ~ #pen::=manufacture.sheet            #::62 ::
 ::25::spot18             ::Bend: Accelerate < -fresh -store -raw > ~ #signal ~ #net ~ #pile::=confidential.issue           #::69 ::
