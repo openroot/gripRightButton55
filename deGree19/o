@@ -18,7 +18,7 @@
 ::16::menu18             ::Hook: Bag < -rest -left -extra > ~ #mechanic ~ #string ~ #system::=trial.jet                    #::31 ::
 ::17::note16             ::Plate: Diagonal < -cap -asset -draw > ~ #play ~ #read ~ #neutral::=case.hierarchy               #::48 ::
 ::18::pin13              ::Pillar: Knob < -division -meter -reach > ~ #clock ~ #band ~ #tip::=determine.channel            #::62 ::
-::19::layer23            ::Corner:                                                         ::=bundle.track                 #::43 ::
+::19::layer23            ::Corner: Board < -touch -sector -double > ~ #mark ~ #send ~ #post::=bundle.track                 #::43 ::
 ::20::calendar31         ::Place:                                                          ::=running.statistics           #::66 ::
 ::21::bill19             ::Perpendicular:                                                  ::=separate.force               #::49 ::
 ::22::float23            ::Information:                                                    ::=protection.part              #::54 ::
